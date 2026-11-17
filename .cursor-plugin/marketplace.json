@@ -787,6 +787,11 @@
       "name": "rillet",
       "source": "third_party/rillet",
       "description": "Query financial reports and manage customers, invoices, bills, contracts, and vendors in Rillet."
+    },
+    {
+      "name": "createos",
+      "source": "third_party/createos",
+      "description": "Deploy and manage projects, environments, deployments, domains, logs, cron jobs, security scans, templates, and sandboxes on NodeOps CreateOS."
     }
   ]
 }
