@@ -1,0 +1,37 @@
+pstack/docs/harness/claude-code.md
+  s_f3b88f13fe6a85::t_f52156652ae7c6 48
+  s_f3b88f13fe6a85::t_fe0b9db0378f13 39
+pstack/skills/arena/SKILL.md
+  s_f3b88f13fe6a85::t_c2987dd4ac9107 28
+  s_f3b88f13fe6a85::t_c1faed37578fbd 17
+pstack/skills/setup-pstack/SKILL.md
+  s_f3b88f13fe6a85::t_efad638ff60ad8 48
+  s_f3b88f13fe6a85::t_165485bc9a6be1 55-56,60
+  s_f3b88f13fe6a85::t_2aa7eb67c5676d 40-41
+  s_f3b88f13fe6a85::t_6836b5c98cdb70 18
+  s_f3b88f13fe6a85::t_3c920d7fbb33d3 44
+pstack/skills/swarm/SKILL.md
+  s_f3b88f13fe6a85::t_efa8444992f091 22
+pstack/skills/poteto-help/SKILL.md
+  s_f3b88f13fe6a85::t_1a559a1129e047 44
+pstack/docs/guide/01-setup.md
+  s_f3b88f13fe6a85::t_1bea37333b4bb4 33-34
+pstack/skills/poteto-mode/SKILL.md
+  s_f3b88f13fe6a85::t_28095e9e77529a 96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "d564f600e52790a6a30eca6a1e1fd28174df760a",
+  "prompts": {},
+  "sessions": {
+    "s_f3b88f13fe6a85": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "9eda99a8-8844-46fd-870c-4d8466752144",
+        "model": "grok-4.7"
+      },
+      "human_author": "xuwentao.59 <xuwentao.59@jd.com>"
+    }
+  }
+}
