@@ -1,0 +1,107 @@
+pstack/skills/poteto-mode/SKILL.md
+  s_f3b88f13fe6a85::t_85eac9fd380b2c 96
+  s_f3b88f13fe6a85::t_1591f716f173ea 92
+pstack/skills/arena/SKILL.md
+  s_f3b88f13fe6a85::t_87de2d7d074a90 17
+  s_f3b88f13fe6a85::t_5cf47cce45c014 28
+README.md
+  s_f3b88f13fe6a85::t_b8c83bcfe93597 148-152
+harness/pstack/claude-code/.claude-plugin/plugin.json
+  s_f3b88f13fe6a85::t_5fd7371fe4d966 4
+harness/pstack/claude-code/README.md
+  s_f3b88f13fe6a85::t_d8d0d4a5e8d21b 43
+harness/pstack/claude-code/docs/guide/01-setup.md
+  s_f3b88f13fe6a85::t_e781256717da0d 33-34
+harness/pstack/claude-code/docs/harness/claude-code.md
+  s_f3b88f13fe6a85::t_2d79b1b07400b1 39,47-48
+harness/pstack/claude-code/plugin.json
+  s_f3b88f13fe6a85::t_6260fce5e20500 4
+harness/pstack/claude-code/skills/arena/SKILL.md
+  s_f3b88f13fe6a85::t_a4873d3c235228 19,30
+harness/pstack/claude-code/skills/poteto-help/SKILL.md
+  s_f3b88f13fe6a85::t_ddb7331b827ba0 46
+harness/pstack/claude-code/skills/poteto-mode/SKILL.md
+  s_f3b88f13fe6a85::t_954aeadcbd0094 94,98
+harness/pstack/claude-code/skills/setup-pstack/SKILL.md
+  s_f3b88f13fe6a85::t_8e9bc40089ef3c 20-22,40,44-45,48,52,59-60,64,70-71,73
+harness/pstack/claude-code/skills/swarm/SKILL.md
+  s_f3b88f13fe6a85::t_85be698f468fa3 24
+pstack/.cursor-plugin/plugin.json
+  s_f3b88f13fe6a85::t_5240088ae1d256 4
+pstack/README.md
+  s_f3b88f13fe6a85::t_81a49ec810a86d 43
+pstack/plugin.json
+  s_f3b88f13fe6a85::t_cfd07c1e8868ea 4
+pstack/skills/setup-pstack/SKILL.md
+  s_f3b88f13fe6a85::t_87dd510585fdd9 20-21,38,68-69,71
+.cursor-plugin/marketplace.json
+  s_f3b88f13fe6a85::t_fe57f17904b794 790-814
+pstack/docs/harness/claude-code.md
+  s_f3b88f13fe6a85::t_7ed0e31678c9c2 47
+third_party/createos/.cursor-plugin/plugin.json
+  s_f3b88f13fe6a85::t_0c6a9da0bab0d7 1-41
+third_party/createos/CHANGELOG.md
+  s_f3b88f13fe6a85::t_28434183f0a459 1-9
+third_party/createos/LICENSE
+  s_f3b88f13fe6a85::t_643cd1dc115dcf 1-21
+third_party/createos/README.md
+  s_f3b88f13fe6a85::t_0cd4f8b53d20c1 1-79
+third_party/createos/mcp.json
+  s_f3b88f13fe6a85::t_63a51143119fa0 1-11
+third_party/fiscal-ai/.cursor-plugin/plugin.json
+  s_f3b88f13fe6a85::t_387f02edea6635 1-42
+third_party/fiscal-ai/CHANGELOG.md
+  s_f3b88f13fe6a85::t_90f4b4005f0fe9 1-9
+third_party/fiscal-ai/LICENSE
+  s_f3b88f13fe6a85::t_47366f3a217024 1-21
+third_party/fiscal-ai/README.md
+  s_f3b88f13fe6a85::t_1f20c6c4e2b08f 1-76
+third_party/fiscal-ai/mcp.json
+  s_f3b88f13fe6a85::t_afb55e49be2437 1-8
+third_party/hq/.cursor-plugin/plugin.json
+  s_f3b88f13fe6a85::t_31a0bd35557c5d 1-39
+third_party/hq/CHANGELOG.md
+  s_f3b88f13fe6a85::t_a26264733afd1e 1-9
+third_party/hq/LICENSE
+  s_f3b88f13fe6a85::t_ff8018f96fb087 1-21
+third_party/hq/README.md
+  s_f3b88f13fe6a85::t_4295369578952c 1-79
+third_party/hq/mcp.json
+  s_f3b88f13fe6a85::t_4cc546313303c2 1-8
+third_party/item/.cursor-plugin/plugin.json
+  s_f3b88f13fe6a85::t_c60ac40de6975b 1-38
+third_party/item/CHANGELOG.md
+  s_f3b88f13fe6a85::t_6941ded99d50b5 1-9
+third_party/item/LICENSE
+  s_f3b88f13fe6a85::t_a09342e71f88ce 1-21
+third_party/item/README.md
+  s_f3b88f13fe6a85::t_4452c59de260ce 1-62
+third_party/item/mcp.json
+  s_f3b88f13fe6a85::t_d1493c4b4de89e 1-8
+third_party/lmty/.cursor-plugin/plugin.json
+  s_f3b88f13fe6a85::t_d34fb5ea2eb35b 1-42
+third_party/lmty/CHANGELOG.md
+  s_f3b88f13fe6a85::t_dcb3d15a72eab2 1-9
+third_party/lmty/LICENSE
+  s_f3b88f13fe6a85::t_44c52dea1e340c 1-21
+third_party/lmty/README.md
+  s_f3b88f13fe6a85::t_3b06caaeabec75 1-84
+third_party/lmty/mcp.json
+  s_f3b88f13fe6a85::t_65b0e0db16ea2d 1-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "b9fd169fa0bdd223bf48719d0ebed5afac18fedb",
+  "prompts": {},
+  "sessions": {
+    "s_f3b88f13fe6a85": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "9eda99a8-8844-46fd-870c-4d8466752144",
+        "model": "grok-4.7"
+      },
+      "human_author": "xuwentao.59 <xuwentao.59@jd.com>"
+    }
+  }
+}
