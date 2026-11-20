@@ -1,0 +1,34 @@
+pstack/docs/guide-zhCN/01-setup.md
+  h_1a420ef55bf221 1-66
+pstack/docs/guide-zhCN/02-poteto-mode.md
+  h_1a420ef55bf221 1-139
+pstack/docs/guide-zhCN/03-understand.md
+  h_1a420ef55bf221 1-79
+pstack/docs/guide-zhCN/04-design.md
+  h_1a420ef55bf221 1-127
+pstack/docs/guide-zhCN/05-build-and-clean.md
+  h_1a420ef55bf221 1-83
+pstack/docs/guide-zhCN/06-verify-and-ship.md
+  h_1a420ef55bf221 1-162
+pstack/docs/guide-zhCN/07-overnight.md
+  h_1a420ef55bf221 1-122
+pstack/docs/guide-zhCN/08-principles.md
+  h_1a420ef55bf221 1-72
+pstack/docs/guide-zhCN/09-make-it-yours.md
+  h_1a420ef55bf221 1-100
+pstack/docs/guide-zhCN/10-recipes-and-pitfalls.md
+  h_1a420ef55bf221 1-182
+pstack/docs/guide-zhCN/README.md
+  h_1a420ef55bf221 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "1ff6e5c33ec224d5674214a21030c1a0764c3117",
+  "prompts": {},
+  "humans": {
+    "h_1a420ef55bf221": {
+      "author": "xuwentao.59 <xuwentao.59@jd.com>"
+    }
+  }
+}
