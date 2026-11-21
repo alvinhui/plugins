@@ -15,7 +15,7 @@ poteto-mode 只是某一个人的风格。底层的 playbook、路由和模型�
 习惯发生变化就再运行一次：
 
 ```text
-/automate-me update my mode skill with everything since its last edit
+/automate-me 用上次修改以来的全部历史更新我的模式技能
 ```
 
 更新模式只挖掘技能上次改动以来的历史。你未推翻过的规则原样保留，有新证据的规则加以修订，只为新出现的模式增加章节。
@@ -25,7 +25,7 @@ poteto-mode 只是某一个人的风格。底层的 playbook、路由和模型�
 刚完成一个让你有所收获的任务，立即运行：
 
 ```text
-/reflect that took way too long. capture what we learned so the next run doesn't repeat it.
+/reflect 这次花的时间太长了。把经验沉淀下来，下次运行不要再重蹈覆辙。
 ```
 
 [`/reflect`](../../skills/reflect/SKILL.md) 读取会话记录，只保留会改变未来智能体工作方式的教训，把提案分成 `Accepted`、`Rejected`、`Backlog` 三类。修改任何技能之前都会先等你批准。只有会改变未来某个决策的提案才值得批准。一次异常的会话只是个案，不是规律。
@@ -42,7 +42,7 @@ poteto-mode 只是某一个人的风格。底层的 playbook、路由和模型�
 人工评审不在列表里。评审者需要在每个 PR 上发现同一个错误，这本身就是这里要解决的问题。[`/correct`](../../skills/correct/SKILL.md) 负责完成这项工作：
 
 ```text
-/correct agents keep calling the database client directly instead of going through the repository layer
+/correct 智能体总是绕过 repository 层直接调用数据库客户端
 ```
 
 它读取最近的提交、回退、评审评论，以及解释临时绕过方案的注释，把错误归成几类。一类错误出现两次就计入。最高频的几类逐一修复，每类一个提交，修在能奏效的最高层级，并证明每条新检查放到一个真实的历史错误上会失败。它还在智能体指令文件里维护一张表，每条规则对应强制执行它的机制；没有机制兜底的规则，一旦重复出现就会在表里暴露。回复会列出每类错误及其证据、选用的层级，以及更高层级为什么行不通。
@@ -54,7 +54,7 @@ poteto-mode 只是某一个人的风格。底层的 playbook、路由和模型�
 已经想清楚要固化哪个工作流时：
 
 ```text
-/poteto-mode write a skill for verifying database migrations in this repo
+/poteto-mode 写一个技能，用于验证这个仓库里的数据库迁移
 ```
 
 写技能会匹配[编写或修改技能的 playbook](../../skills/poteto-mode/playbooks/authoring-a-skill.md)：走 Cursor 内置的 `create-skill`，校验 frontmatter 和链接，再经 Opening a PR playbook 交付。写给智能体看的文字，标准要比写给人看的更高——一句无用的话，将来会变成某个智能体照办的指令。把这个标准交给 playbook 把关，不要手写 `SKILL.md`。
@@ -66,7 +66,7 @@ poteto-mode 只是某一个人的风格。底层的 playbook、路由和模型�
 要交付的文字不止技能。文档、RFC、readme、PR 描述、提交信息都包括在内：
 
 ```text
-/technical-writing review the readme changes
+/technical-writing 评审 README 的改动
 ```
 
 [`/technical-writing`](../../skills/technical-writing/SKILL.md) 执行的是一套分层标准，目标是让疲惫的工程师读一遍就懂。它先确定文档类型（教程、操作指南、参考、解释），再逐句检查：谁做什么、一句只讲一件事、不允许一句话有两种读法。可以用它评审你或智能体刚写的内容，也可以在要求编写文档时一开始就点名它。
@@ -76,13 +76,13 @@ poteto-mode 只是某一个人的风格。底层的 playbook、路由和模型�
 修改一次技能会影响之后的所有会话，所以要像做实验一样测试它。采纳别人的技能也一样：先确认它在你的实际工作中确实让智能体表现更好，再保留。
 
 ```text
-/poteto-mode run the eval playbook on this skill change. same task for both variants, candidates stay blind.
+/poteto-mode 对这次技能改动运行 eval playbook。两个变体用同一个任务，候选保持盲测。
 ```
 
 技能反复表现不佳、而你知道它该做什么时，把修改和测试放进同一个任务：
 
 ```text
-/poteto-mode update the review skill so it flags missing migrations, and eval the change.
+/poteto-mode 更新评审技能，让它能标出遗漏的迁移，并对这次改动做 eval。
 ```
 
 一开始就言明要 eval，这次改动才不至于失真。凭一次糟糕会话写出来的修复，往往只对那一次会话有效；修改次数多了，技能就会逐渐偏离。eval 能在交付前发现这种漂移。

@@ -56,7 +56,7 @@ pstack 会在子智能体和评审组上额外消耗 token，这是严谨的成�
 选一件真实但足够小的任务，像向同事交代那样说清楚：
 
 ```text
-/poteto-mode add a --json flag to this command. text output stays byte-identical. verify both.
+/poteto-mode 给这个命令加一个 --json 参数。文本输出保持逐字节一致。两种输出都要验证。
 ```
 
 观察待办列表。开头几项就是匹配到的 playbook 的步骤被复制了进来——这条提示词匹配的是 Feature playbook。

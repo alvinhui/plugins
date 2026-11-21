@@ -32,10 +32,10 @@ flowchart TD
 不用写需求文档。说清楚哪里出了问题、或者你想要什么，再补上你已经掌握的、能为智能体节省时间的信息：
 
 ```text
-/poteto-mode users get two notifications after a retry. repro first, then fix and verify.
+/poteto-mode 重试之后用户会收到两条通知。先复现，再修复并验证。
 ```
 
-这是一条 Bug fix 提示词。"repro first"（先复现）是真实的约束，不是客套话，playbook 会遵守。你会看到待办列表被 Bug fix 的步骤填满。
+这是一条 Bug fix 提示词。"先复现"是真实的约束，不是客套话，playbook 会遵守。你会看到待办列表被 Bug fix 的步骤填满。
 
 ## 提示词里该写什么
 
@@ -45,12 +45,12 @@ flowchart TD
 - **完成判据。** 必须能判定通过或失败。"改好一点"和"花一小时弄这个"都不算判据。
 - **你想看到的证据。** 明确要求真实的命令输出、操作过程的录屏、实际写入的值，或者前后对比的数字。
 - **你已经掌握的线索。** 一个症状、一步复现、一行日志或一个链接，都能为智能体省去一轮检索。
-- **真正的约束。** "repro first"、"先别改代码"、"行为零变化"、"继续之前先给我看"，每一条都会改变智能体的做法。
+- **真正的约束。** "先复现"、"先不要修改任何代码"、"行为零变化"、"继续之前先让我审阅"，每一条都会改变智能体的做法。
 
 五项齐全的一条如下：
 
 ```text
-/poteto-mode the csv export drops its last row since yesterday's deploy. failing job id is 4812. repro first, then fix. done means the 60k-row fixture exports every row. show me the row counts before and after.
+/poteto-mode 昨天部署之后，csv 导出会丢掉最后一行。失败的任务 id 是 4812。先复现，再修复。完成的标准是 60k 行的 fixture 每一行都导出。给我修复前后的行数对比。
 ```
 
 有两项内容反而应该省略：
@@ -61,7 +61,7 @@ flowchart TD
 遇到信息杂乱的报告，比如很长的讨论串或描述含糊的 bug，把复述作为第一步：
 
 ```text
-/poteto-mode read this thread. restate the underlying issue in your own words, in plain english. don't change any code yet.
+/poteto-mode 读一下这个讨论串。用你自己的话、用平实的语言复述底层问题。先不要修改任何代码。
 ```
 
 理解偏差会在复述中暴露出来，而此时还没有写任何代码。当场纠正只需一条消息，晚了就要付出一次错误修复的代价。只想要复述、不想启动 playbook，就用 [`/in-your-own-words`](../../skills/in-your-own-words/SKILL.md)：它会把智能体理解的目标和要解决的问题原样陈述给你。
@@ -69,7 +69,7 @@ flowchart TD
 拿不准提示词的方向是否正确，发送之前先用 [`/sharpen`](../../skills/sharpen/SKILL.md) 打磨一遍：
 
 ```text
-/sharpen write a migration guide for the v2 config format.
+/sharpen 为 v2 配置格式写一份迁移指南。
 ```
 
 智能体会指出四件事：顶尖专家会做、而你没要求的事；他们会从哪些最原始的材料入手；他们会用什么方法和工具；以及除了你和智能体的主观判断，还有什么能证明结果是正确的。然后它据此重写你的提示词——更深入，而不是更庞大。重写版会要求智能体：凡是能用实验确定的选择就先做原型，再基于观察结果给出推荐；产品取向和个人偏好类的选择仍然留给你。它不会直接执行任务。你读一遍重写版，确认合适后再发送，比如交给 `/poteto-mode`。
@@ -79,15 +79,15 @@ flowchart TD
 上下文已经在对话中时，追问可以短到几乎不存在。下面这些都足够：
 
 ```text
-/poteto-mode do it
+/poteto-mode 执行吧
 ```
 
 ```text
-continue
+继续
 ```
 
 ```text
-keep going until done
+一直执行到完成为止
 ```
 
 简短之所以可行，是因为流程结构由 playbook 承担，而 Custom Mode 让 `/poteto-mode` 每一轮都留在上下文中。开启方法见[配置 pstack](./01-setup.md#跑第一个任务)。意图由你的话传达，严谨由技能兜底。
@@ -97,10 +97,10 @@ keep going until done
 聊天一长，上一个任务的上下文就会不断累积。切换话题时要明确说明：
 
 ```text
-/poteto-mode new task. figure out why the cache entry survives logout. don't change any code yet.
+/poteto-mode new task. 查清楚为什么退出登录后缓存条目还在。先不要修改任何代码。
 ```
 
-"new task" 让 `/poteto-mode` 重新匹配 playbook，而不是继续执行上一个；"don't change any code yet" 把这次锁定在 Investigation。少了这两句，正在执行 Feature 中途的模式，往往会把你的新问题当作功能开发的下一步。
+"new task" 让 `/poteto-mode` 重新匹配 playbook，而不是继续执行上一个；"先不要修改任何代码"把这次锁定在 Investigation。少了这两句，正在执行 Feature 中途的模式，往往会把你的新问题当作功能开发的下一步。
 
 ## 并行任务各用一台机器
 
@@ -109,7 +109,7 @@ keep going until done
 任务必须留在本地时，一开始就要求一个 worktree：
 
 ```text
-/poteto-mode new task. branch off <base> in a fresh worktree, then port the parser change there.
+/poteto-mode new task. 基于 <base> 新建一个 worktree 和分支，然后把解析器的改动移植过去。
 ```
 
 每个任务独占分支和 worktree，任何智能体都不会覆盖其他智能体的文件。不过 worktree 占用磁盘和机器资源，一台笔记本同时运行不了几个。[Opening a PR playbook](../../skills/poteto-mode/playbooks/opening-a-pr.md) 修改代码本来就默认在 worktree 中进行，所以只有当基线分支或目录位置有特殊要求时，你才需要专门说明。
@@ -117,7 +117,7 @@ keep going until done
 worktree 会越积越多。磁盘紧张时问一句：
 
 ```text
-/poteto-mode what's eating my disk? prune the worktrees that are safe to prune.
+/poteto-mode 是什么占满了我的磁盘？把可以安全清理的 worktree 清理掉。
 ```
 
 [Worktree cleanup playbook](../../skills/poteto-mode/playbooks/worktree-cleanup.md) 会按合并状态、有无未提交的改动、还有哪些聊天在使用它，对每个 worktree 分类。只删除证据齐全、确认可删的；凡是仍有未提交改动的，都会停下来等你决定。
@@ -127,12 +127,12 @@ worktree 会越积越多。磁盘紧张时问一句：
 要离开时，把"完成"的标准说清楚，然后即可离开：
 
 ```text
-/poteto-mode im stepping away. keep going until the migration check reports zero old callers. log your decisions.
+/poteto-mode 我要离开一会儿。一直执行到迁移检查报告旧调用方为零为止。记录你的决策。
 ```
 
 这类事后才审阅的任务会交给 [`/figure-it-out`](../../skills/figure-it-out/SKILL.md)：它先设计整轮运行的阶段，并全程维护一份 [`/show-me-your-work`](../../skills/show-me-your-work/SKILL.md) 决策日志。完整的过夜约定见[睡觉时也让任务继续跑](./07-overnight.md)。
 
-**坑：** 不要在提示词里罗列技能清单（"use /architect, then /arena, then /interrogate..."）。playbook 已经排好了顺序，手写的顺序往往会打乱、甚至遗漏 playbook 本来会执行的步骤。只有想推翻某个具体选择时，才点名技能。
+**坑：** 不要在提示词里罗列技能清单（"先 /architect，再 /arena，再 /interrogate……"）。playbook 已经排好了顺序，手写的顺序往往会打乱、甚至遗漏 playbook 本来会执行的步骤。只有想推翻某个具体选择时，才点名技能。
 
 完整的分派规则读 [`poteto-mode`](../../skills/poteto-mode/SKILL.md) 技能本身。
 

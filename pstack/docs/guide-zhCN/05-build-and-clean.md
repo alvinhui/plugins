@@ -7,25 +7,25 @@
 Bug 提示词写清症状，并要求先复现：
 
 ```text
-/poteto-mode this command emits two records after a retry. repro first, then fix and verify.
+/poteto-mode 这条命令重试后会输出两条记录。先复现，再修复并验证。
 ```
 
 Feature 提示词写清目标行为，以及什么绝不能变：
 
 ```text
-/poteto-mode add a --json flag. text output stays byte-identical. verify both forms.
+/poteto-mode 加一个 --json 参数。文本输出保持逐字节一致。两种输出都要验证。
 ```
 
 重构提示词在调整结构之前先锁定行为：
 
 ```text
-/poteto-mode move parsing into one module, zero behavior change. record the current output first and prove it's unchanged after.
+/poteto-mode 把解析逻辑挪进一个模块，行为零变化。先记录当前输出，改完后证明输出没有变化。
 ```
 
 性能提示词给出测量结果，而不是主观感受：
 
 ```text
-/poteto-mode startup takes 1.8s on this fixture. trace it, fix the measured cause, show me before and after.
+/poteto-mode 在这个 fixture 上启动耗时 1.8s。追踪耗时去向，修复测出来的原因，把前后的数据展示给我。
 ```
 
 这几条会分别分派到对应的 playbook（[Bug fix](../../skills/poteto-mode/playbooks/bug-fix.md)、[Feature](../../skills/poteto-mode/playbooks/feature.md)、[Refactoring](../../skills/poteto-mode/playbooks/refactoring.md)、[Perf issue](../../skills/poteto-mode/playbooks/perf-issue.md)），你未写出的步骤由 playbook 补齐：修复前先复现、实现前先确定数据结构、重构前先锁定行为、优化前先做性能剖析。
@@ -37,7 +37,7 @@ Feature 提示词写清目标行为，以及什么绝不能变：
 有时你要的是先查明原因，不做任何修复。对于正在发生的运行时症状，比如内存泄漏、空闲时 CPU 空转或显示异常，用 [Runtime forensics playbook](../../skills/poteto-mode/playbooks/runtime-forensics.md) 给运行中的进程插桩。对于已捕获的 profile，用 [Trace forensics playbook](../../skills/poteto-mode/playbooks/trace-forensics.md) 读取这份产物，把热点栈帧对应回源码。两者给出的都是诊断，不是修复：
 
 ```text
-/poteto-mode here's a cpuprofile from the slow startup. tell me where the time goes and which source lines own it. no fix yet.
+/poteto-mode 这是启动慢时抓的一份 cpuprofile。告诉我时间花在哪里、对应哪些源码行。先不要修复。
 ```
 
 ## 用 /tdd 先写失败的测试
@@ -61,10 +61,10 @@ bug 有低成本的本地测试路径时，整条提示词两个词就足够：
 清理文字时，`/unslop` 接受一个目标，外加你自己的任何规则：
 
 ```text
-/unslop the readme changes, no emdashes
+/unslop README 的改动，不要用长破折号
 ```
 
-你会逐渐形成自己的简写。即使提示词简短到 `unslop that, tighten it`，技能也能准确理解意图。
+你会逐渐形成自己的简写。即使提示词简短到 `unslop 一下，再紧凑些`，技能也能准确理解意图。
 
 ## 用 /no-comments 清掉注释
 

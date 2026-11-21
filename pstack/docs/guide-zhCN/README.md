@@ -20,7 +20,7 @@
 遇到困难，或者不确定该用哪个技能，就把问题跟在 [`/poteto-help`](../../skills/poteto-help/SKILL.md) 后面输入：
 
 ```text
-/poteto-help which skill should i use to review this branch?
+/poteto-help 评审这个分支该用哪个技能？
 ```
 
 它会回答问题，给你一条可以直接发送的提示词，并附上答案出处——对应的技能或指南页。它不会直接开始工作：运行一次 pstack 消耗的是真实的 token，所以提示词由你准备好后再发送。它只在你输入时才运行。
@@ -30,9 +30,9 @@
 用你自己的话，给智能体一个目标，再给一个可验证的方法：
 
 ```text
-/poteto-mode the export writes duplicate rows when a retry lands mid-run. repro first, then fix and verify.
+/poteto-mode 导出过程中途发生重试时会写入重复行。先复现，再修复并验证。
 ```
 
-不用指定 playbook，也不用罗列技能。一句 "repro first"（先复现）加一个可验证的结果，就是 `/poteto-mode` 分派任务所需的全部信号。它会匹配到 Bug fix playbook，把步骤复制到待办列表，再按每一步的需要调用对应技能。
+不用指定 playbook，也不用罗列技能。一句"先复现"加一个可验证的结果，就是 `/poteto-mode` 分派任务所需的全部信号。它会匹配到 Bug fix playbook，把步骤复制到待办列表，再按每一步的需要调用对应技能。
 
 下一步：[配置 pstack](./01-setup.md)。

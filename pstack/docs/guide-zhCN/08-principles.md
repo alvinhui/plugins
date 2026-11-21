@@ -9,19 +9,19 @@ pstack 将 24 条原则实现为独立技能。`/poteto-mode` 在每个多步骤
 比如智能体打算在现有三个适配器之外直接追加一个新适配器：
 
 ```text
-use subtract before you add. delete the obsolete adapters first, then design what's left.
+use subtract before you add. 先删掉过时的适配器，再设计剩下的部分。
 ```
 
 比如它仅因构建通过就宣布成功：
 
 ```text
-apply prove it works. run the real import flow and show me the written records.
+apply prove it works. 运行真实的导入流程，把写入的记录展示给我。
 ```
 
 比如两个并行尝试即将写入同一个分支：
 
 ```text
-separate before serializing shared state. give each attempt its own worktree, no locks.
+separate before serializing shared state. 给每次尝试各自独立的 worktree，不要加锁。
 ```
 
 这些话之所以有效，是因为背后的规则足够具体。智能体仍须在回复中说清这条规则改变了哪个决策。只引用原则名却说不出对应的决策，说明它只是提到了规则名，并没有真正应用。

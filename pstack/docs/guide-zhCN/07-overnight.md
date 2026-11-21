@@ -20,24 +20,24 @@
 一份好的交接要有目标、完成判据、权限和一个退出机制，不必写很长：
 
 ```text
-/poteto-mode im going to bed. migrate every caller to the new parser in a fresh worktree off <base>.
-done means zero old callers, all parser fixtures pass, old api deleted.
-keep a decision log. don't ask me before committing.
-/loop until done. if you're truly stuck after a few hours, stop and write up why.
+/poteto-mode 我要去睡觉了。基于 <base> 新建 worktree，把所有调用方迁移到新解析器。
+完成的标准是：旧调用方清零，所有解析器 fixture 通过，旧 api 删除。
+记录决策日志。提交前不用问我。
+/loop 直到完成。如果几个小时后确实陷入僵局，就停下来写清原因。
 ```
 
 逐行看每一行分别换来什么：
 
-- "im going to bed" 是会话级的覆盖指令：智能体不再询问，持续执行。
-- "done means..." 把目标变成每轮迭代都能运行的检查。
-- "fresh worktree off `<base>`" 让这轮运行不与你正在进行的任何其他工作冲突。
-- "don't ask me before committing" 预先批准了那个原本会让智能体阻塞的权限。
+- "我要去睡觉了"是会话级的覆盖指令：智能体不再询问，持续执行。
+- "完成的标准是……"把目标变成每轮迭代都能运行的检查。
+- "基于 `<base>` 新建 worktree"让这轮运行不与你正在进行的任何其他工作冲突。
+- "提交前不用问我"预先批准了那个原本会让智能体阻塞的权限。
 - `/loop` 是 Cursor 内置的唤醒机制，不是 pstack 技能。[Autonomous run playbook](../../skills/poteto-mode/playbooks/autonomous-run.md) 靠它在事件或心跳到来时重新检查完成判据。
 - 退出机制让它能在真正陷入僵局时停下、写清原因，好过花八个小时反复重新解读目标。
 
 因为这些工作要等你离开之后再审阅，`/poteto-mode` 会把它交给 [`/figure-it-out`](../../skills/figure-it-out/SKILL.md)：编写任何代码之前先设计好整轮运行的阶段，并接入决策日志。
 
-想主动停止一轮运行，就告诉智能体暂停，或说明你即将下线、要重启 Cursor。[Pause safely playbook](../../skills/poteto-mode/playbooks/pause-safely.md) 会完成或回退当前步骤，提交一个进行中的检查点，写一份续接笔记。新开的聊天通过 Session pickup playbook 从这份笔记接手。说"keep going"绝不会触发暂停。
+想主动停止一轮运行，就告诉智能体暂停，或说明你即将下线、要重启 Cursor。[Pause safely playbook](../../skills/poteto-mode/playbooks/pause-safely.md) 会完成或回退当前步骤，提交一个进行中的检查点，写一份续接笔记。新开的聊天通过 Session pickup playbook 从这份笔记接手。说"继续"绝不会触发暂停。
 
 ## 循环整晚在做什么
 
@@ -62,7 +62,7 @@ flowchart TD
 回来之后，索取一份可审阅的运行汇报：
 
 ```text
-/show-me-your-work catch me up on what you did last night
+/show-me-your-work 帮我补上你昨晚做了什么的进度
 ```
 
 技能交回摘要之前，会先派一个不同模型家族的评审智能体，通读决策轨迹和会话记录；回复以 Attention 小节收尾，列出值得你重点审视的内容。先读这一节，再读它指向的日志行。你审计的是决策，不是把一整晚重读一遍。
@@ -76,19 +76,19 @@ flowchart TD
 [Autopilot-full](../../skills/poteto-mode/playbooks/autopilot-full.md) 把一个相互独立的 PR 队列推进到全部合并。每个 PR 有一个负责智能体，从构建一路负责到合并，但任何负责智能体都不能凭自己的结论合并。一批全新的验证 worker 检查负责智能体交出的、已达代码就绪状态的 head。之后的变基或小修只派一个全新的验证 worker；只有出现新行为或很大的新 diff，才再次动用整批 swarm。只有对最终要合并的那份补丁给出干净结论，才授权合并：
 
 ```text
-/poteto-mode full autopilot on this queue. each item is independent. i want them merged by morning.
+/poteto-mode 对这个队列启用 full autopilot。每一项都相互独立。我要在早上看到它们全部合并。
 ```
 
 [Autopilot-stack](../../skills/poteto-mode/playbooks/autopilot-stack.md) 就是去掉合并的 Autopilot-full。醒来看到的是一批已验证的 PR，各带结论，由你自己审阅、自行落地。PR 只堆叠在它真正依赖的 PR 上。想在任何合并发生之前亲自审阅一遍工作，就选它，而不是 Autopilot-full：
 
 ```text
-/poteto-mode autopilot these five changes, but don't merge. i'll land them in the morning.
+/poteto-mode 用 autopilot 跑这五个改动，但不要合并。我早上自己落地。
 ```
 
 一整个项目计划，比如横跨许多包的迁移，没有专属 playbook。`/poteto-mode` 会把大型或横切多处的工作交给 [`/figure-it-out`](../../skills/figure-it-out/SKILL.md)，由它设计一轮严谨的运行：
 
 ```text
-/poteto-mode migrate every package to the new store. own it until each one is converted and merged. i'll check in twice a day.
+/poteto-mode 把每个包都迁移到新的 store。全程负责，直到每个包都完成转换并合并。我每天查看两次进度。
 ```
 
 ## 多个项目并行跑
@@ -105,7 +105,7 @@ flowchart TD
 一条提示词就能带动一整个 Project，从调研到执行：
 
 ```text
-/poteto-mode refactor this repo so its architecture is more agent friendly. use /correct and /architect on past commits and review comments to find the mistakes agents make most here. use /recall for context from past chats. answer open questions with prototypes instead of asking me. come back with a plan backed by real data. once i approve it, run it with autopilot-stack or autopilot-full, and ask me which.
+/poteto-mode 重构这个仓库，让架构对智能体更友好。用 /correct 和 /architect 分析过往 commit 和评审意见，找出智能体在这里最常犯的错误。用 /recall 获取过往聊天的上下文。悬而未决的问题用原型回答，而不是来问我。给我一份有真实数据支撑的计划。我批准后，用 autopilot-stack 或 autopilot-full 执行，用哪个先问我。
 ```
 
 ## 让循环自己启动
@@ -117,6 +117,6 @@ flowchart TD
 
 pstack 自带一个默认休眠的[自动化包](../../automations/benny/README.md)，面向 Slack 上的 issue 报告：一个自动化对每份报告做分类甄别，另一个复现已确认的 bug，还可能准备一份小的草稿修复。让智能体读它的 [`FOR_AGENTS.md`](../../automations/benny/FOR_AGENTS.md)、指明目标仓库，即可完成配置。
 
-**坑：** 时长不是完成判据。"work on this for 4 hours" 没有给智能体任何可检查的条件，醒来看到的是四个小时的忙碌，不是结果。给 `/loop` 一个能判定通过或失败的谓词。
+**坑：** 时长不是完成判据。"在这上面干 4 个小时"没有给智能体任何可检查的条件，醒来看到的是四个小时的忙碌，不是结果。给 `/loop` 一个能判定通过或失败的谓词。
 
 下一步：[用原则名给智能体纠偏](./08-principles.md)。

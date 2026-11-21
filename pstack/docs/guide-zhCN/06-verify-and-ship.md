@@ -11,7 +11,7 @@
 在第一条提示词里就写明完成的标准，措辞不限：
 
 ```text
-/poteto-mode add json output to this command. text output stays byte-identical, the json parses, both run against the sample project. show me the evidence.
+/poteto-mode 给这个命令加上 json 输出。文本输出保持逐字节一致，json 能正常解析，两种输出都在示例项目上运行验证。把证据展示给我。
 ```
 
 这样智能体就有三项可运行的检查，而不是一个只能凭感觉去满足的要求。回复应该附上确切的命令和输出。某项检查无法运行时，合格的回复会写"inconclusive"（无法定论）。没有证据却信心十足的回复，是危险信号。
@@ -33,7 +33,7 @@
 前后对比的数字，是最容易在不经意间出错的证据。缓存是热的、某一侧运行的是 debug 构建、要测的工作根本没落在计时区间内——任何一条都能造出看似可信的加速。在汇报数字或据此行动之前，输入：
 
 ```text
-/benchmark-checklist vet the export speedup before it goes in the pr
+/benchmark-checklist 在导出加速的数字写进 pr 之前先审查一遍
 ```
 
 [`/benchmark-checklist`](../../skills/benchmark-checklist/SKILL.md) 会问七个问题，每个问题都要有真实运行给出的证据：
@@ -63,11 +63,11 @@
 从此，"在应用里验证"就是这个仓库里任何智能体都能直接执行的一步，无需再沟通一轮环境配置。想要特定形式的证据，就在提示词里点名这个技能：
 
 ```text
-/poteto-mode build the bulk-archive action. use /verify-<app> to verify your changes and show me a video and screenshots as proof.
+/poteto-mode 实现批量归档操作。用 /verify-<app> 验证你的改动，并给我一段视频和截图作为证据。
 ```
 
 ```text
-/poteto-mode repro this with /verify-<app>. if it repros on main, fix it and show me a video as proof.
+/poteto-mode 用 /verify-<app> 复现这个问题。如果在 main 上能复现，就修复它，并给我一段视频作为证据。
 ```
 
 验证技能可用之后，[`/swarm`](../../skills/swarm/SKILL.md) 就能按功能地图的条目拆分一整轮验证，再汇总结果。一批验证 worker 还能在足够大的样本上确认性能提升，或在 PR 交付前对应用做模糊测试、排查回归。
@@ -104,7 +104,7 @@
 [`/create-formal-verification-skill`](../../skills/create-formal-verification-skill/SKILL.md) 从代码中选择目标：代码许下的某个承诺，破坏它会损害用户，而测试又很少覆盖到会破坏它的情形。它选择最关键的目标，而不是最容易验证的。也可以点名一个模块或一个 bug，让它从那里入手：
 
 ```text
-/create-formal-verification-skill the job lease and retry logic. a job must never run twice at once.
+/create-formal-verification-skill 任务租约和重试逻辑。同一个任务绝不能同时运行两次。
 ```
 
 问题决定工具。"事件是否可能以错误的顺序发生"适合对设计的小模型运行模型检查器，这类场景无论什么语言，默认都用 TLA+。"代码对任意输入是否行为正确"适合直接作用于代码的验证器。你的语言没有可用的验证器时，智能体会明确说明，并改用生成的输入测试真实代码，而不是手写一个函数模型。必须在任意规模下都成立的性质，可能需要证明。智能体会告诉你选了哪个工具、为什么。
@@ -120,7 +120,7 @@
 用模型术语写的反例能说服你，但对这个行为负责的 PM 或设计师，需要用他们的语言理解它。运行：
 
 ```text
-/statechart what the user sees when they edit a note offline
+/statechart 用户离线编辑笔记时会看到什么
 ```
 
 [`/statechart`](../../skills/statechart/SKILL.md) 从 TLA+ 模型生成一张 Mermaid 状态图，呈现的是用户视角的行为，图和被检查的模型因此不会脱节。读者定下的规则（"离线时绝不该看到 Synced"）变成不变式。图会标出每个违反规则的状态，报告用读者的语言给出到达该状态的最短路径。交付之前，智能体会在真实代码里复现每条 bug 路径，建模错误就不会被当成 bug 呈交给读者。
@@ -128,7 +128,7 @@
 ## 提 PR
 
 ```text
-/poteto-mode open the pr. small ordered commits, evidence in the description.
+/poteto-mode 提 pr。提交要小且有序，描述里附上证据。
 ```
 
 [Opening a PR playbook](../../skills/poteto-mode/playbooks/opening-a-pr.md) 在 worktree 里工作：把工作变基成小而可落地的提交、清理 diff、写一份一分钟能读完的简报作为正文，然后提出一个可直接评审的 PR。后续改动堆叠成新 PR，优于让一条分支不断增长。
@@ -138,13 +138,13 @@
 PR 一经提出就开始积累阻塞项：检查失败、评审者留言、主干还在前进。把这些变动交给 [Babysit playbook](../../skills/poteto-mode/playbooks/babysit.md)：
 
 ```text
-/poteto-mode babysit this pr. get it green.
+/poteto-mode 跟进这个 pr。让 CI 全绿。
 ```
 
 Babysit 监控 PR——GitHub 上用自带的 watcher，Origin CLI 可用时就用它——按顺序清除阻塞项：先冲突，再评审讨论，最后 CI。它从不变基，也不强推。遇到冲突或基线过时，会连同需要变基的分支一起交回给你。它甄别评论时持怀疑态度，因为人和机器人会把真问题和噪音混在同一个列表里。真问题予以修复；噪音予以驳回，并把反证贴在评审讨论里。只想知道状态时，把问题范围缩小，Babysit 会直接回答，不启动循环：
 
 ```text
-/poteto-mode check on pr 123. anything outstanding?
+/poteto-mode 看一下 pr 123 的状态。还有什么未解决的？
 ```
 
 Babysit 到"达到可合并状态"即停止。即使 CI 全绿它也从不合并，因为合并是另一个决定。
@@ -154,7 +154,7 @@ Babysit 到"达到可合并状态"即停止。即使 CI 全绿它也从不合并
 CI 全绿不等于安全。准备好落地时，直接说明：
 
 ```text
-/poteto-mode land the stack.
+/poteto-mode 落地整个 stack。
 ```
 
 [Shipping playbook](../../skills/poteto-mode/playbooks/shipping.md) 在启动合并流程之前，先独立验证每个 PR：每个 PR 由一个全新的智能体实际运行、证明行为，评判改动的智能体绝不是编写它的那个。然后 Shipping 只从 stack 底部落地那段连续的已验证区间，一次一个 PR，默认通过 GitHub，Origin CLI 可用时通过 Origin，并报告第一个断链的 PR。已验证的 PR 如果位于未验证的 PR 之上，就必须等待——合并它会把中间的缺口一起带进主干。
