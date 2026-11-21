@@ -1,8 +1,8 @@
 # 改造成你自己的风格
 
-poteto-mode 只是某一个人的风格。底下的 playbook、路由和模型角色换成你的风格照样好用。这一页讲：生成个人模式、把一次会话的经验沉淀下来、修仓库让智能体不再重复犯错、写一个职责单一的技能，以及在采信技能改动之前先测试它。
+poteto-mode 只是某一个人的风格。底层的 playbook、路由和模型角色换成你的风格同样适用。本页介绍：生成个人模式、沉淀一次会话的经验、修复仓库让智能体不再重复犯错、编写一个职责单一的技能，以及在采信技能改动之前先测试它。
 
-起步比你想的再小一点。第一天不需要一堆技能，甚至不需要装整个插件。平实地写提示词，盯着智能体在哪里出错，同一个失败出现两次，再补一个技能或一项检查。
+起步比你想的再小一点。第一天不需要大量技能，甚至不需要安装整个插件。平实地写提示词，观察智能体在哪里出错，同一个失败出现两次，再补一个技能或一项检查。
 
 ## 用 /automate-me 生成你自己的模式
 
@@ -10,44 +10,44 @@ poteto-mode 只是某一个人的风格。底下的 playbook、路由和模型�
 /automate-me
 ```
 
-你不用描述自己的风格，[`/automate-me`](../../skills/automate-me/SKILL.md) 会从你的历史里读出来。它在当前工作区里挖掘你最近的会话记录，找出反复出现的偏好——回复方式、委托方式、验证、代码、行文和流程——然后问你哪些确实是你本人的习惯。它走 Cursor 内置的 `create-skill` 流程起草 `.cursor/skills/<your-name>-mode/SKILL.md`，把草稿交给 [`/unslop`](../../skills/unslop/SKILL.md) 过一遍，再从 worktree 提一个 PR，让你像评审其他改动一样评审它。
+你不用描述自己的风格，[`/automate-me`](../../skills/automate-me/SKILL.md) 会从你的历史中读出来。它在当前工作区里挖掘你最近的会话记录，找出反复出现的偏好——回复方式、委托方式、验证、代码、行文和流程——然后询问你哪些确实是你本人的习惯。它通过 Cursor 内置的 `create-skill` 流程起草 `.cursor/skills/<your-name>-mode/SKILL.md`，将草稿交给 [`/unslop`](../../skills/unslop/SKILL.md) 处理一遍，再从 worktree 提交一个 PR，让你像评审其他改动一样评审它。
 
-习惯变了就再跑一次：
+习惯发生变化就再运行一次：
 
 ```text
 /automate-me update my mode skill with everything since its last edit
 ```
 
-更新模式只挖掘技能上次改动以来的历史。你没推翻过的规则原样保留，有新证据的规则修订，只为新出现的模式增加章节。
+更新模式只挖掘技能上次改动以来的历史。你未推翻过的规则原样保留，有新证据的规则加以修订，只为新出现的模式增加章节。
 
 ## 用 /reflect 沉淀一次会话的经验
 
-刚跑完一个让你学到东西的任务，马上运行：
+刚完成一个让你有所收获的任务，立即运行：
 
 ```text
 /reflect that took way too long. capture what we learned so the next run doesn't repeat it.
 ```
 
-[`/reflect`](../../skills/reflect/SKILL.md) 读会话记录，只留下会改变未来智能体工作方式的教训，把提案分成 `Accepted`、`Rejected`、`Backlog` 三类。改任何技能之前都会先等你批准。只有会改变未来某个决策的提案才值得批准。一次古怪的会话只是个案，不是规律。
+[`/reflect`](../../skills/reflect/SKILL.md) 读取会话记录，只保留会改变未来智能体工作方式的教训，把提案分成 `Accepted`、`Rejected`、`Backlog` 三类。修改任何技能之前都会先等你批准。只有会改变未来某个决策的提案才值得批准。一次异常的会话只是个案，不是规律。
 
 ## 用 /correct 修环境，而不是反复叮嘱
 
-同一个错误你纠正了一遍又一遍，说明修复该落在仓库里，而不是你的下一条提示词里。按约束力从强到弱排序：
+同一个错误你反复纠正，说明修复应该落在仓库里，而不是你的下一条提示词里。按约束力从强到弱排序：
 
 1. 用架构或更好的数据结构，让这个错误根本不可能发生。
-2. 用类型挡住它，或者加一条 lint / CI 检查，报错信息直接写明修法。
-3. 用测试抓住它。
-4. 写成文档或智能体规则。智能体跳过规则时不会有任何东西失败，所以排最后。
+2. 用类型阻止它，或者加一条 lint / CI 检查，报错信息直接写明修法。
+3. 用测试捕获它。
+4. 写成文档或智能体规则。智能体跳过规则时不会有任何检查失败，所以排在最后。
 
-人工评审不在列表里。评审者得在每个 PR 上盯着同一个错误，这本身就是这里要解决的问题。[`/correct`](../../skills/correct/SKILL.md) 负责干这件事：
+人工评审不在列表里。评审者需要在每个 PR 上发现同一个错误，这本身就是这里要解决的问题。[`/correct`](../../skills/correct/SKILL.md) 负责完成这项工作：
 
 ```text
 /correct agents keep calling the database client directly instead of going through the repository layer
 ```
 
-它读最近的提交、回退、评审评论，以及解释绕路写法的注释，把错误归成几类。一类错误出现两次就计入。最高频的几类逐一修掉，每类一个提交，修在能奏效的最高层级，并证明每条新检查放到一个真实的历史错误上会失败。它还在智能体指令文件里维护一张表，每条规则对应强制执行它的机制；没有机制兜底的规则，一旦重复出现就会在表里现形。回复会列出每类错误及其证据、选用的层级，以及更高层级为什么行不通。
+它读取最近的提交、回退、评审评论，以及解释临时绕过方案的注释，把错误归成几类。一类错误出现两次就计入。最高频的几类逐一修复，每类一个提交，修在能奏效的最高层级，并证明每条新检查放到一个真实的历史错误上会失败。它还在智能体指令文件里维护一张表，每条规则对应强制执行它的机制；没有机制兜底的规则，一旦重复出现就会在表里暴露。回复会列出每类错误及其证据、选用的层级，以及更高层级为什么行不通。
 
-不带参数运行，它会自己从历史里找出错误类别。`/reflect` 和 `/correct` 分工明确：`/reflect` 用一次会话改进技能；`/correct` 改仓库，让一类错误回不来。修法涉及新边界时，搭配 `/architect`。[多个项目并行跑](./07-overnight.md#多个项目并行跑)里有一条提示词，能在整个仓库同时做这两件事。
+不带参数运行，它会自行从历史中找出错误类别。`/reflect` 和 `/correct` 分工明确：`/reflect` 用一次会话改进技能；`/correct` 修改仓库，让一类错误不再复发。修法涉及新边界时，搭配 `/architect`。[多个项目并行跑](./07-overnight.md#多个项目并行跑)里有一条提示词，能在整个仓库同时做这两件事。
 
 ## 写一个职责单一的技能
 
@@ -57,44 +57,44 @@ poteto-mode 只是某一个人的风格。底下的 playbook、路由和模型�
 /poteto-mode write a skill for verifying database migrations in this repo
 ```
 
-写技能会匹配[编写或修改技能的 playbook](../../skills/poteto-mode/playbooks/authoring-a-skill.md)：走 Cursor 内置的 `create-skill`，校验 frontmatter 和链接，再经 Opening a PR playbook 交付。写给智能体看的文字，标准要比写给人看的更高——一句没用的话，将来会变成某个智能体照办的指令。把这个标准交给 playbook 把关，别徒手写 `SKILL.md`。
+写技能会匹配[编写或修改技能的 playbook](../../skills/poteto-mode/playbooks/authoring-a-skill.md)：走 Cursor 内置的 `create-skill`，校验 frontmatter 和链接，再经 Opening a PR playbook 交付。写给智能体看的文字，标准要比写给人看的更高——一句无用的话，将来会变成某个智能体照办的指令。把这个标准交给 playbook 把关，不要手写 `SKILL.md`。
 
 两类特例有专门的生成器。需要驱动你的应用、证明行为正确的技能是验证技能，改用 [`/create-verification-skill`](../../skills/create-verification-skill/SKILL.md) 和 [`/maintain-verification-skill`](../../skills/maintain-verification-skill/SKILL.md)。用模型检查器、证明或其他验证器检查代码某条性质的技能是形式化验证技能，用 [`/create-formal-verification-skill`](../../skills/create-formal-verification-skill/SKILL.md) 和 [`/maintain-formal-verification-skill`](../../skills/maintain-formal-verification-skill/SKILL.md)。[验证结果，提 PR](./06-verify-and-ship.md#用形式化验证技能证明一条性质) 对这两类都有介绍。
 
 ## 用 /technical-writing 按标准写文档
 
-要交付的文字不止技能。文档、RFC、readme、PR 描述、提交信息都算：
+要交付的文字不止技能。文档、RFC、readme、PR 描述、提交信息都包括在内：
 
 ```text
 /technical-writing review the readme changes
 ```
 
-[`/technical-writing`](../../skills/technical-writing/SKILL.md) 执行的是一套分层标准，目标是让疲惫的工程师读一遍就懂。它先定文档类型（教程、操作指南、参考、解释），再逐句过：谁做什么、一句只讲一件事、不允许一句话有两种读法。可以用它评审你或智能体刚写的东西，也可以在要文档时一开始就点名它。
+[`/technical-writing`](../../skills/technical-writing/SKILL.md) 执行的是一套分层标准，目标是让疲惫的工程师读一遍就懂。它先确定文档类型（教程、操作指南、参考、解释），再逐句检查：谁做什么、一句只讲一件事、不允许一句话有两种读法。可以用它评审你或智能体刚写的内容，也可以在要求编写文档时一开始就点名它。
 
 ## 盲测技能改动
 
-改一次技能会影响之后的所有会话，所以要像做实验一样测它。采纳别人的技能也一样：先确认它在你的活儿上确实让智能体表现更好，再留下。
+修改一次技能会影响之后的所有会话，所以要像做实验一样测试它。采纳别人的技能也一样：先确认它在你的实际工作中确实让智能体表现更好，再保留。
 
 ```text
 /poteto-mode run the eval playbook on this skill change. same task for both variants, candidates stay blind.
 ```
 
-技能反复失手、而你知道它该做什么时，把修改和测试放进同一个任务：
+技能反复表现不佳、而你知道它该做什么时，把修改和测试放进同一个任务：
 
 ```text
 /poteto-mode update the review skill so it flags missing migrations, and eval the change.
 ```
 
-一开始就言明要 eval，这次改动才不至于自欺。凭一次糟糕会话写出来的修复，往往只对那一次会话有效；改得多了，技能就慢慢跑偏。eval 能在交付前把这种漂移抓出来。
+一开始就言明要 eval，这次改动才不至于失真。凭一次糟糕会话写出来的修复，往往只对那一次会话有效；修改次数多了，技能就会逐渐偏离。eval 能在交付前发现这种漂移。
 
-[Eval playbook](../../skills/poteto-mode/playbooks/eval.md) 的设计围绕一种失败模式：观察者效应。智能体知道自己在被测，表现就会变样。所以候选智能体拿到的是清理过的目录里一个看起来普通的任务，全程不出现 "eval" 或 "candidate" 字样，也不知道彼此的存在。一位评委在中性标签下给所有输出打分；有没有真的沿着技能指引链走，按每个候选实际读过哪些文件评分，不听它自己怎么说。
+[Eval playbook](../../skills/poteto-mode/playbooks/eval.md) 的设计围绕一种失败模式：观察者效应。智能体知道自己在被评估，表现就会不同。所以候选智能体拿到的是清理过的目录里一个看起来普通的任务，全程不出现 "eval" 或 "candidate" 字样，也不知道彼此的存在。一位评委在中性标签下给所有输出打分；是否真正遵循了技能指引链，按每个候选实际读过哪些文件评分，而不是依据它自己的陈述。
 
 接受结论之前，自己把每份输出读一遍。和评委意见不一致时，先怀疑评分标准，再怀疑自己的判断。
 
 ## 用 /make-bot-ui 做一个机器人界面
 
-有一个面向特定场景的技能，给 Grok Bot 用户用。[`/make-bot-ui`](../../skills/make-bot-ui/SKILL.md) 做一个小页面，按钮通过 webhook 例程唤醒机器人。比如你可以逐条滑动评审队列，每滑一条就让机器人处理那一条。webhook 的发送方密钥保存在你机器上的一个服务里，永远不会进浏览器或聊天。这个技能还讲了怎么把页面通过 Tailscale 暴露出去。
+有一个面向特定场景的技能，供 Grok Bot 用户使用。[`/make-bot-ui`](../../skills/make-bot-ui/SKILL.md) 构建一个小页面，按钮通过 webhook 例程唤醒机器人。比如你可以逐条滑动评审队列，每滑一条就让机器人处理那一条。webhook 的发送方密钥保存在你机器上的一个服务里，永远不会进入浏览器或聊天。这个技能还介绍了如何通过 Tailscale 将页面暴露出去。
 
-**坑：** 别因为技能表现不对就在任务中途改它。单独开 PR 修，任务照常推进。技能改动混在功能代码里一起交付，评审时看不见，也没法评估。
+**坑：** 不要因为技能表现不佳就在任务中途修改它。单独开 PR 修复，任务照常推进。技能改动混在功能代码里一起交付，评审时无法察觉，也无法评估。
 
 下一步：[提示词范例与常见坑](./10-recipes-and-pitfalls.md)。
