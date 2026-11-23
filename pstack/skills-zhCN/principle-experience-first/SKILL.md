@@ -4,8 +4,7 @@ description: "出现产品、用户体验或功能范围取舍时应用。选用
 disable-model-invocation: true
 ---
 
-# Experience First
-（体验优先）
+# Experience First（体验优先）
 
 实现的便利与用户的愉悦冲突时，选愉悦。
 

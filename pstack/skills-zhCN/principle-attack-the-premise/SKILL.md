@@ -4,8 +4,7 @@ description: "当两个及以上共享同一前提的修复在同一检验关口
 disable-model-invocation: true
 ---
 
-# Attack the Premise
-（攻击前提）
+# Attack the Premise（攻击前提）
 
 当两个及以上共享同一前提的修复在同一检验关口失败时，怀疑前提，而不是修复。
 

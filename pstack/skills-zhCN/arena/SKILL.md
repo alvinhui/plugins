@@ -4,8 +4,7 @@ description: "让 N 个候选并行做同一个任务，选一个基底，把落
 disable-model-invocation: true
 ---
 
-# Arena
-（竞技场）
+# Arena（竞技场）
 
 启动任何东西之前，先建一个待办列表，每个阶段一条（框定、并行分发、交叉评审、选基底、嫁接、验证）。
 

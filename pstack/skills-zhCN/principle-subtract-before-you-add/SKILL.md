@@ -4,8 +4,7 @@ description: "安排新增、重构或重写的顺序时应用。先移除死代
 disable-model-invocation: true
 ---
 
-# Subtract Before You Add
-（先做减法，再做加法）
+# Subtract Before You Add（先做减法，再做加法）
 
 演进系统时，先移除复杂度，再构建。默认做减法。
 

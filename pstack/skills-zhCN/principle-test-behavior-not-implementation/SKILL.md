@@ -4,8 +4,7 @@ description: "编写、修改或保留测试时应用。断言代码使用者能
 disable-model-invocation: true
 ---
 
-# Test Behavior, Not Implementation
-（测试行为，而非实现）
+# Test Behavior, Not Implementation（测试行为，而非实现）
 
 测试是对代码使用者能通过接口观察到什么的断言：返回值、错误、能读回的状态、对外部系统的影响。私有辅助函数、内部调用顺序和中间数据都是实现。
 

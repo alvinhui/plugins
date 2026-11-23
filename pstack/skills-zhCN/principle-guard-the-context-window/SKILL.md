@@ -4,8 +4,7 @@ description: "上下文快被填满时应用：大输出、长文件、重复读
 disable-model-invocation: true
 ---
 
-# Guard the Context Window
-（守护上下文窗口）
+# Guard the Context Window（守护上下文窗口）
 
 **原因：** 上下文溢出会降低推理质量、产生压缩失真，并让进展停滞。
 

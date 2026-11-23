@@ -5,8 +5,7 @@ paths: ["**/*.ts", "**/*.tsx"]
 disable-model-invocation: true
 ---
 
-# TypeScript best practices
-（TypeScript 最佳实践）
+# TypeScript best practices（TypeScript 最佳实践）
 
 先应用 **type-system-discipline** 原则技能。
 

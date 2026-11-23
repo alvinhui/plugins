@@ -4,8 +4,7 @@ description: "完成任务后、宣布完成前应用。对照真实产物验证
 disable-model-invocation: true
 ---
 
-# Prove It Works
-（证明它有效）
+# Prove It Works（证明它有效）
 
 直接检查真实事物来验证每个输出：运行功能、读取实际值、检查 diff。代理指标（文件 mtime、自述、缓存输出、「能编译」）不算数。检查失败时，先怀疑观察方法，再怀疑系统。
 

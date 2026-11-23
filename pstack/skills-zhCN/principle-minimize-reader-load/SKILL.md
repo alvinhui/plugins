@@ -4,8 +4,7 @@ description: "评审或塑造难以追踪的代码时应用。数一数问题与
 disable-model-invocation: true
 ---
 
-# Minimize Reader Load
-（最小化读者负担）
+# Minimize Reader Load（最小化读者负担）
 
 读者负担是读者为理解代码必须做的工作。它有两个独立的维度：从问题追到答案要穿过的层数，以及必须记在脑中的隐藏或可变状态。两者都要守住。
 

@@ -4,8 +4,7 @@ description: "在变更交付前找出它可能在别处破坏什么，视野超
 disable-model-invocation: true
 ---
 
-# Blast radius
-（影响面）
+# Blast radius（影响面）
 
 在变更交付前，找出它会在别处破坏什么。用于「blast radius of X」「what could this break」，或评审一个你还不敢信的小 diff。
 

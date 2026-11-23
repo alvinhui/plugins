@@ -1,5 +1,4 @@
-# TypeScript patterns
-（TypeScript 模式）
+# TypeScript patterns（TypeScript 模式）
 
 `SKILL.md` 中每条规则的代码示例。底层原则与语言无关。见 **type-system-discipline** 和 **boundary-discipline** 原则技能。
 

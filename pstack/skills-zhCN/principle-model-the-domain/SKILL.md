@@ -4,8 +4,7 @@ description: "编写有状态逻辑，或代码分支很多、同一形状假设
 disable-model-invocation: true
 ---
 
-# Model the Domain
-（为领域建模）
+# Model the Domain（为领域建模）
 
 把领域编码进数据结构，而不是散落在条件判断里。正确的结构让非法状态无法表示，并删掉分支。
 

@@ -4,8 +4,7 @@ description: "适用于多步骤工作（批量清扫、迁移、成批相似编
 disable-model-invocation: true
 ---
 
-# Sequence work into verifiable units
-（把工作排成可验证的单元）
+# Sequence work into verifiable units（把工作排成可验证的单元）
 
 把工作排成小单元，每个单元都结束于你能检查的状态；当前单元没通过，就不进入下一个。
 

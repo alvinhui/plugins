@@ -4,8 +4,7 @@ description: "适用于任何不琐碎的工作，不只是批量工作：编辑
 disable-model-invocation: true
 ---
 
-# Build the Lever
-（打造杠杆）
+# Build the Lever（打造杠杆）
 
 工作不琐碎时，构建完成它的工具（codemod、脚本、生成器或可重跑的检查），而不是手工做。门槛是「是否琐碎」，不是「是否重复」。只有几处显而易见的编辑才可以不建工具。
 

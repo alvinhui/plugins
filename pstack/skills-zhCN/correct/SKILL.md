@@ -4,7 +4,7 @@ description: "找出智能体在这个仓库里反复犯的错误，让每一个
 disable-model-invocation: true
 ---
 
-# Correct
+# Correct（纠正复发错误）
 
 操作者在这个仓库里反复纠正智能体的同一批错误。改造仓库，让下一个智能体犯不了这些错。
 

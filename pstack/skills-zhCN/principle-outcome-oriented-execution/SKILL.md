@@ -4,8 +4,7 @@ description: "有明确阶段边界的计划内重写和迁移期间应用。向
 disable-model-invocation: true
 ---
 
-# Outcome-Oriented Execution
-（结果导向执行）
+# Outcome-Oriented Execution（结果导向执行）
 
 为预期的、可验证的最终状态优化，而不是维持平滑的中间状态。
 

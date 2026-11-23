@@ -4,8 +4,7 @@ description: "写逻辑之前应用：选择核心类型和数据结构、安排
 disable-model-invocation: true
 ---
 
-# Foundational Thinking
-（地基思维）
+# Foundational Thinking（地基思维）
 
 写逻辑之前先把数据形状做对。尽早定义核心类型，梳理每一种访问模式，选择匹配主要路径的结构。对结构做 DRY，而不是对每一行。
 

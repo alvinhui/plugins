@@ -4,7 +4,7 @@ description: "用于「X 是怎么工作的」、改动之前的代码走读，�
 disable-model-invocation: true
 ---
 
-# How
+# How（工作原理）
 
 探索代码库，回答「X 是怎么工作的？」这类问题。
 

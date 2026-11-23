@@ -3,7 +3,7 @@ name: setup-pstack
 description: 配置 pstack 各角色用哪些模型、推理预算多大。检测你可用的模型，写入一条始终生效的规则来覆盖技能默认值。用于 /setup-pstack、「配置 pstack 模型」「pstack 预算」，或更改 pstack 的模型选择。
 ---
 
-# Setup pstack
+# Setup pstack（配置 pstack）
 
 写入 `~/.cursor/rules/pstack-models.mdc`，一条始终生效、按角色设定 pstack 模型的规则。
 

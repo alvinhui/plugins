@@ -4,7 +4,7 @@ description: "用于「interrogate」「对抗性评审」「多模型评审」�
 disable-model-invocation: true
 ---
 
-# Interrogate
+# Interrogate（对抗性评审）
 
 对抗者尝试击破变更或设计。一条发现只有被实际运行证明才算数。报告发现。不做修复。
 

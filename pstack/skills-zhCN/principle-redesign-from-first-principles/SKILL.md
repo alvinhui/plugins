@@ -4,8 +4,7 @@ description: "把新需求整合进既有设计时应用。"
 disable-model-invocation: true
 ---
 
-# Redesign From First Principles
-（从第一性原理重新设计）
+# Redesign From First Principles（从第一性原理重新设计）
 
 整合变更时，不要把它硬拴在既有设计上。重新设计，就当这个需求从一开始就是基础假设。
 

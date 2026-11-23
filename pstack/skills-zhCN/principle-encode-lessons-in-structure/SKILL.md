@@ -4,8 +4,7 @@ description: "当你发现自己第二次写同一条指令，或注意到反复
 disable-model-invocation: true
 ---
 
-# Encode Lessons in Structure
-（把教训编码进结构）
+# Encode Lessons in Structure（把教训编码进结构）
 
 如果教训需要判断力、无法编码，就让指令更醒目，并补一个失败模式的示例。
 

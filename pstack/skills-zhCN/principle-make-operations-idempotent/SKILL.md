@@ -4,8 +4,7 @@ description: "设计要在崩溃、重启和重试中运行的命令、生命周
 disable-model-invocation: true
 ---
 
-# Make Operations Idempotent
-（让操作幂等）
+# Make Operations Idempotent（让操作幂等）
 
 把每个改变状态的操作设计成：无论运行多少次、无论上一次运行停在哪里，都收敛到正确状态。
 

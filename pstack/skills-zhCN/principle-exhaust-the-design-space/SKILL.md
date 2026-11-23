@@ -4,7 +4,6 @@ description: "面对代码库中没有先例的新颖 UI 交互或架构决策�
 disable-model-invocation: true
 ---
 
-# Exhaust the Design Space
-（穷尽设计空间）
+# Exhaust the Design Space（穷尽设计空间）
 
 它同样适用于用户体验取决于手感而非逻辑的产品设计决策。

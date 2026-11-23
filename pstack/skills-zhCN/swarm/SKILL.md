@@ -4,7 +4,7 @@ description: "并行分发 N 个工作智能体，等它们全部结束，返回
 disable-model-invocation: true
 ---
 
-# Swarm
+# Swarm（蜂群）
 
 ## 开始
 
@@ -15,14 +15,14 @@ disable-model-invocation: true
 3. 汇总
 4. 汇报
 
-## Phase A：框定
+## 阶段 A：框定
 
 1. 写明完成判据，以及 swarm 必须返回的产物或报告。
 2. 选择形态。切分成切片、让 N 个工作智能体拿着相同任务简报竞速，或两者混合。竞速或混合形态要在派生前声明 `first pass`、`rank all` 还是 `best-of`。
 3. 从 `~/.cursor/rules/pstack-models.mdc` 的 `swarm workers` 行选择工作智能体模型。规则或该行缺失时用 `claude-opus-5-5-high-fast`。遇到 `auto` 或 `inherit-parent` 时省略 `model`，让工作智能体跑在父模型上。Task 工具拒绝某个 slug 时，改用默认值并说明。默认值也被拒绝时，从其报错信息中选同家族最接近的有效 slug。模型竞速要预先写明每个分组的模型。按 **poteto-mode** 技能 Subagents 一节的要求，为每个子智能体按任务选择推理级别。
 4. 工作智能体需要写文件时，给它独立的可写输出位置。工作智能体验证或测量提交时，每份任务简报写明精确的 SHA。测量类简报还要写明方法（采样数、单个采样是什么、顺序）。工作智能体把两者都记入结果。
 
-## Phase B：并行分发
+## 阶段 B：并行分发
 
 在一条消息里派生全部 N 个工作智能体，带 `subagent_type: generalPurpose`、`environment: "cloud"`、`run_in_background: true` 和第 3 步的模型；`auto` 或 `inherit-parent` 时不设置模型。只有工作智能体需要访问用户电脑上的东西时才用 `environment: "local"`。
 
@@ -32,10 +32,10 @@ disable-model-invocation: true
 
 有工作智能体掉队时，按 N-1 继续并记录。
 
-## Phase C：汇总
+## 阶段 C：汇总
 
 读取最终结果。结果没有记录任务简报指定的 SHA 和方法时，丢弃它并重派该工作智能体一次。第二次仍缺失就记一个缺口。缺口不算通过。覆盖形态下，每个必需切片都要有结果。竞速形态下，应用预先声明的选择规则：first pass、rank all 或 best-of。不要粘贴工作智能体的原始输出。
 
-## Phase D：汇报
+## 阶段 D：汇报
 
 返回一份合并后的会话内报告，含结果表、每条问题的一行摘要、缺口或掉队情况，以及使用竞速时的选择规则。

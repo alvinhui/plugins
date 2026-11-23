@@ -4,7 +4,7 @@ description: "派生 Comment Sicko，修复被接受的发现，并为声称的�
 disable-model-invocation: true
 ---
 
-# No comments
+# No comments（删除多余注释）
 
 派生 Comment Sicko。对被接受的发现采取行动。
 

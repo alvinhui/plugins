@@ -4,8 +4,7 @@ description: "在测量之前，以及在信任、报告或依据你测得的数
 disable-model-invocation: true
 ---
 
-# Explain the Number
-（解释数字）
+# Explain the Number（解释数字）
 
 - **跑之前先写下决策。** 写明什么结果会改变这个决策，以及噪声底。当多次运行的波动大于效应时，停下来。
 - **问「为什么不能翻倍？」** 指出限制结果的资源或代码路径，依据是运行期间采集的 profile 或计数器。读代码猜出来的不算限制因素。

@@ -4,7 +4,7 @@ description: "为长时间或无人值守的工作保留可审阅的决策记录
 disable-model-invocation: true
 ---
 
-# Show me your work
+# Show me your work（留存决策记录）
 
 只维护一份权威日志。
 

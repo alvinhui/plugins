@@ -4,8 +4,7 @@ description: "设计类型、评审函数签名，或在任何静态类型语言
 disable-model-invocation: true
 ---
 
-# Type System Discipline
-（类型系统纪律）
+# Type System Discipline（类型系统纪律）
 
 让编译器拒绝不可能的状态、错配的原始类型和未处理的变体。
 

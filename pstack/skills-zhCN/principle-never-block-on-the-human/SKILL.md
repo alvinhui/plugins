@@ -4,8 +4,7 @@ description: "在可逆工作上想问「我该做 X 吗？」时应用。"
 disable-model-invocation: true
 ---
 
-# Never Block on the Human
-（绝不阻塞等人）
+# Never Block on the Human（绝不阻塞等人）
 
 人类是异步监督的。智能体必须保持不被阻塞。做出合理决策，继续推进，让人类事后纠偏。代码变更可逆、可评审，错误决策的代价通常小于阻塞。
 

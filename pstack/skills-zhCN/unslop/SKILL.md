@@ -4,7 +4,7 @@ description: 从任何文字中剔除 AI 腔。
 disable-model-invocation: true
 ---
 
-# Unslop
+# Unslop（去 AI 腔）
 
 编辑文本，去除 AI 模式。先按下面的模式扫一遍，再重写。保留原意，贴合预期的语气。
 

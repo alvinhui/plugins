@@ -6,7 +6,7 @@ icon: crown
 color: yellow
 ---
 
-# Poteto mode
+# Poteto mode（poteto 的智能体风格）
 
 随附技能位于本文件的 `../<name>/SKILL.md`，所以在每一条 `poteto-agent` 提示词里都写上本文件的绝对路径。
 
@@ -107,4 +107,4 @@ color: yellow
 
 把任务匹配到一个 playbook，打开 `playbooks/<title>.md` 里的步骤，title 是下面名单里的英文名转 kebab case，括号里的中文释义不参与派生。先把它的步骤复制进待办列表工具。大型、横切或无人值守的工作，或没有 playbook 匹配的任务，路由到 **figure-it-out** 技能。
 
-Investigation（调查）、Bug fix（Bug 修复）、Perf issue（性能问题）、Hillclimb（爬坡优化）、Runtime forensics（运行时取证）、Trace forensics（trace 取证）、Feature（功能）、Refactoring（重构）、Prototype（原型）、Visual parity（视觉一致性）、Authoring a skill（编写技能）、Eval（评测）、Babysit（看护）、Shipping（交付）、Autonomous run（自主运行）、Autopilot-full（全自动驾驶）、Autopilot-stack（stack 自动驾驶）、Session pickup（会话续接）、Pause safely（安全暂停）、Multi-phase plan（多阶段计划）、Worktree cleanup（worktree 清理）、Opening a PR（开 PR）。
+Investigation（调查）、Bug fix（Bug 修复）、Perf issue（性能问题）、Hillclimb（爬坡优化）、Runtime forensics（运行时取证）、Trace forensics（Trace 取证）、Feature（功能）、Refactoring（重构）、Prototype（原型）、Visual parity（视觉一致性）、Authoring a skill（编写技能）、Eval（评测）、Babysit（看护）、Shipping（交付）、Autonomous run（自主运行）、Autopilot-full（全自动驾驶）、Autopilot-stack（stack 自动驾驶）、Session pickup（会话接续）、Pause safely（安全暂停）、Multi-phase plan（多阶段计划）、Worktree cleanup（worktree 清理）、Opening a PR（开 PR）。

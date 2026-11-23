@@ -4,8 +4,7 @@ description: "调试时应用。把每个症状追溯到系统最早出错的地
 disable-model-invocation: true
 ---
 
-# Fix Root Causes
-（修复根因）
+# Fix Root Causes（修复根因）
 
 修复故障本身，而不是它浮现的地方。根因是系统最早做了不该做的事、或没能处理本该处理的状态的地方。
 

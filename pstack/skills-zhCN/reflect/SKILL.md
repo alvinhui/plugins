@@ -4,7 +4,7 @@ description: 从当前会话记录中挖掘可长期成立的教训，并把每�
 disable-model-invocation: true
 ---
 
-# Reflect
+# Reflect（复盘沉淀）
 
 从这次对话中挖掘可长期成立的教训，把每一条路由为对现有技能的一处编辑。
 

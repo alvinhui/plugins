@@ -4,8 +4,7 @@ description: "在报告或依据性能测量行动之前审查它（限制因素
 disable-model-invocation: true
 ---
 
-# Benchmark checklist
-（基准测试检查清单）
+# Benchmark checklist（基准测试检查清单）
 
 产出性能数字时使用本技能：PR 的前后对比、回归论断、爬坡优化执行框架，或库和配置的选型。每个问题都用一次运行的证据回答，不靠对代码的猜测。
 

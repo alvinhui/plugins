@@ -4,7 +4,7 @@ description: "分层的技术写作标准：Diátaxis 结构、Google 开发者�
 disable-model-invocation: true
 ---
 
-# Technical writing
+# Technical writing（技术写作）
 
 写到让一个疲惫的工程师第一遍就读懂。
 
@@ -34,7 +34,7 @@ disable-model-invocation: true
 - 用「你」称呼读者，用现在时。
 - 说清谁做什么。只有动作主体未知或无关紧要时才用被动。
 - 指令写成命令。条件放在指令之前，常见情况放在前面。
-- 不用buzzword，不用比喻，不说「请」，步骤里绝不出现「只需」「轻松」「快速」。
+- 不用 buzzword，不用比喻，不说「请」，步骤里绝不出现「只需」「轻松」「快速」。
 - 不预告下文，相邻句子不用同一个短语开头。
 - 链接文字要说出链接去向。
 - 标题承载要点，用句子式大小写。每页一个 h1，不跳级。

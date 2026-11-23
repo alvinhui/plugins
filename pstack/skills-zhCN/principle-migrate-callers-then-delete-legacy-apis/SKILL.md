@@ -4,8 +4,7 @@ description: "在旧调用方仍存在时引入新内部 API 的场景下应用�
 disable-model-invocation: true
 ---
 
-# Migrate Callers Then Delete Legacy APIs
-（先迁移调用方，再删除旧 API）
+# Migrate Callers Then Delete Legacy APIs（先迁移调用方，再删除旧 API）
 
 - 更新测试以断言新契约，删除只保护重构前实现细节的测试
 
