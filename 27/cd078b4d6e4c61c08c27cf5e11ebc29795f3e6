@@ -1,0 +1,17 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "27cd078b4d6e4c61c08c27cf5e11ebc29795f3e6",
+  "prompts": {},
+  "sessions": {
+    "s_6a9cc2dd5772c5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a20687-9b73-7a71-9afe-cbf8ebd1ecd8",
+        "model": "unknown"
+      },
+      "human_author": "xuwentao.59 <xuwentao.59@jd.com>"
+    }
+  }
+}

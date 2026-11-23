@@ -1,0 +1,19 @@
+scripts/check-pstack-zhcn.mjs
+  s_6a9cc2dd5772c5::t_af205dd10eb02e 1-196
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "743b1ec807ec1f4f5c5b36ec6d230981e0dbba8f",
+  "prompts": {},
+  "sessions": {
+    "s_6a9cc2dd5772c5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a20687-9b73-7a71-9afe-cbf8ebd1ecd8",
+        "model": "unknown"
+      },
+      "human_author": "xuwentao.59 <xuwentao.59@jd.com>"
+    }
+  }
+}
