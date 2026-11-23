@@ -1,0 +1,1073 @@
+pstack/skills-zhCN/TRANSLATION-CONVENTIONS.md
+  s_6a9cc2dd5772c5::t_6bf13da130ee1f 1-104
+pstack/skills-zhCN/architect/SKILL.md
+  s_6a9cc2dd5772c5::t_17f8f9ddf6e530 1-11
+pstack/skills-zhCN/arena/SKILL.md
+  s_d5408722471ce3::t_0fe65950841daa 1-49
+pstack/skills-zhCN/automate-me/SKILL.md
+  s_c97446b7684bad::t_f483942b3d9955 1-104
+pstack/skills-zhCN/benchmark-checklist/SKILL.md
+  s_d5408722471ce3::t_c83f9e900f94af 1-40
+pstack/skills-zhCN/blast-radius/SKILL.md
+  s_d5408722471ce3::t_1569cdc19336fc 1-51
+pstack/skills-zhCN/bro/SKILL.md
+  s_6a9cc2dd5772c5::t_a094855e166cd6 1-7
+pstack/skills-zhCN/correct/SKILL.md
+  s_6a9cc2dd5772c5::t_525252ccba953f 1-32
+pstack/skills-zhCN/create-formal-verification-skill/SKILL.md
+  s_e73e10364f1661::t_7334c850f696da 1-43
+pstack/skills-zhCN/create-verification-skill/SKILL.md
+  s_6a9cc2dd5772c5::t_d1e2c460d31129 1-44
+pstack/skills-zhCN/create-verification-skill/references/feature-map-example/README.md
+  s_d5408722471ce3::t_ee0c9efcab6bbc 1-47
+pstack/skills-zhCN/create-verification-skill/references/feature-map-example/create-note.md
+  s_d5408722471ce3::t_c542bc763fe34f 1-39
+pstack/skills-zhCN/create-verification-skill/references/feature-map-example/search.md
+  s_d5408722471ce3::t_5125f5db64ab53 1-45
+pstack/skills-zhCN/figure-it-out/SKILL.md
+  s_d5408722471ce3::t_c3e6ac56285d4c 1-53
+pstack/skills-zhCN/how/SKILL.md
+  s_6a9cc2dd5772c5::t_d895ea16aa186d 1-23
+pstack/skills-zhCN/in-your-own-words/SKILL.md
+  s_6a9cc2dd5772c5::t_6ee879c8470300 1-7
+pstack/skills-zhCN/interrogate/SKILL.md
+  s_6a9cc2dd5772c5::t_5d4654bb551718 1-33
+pstack/skills-zhCN/ketchup-video/SKILL.md
+  s_c97446b7684bad::t_a08ea86afa72e5 1-29
+pstack/skills-zhCN/ketchup/SKILL.md
+  s_c97446b7684bad::t_59b9426a77d3c6 1-43
+pstack/skills-zhCN/maintain-formal-verification-skill/SKILL.md
+  s_e73e10364f1661::t_c0afcd0fdb6ae6 1-58
+pstack/skills-zhCN/maintain-verification-skill/SKILL.md
+  s_6a9cc2dd5772c5::t_7cb9f8f09e2d38 1-39
+pstack/skills-zhCN/make-bot-ui/SKILL.md
+  s_c97446b7684bad::t_a7020ca2d305c0 1-112
+pstack/skills-zhCN/no-comments/SKILL.md
+  s_6a9cc2dd5772c5::t_5f18ba7df44d41 1-24
+pstack/skills-zhCN/poteto-help/SKILL.md
+  s_c97446b7684bad::t_be2d62cd7f8775 1-162
+pstack/skills-zhCN/poteto-help/references/prompting.md
+  s_c97446b7684bad::t_6509616efa2663 1-51
+pstack/skills-zhCN/poteto-help/references/recipes.md
+  s_6a9cc2dd5772c5::t_43c335565e9ee2 1-61
+pstack/skills-zhCN/poteto-mode/SKILL.md
+  s_6a9cc2dd5772c5::t_8e6a3eb3fb62fd 1-110
+pstack/skills-zhCN/poteto-mode/playbooks/authoring-a-skill.md
+  s_c97446b7684bad::t_cb5bb6113d41f8 1-12
+pstack/skills-zhCN/poteto-mode/playbooks/autonomous-run.md
+  s_c97446b7684bad::t_c9802865003ed9 1-13
+pstack/skills-zhCN/poteto-mode/playbooks/autopilot-full.md
+  s_c97446b7684bad::t_ce839bfc782e23 1-25
+pstack/skills-zhCN/poteto-mode/playbooks/autopilot-stack.md
+  s_c97446b7684bad::t_6e523bc8e41f99 1-8
+pstack/skills-zhCN/poteto-mode/playbooks/babysit.md
+  s_c97446b7684bad::t_0a827531f7fae2 1-10
+pstack/skills-zhCN/poteto-mode/playbooks/bug-fix.md
+  s_c97446b7684bad::t_b38eedab9256fd 1-15
+pstack/skills-zhCN/poteto-mode/playbooks/eval.md
+  s_c97446b7684bad::t_7594a23a90b1e7 1-25
+pstack/skills-zhCN/poteto-mode/playbooks/feature.md
+  s_c97446b7684bad::t_a48485c893deef 1-21
+pstack/skills-zhCN/poteto-mode/playbooks/hillclimb.md
+  s_c97446b7684bad::t_c4a790d6afa430 1-21
+pstack/skills-zhCN/poteto-mode/playbooks/investigation.md
+  s_c97446b7684bad::t_8d93362a12eee6 1-14
+pstack/skills-zhCN/poteto-mode/playbooks/multi-phase-plan.md
+  s_c97446b7684bad::t_f54593bc7f6c37 1-11
+pstack/skills-zhCN/poteto-mode/playbooks/opening-a-pr.md
+  s_c97446b7684bad::t_0ff2c42e53905f 1-9
+pstack/skills-zhCN/poteto-mode/playbooks/pause-safely.md
+  s_e73e10364f1661::t_a15c90c4e9941f 1-10
+pstack/skills-zhCN/poteto-mode/playbooks/perf-issue.md
+  s_e73e10364f1661::t_0c7f6f0b1179f7 1-25
+pstack/skills-zhCN/poteto-mode/playbooks/prototype.md
+  s_e73e10364f1661::t_7b1622d6a5de5f 1-14
+pstack/skills-zhCN/poteto-mode/playbooks/refactoring.md
+  s_e73e10364f1661::t_71d9ea14f7cb41 1-16
+pstack/skills-zhCN/poteto-mode/playbooks/runtime-forensics.md
+  s_e73e10364f1661::t_09f4b6f6d41f61 1-11
+pstack/skills-zhCN/poteto-mode/playbooks/session-pickup.md
+  s_e73e10364f1661::t_fbedb5c1551957 1-11
+pstack/skills-zhCN/poteto-mode/playbooks/shipping.md
+  s_e73e10364f1661::t_bde39c562500d3 1-12
+pstack/skills-zhCN/poteto-mode/playbooks/trace-forensics.md
+  s_e73e10364f1661::t_54d376b8a0e8ba 1-14
+pstack/skills-zhCN/poteto-mode/playbooks/visual-parity.md
+  s_c97446b7684bad::t_fd680ff2e6c21b 1-11
+pstack/skills-zhCN/poteto-mode/playbooks/worktree-cleanup.md
+  s_c97446b7684bad::t_2e2261a6075cc9 1-12
+pstack/skills-zhCN/poteto-mode/references/bugbot-triage.md
+  s_d5408722471ce3::t_d36e4db0133a46 1-120
+pstack/skills-zhCN/poteto-mode/scripts/bootstrap.ts
+  s_6a9cc2dd5772c5::t_960fbbcaeda137 1-62
+pstack/skills-zhCN/poteto-mode/scripts/bun.lock
+  s_6a9cc2dd5772c5::t_5cede879d26b1f 1-67
+pstack/skills-zhCN/poteto-mode/scripts/package.json
+  s_6a9cc2dd5772c5::t_d6420856f76569 1-16
+pstack/skills-zhCN/poteto-mode/scripts/watch-pr/cli.test.ts
+  s_6a9cc2dd5772c5::t_01a2d7e0427a4c 1-224
+pstack/skills-zhCN/poteto-mode/scripts/watch-pr/cli.ts
+  s_6a9cc2dd5772c5::t_adb7d67b5d1c22 1-223
+pstack/skills-zhCN/poteto-mode/scripts/watch-pr/fakes.test-helper.ts
+  s_6a9cc2dd5772c5::t_0198ce004bf99a 1-129
+pstack/skills-zhCN/poteto-mode/scripts/watch-pr/github.test.ts
+  s_6a9cc2dd5772c5::t_fb6e39c120b1c6 1-498
+pstack/skills-zhCN/poteto-mode/scripts/watch-pr/github.ts
+  s_6a9cc2dd5772c5::t_03e7e27e87cbc0 1-726
+pstack/skills-zhCN/poteto-mode/scripts/watch-pr/policy.test.ts
+  s_6a9cc2dd5772c5::t_db2f5a9c4e6dbe 1-482
+pstack/skills-zhCN/poteto-mode/scripts/watch-pr/policy.ts
+  s_6a9cc2dd5772c5::t_d5500de23fe73a 1-842
+pstack/skills-zhCN/poteto-mode/scripts/watch-pr/render.ts
+  s_6a9cc2dd5772c5::t_86ca8b8297c350 1-169
+pstack/skills-zhCN/poteto-mode/scripts/watch-pr/tsconfig.json
+  s_6a9cc2dd5772c5::t_7aca1f33b5113d 1-13
+pstack/skills-zhCN/poteto-mode/scripts/watch-pr/types.compile.ts
+  s_6a9cc2dd5772c5::t_49bec6d4c466fc 1-93
+pstack/skills-zhCN/poteto-mode/scripts/watch-pr/types.ts
+  s_6a9cc2dd5772c5::t_8af8f3c6ea5c61 1-414
+pstack/skills-zhCN/poteto-mode/scripts/watch-pr/watch-pr
+  s_6a9cc2dd5772c5::t_1ffe51b10c94b4 1-6
+pstack/skills-zhCN/poteto-mode/scripts/worktree-audit.sh
+  s_6a9cc2dd5772c5::t_3159bdd303b6f1 1-134
+pstack/skills-zhCN/poteto-mode/worker.md
+  s_c97446b7684bad::t_496b820f663dde 1-11
+pstack/skills-zhCN/principle-attack-the-premise/SKILL.md
+  s_c97446b7684bad::t_7c7e02e97b8c0f 1-16
+pstack/skills-zhCN/principle-boundary-discipline/SKILL.md
+  s_c97446b7684bad::t_261283370a2107 1-12
+pstack/skills-zhCN/principle-build-the-lever/SKILL.md
+  s_c97446b7684bad::t_c0f550e1b98438 1-15
+pstack/skills-zhCN/principle-encode-lessons-in-structure/SKILL.md
+  s_c97446b7684bad::t_8f2a57df8cdb2b 1-12
+pstack/skills-zhCN/principle-exhaust-the-design-space/SKILL.md
+  s_c97446b7684bad::t_b8ede32c181ee3 1-10
+pstack/skills-zhCN/principle-experience-first/SKILL.md
+  s_c97446b7684bad::t_2348edce49d0fe 1-20
+pstack/skills-zhCN/principle-explain-the-number/SKILL.md
+  s_d5408722471ce3::t_da664c92eb033b 1-15
+pstack/skills-zhCN/principle-fix-root-causes/SKILL.md
+  s_d5408722471ce3::t_708c42666e2eb6 1-15
+pstack/skills-zhCN/principle-foundational-thinking/SKILL.md
+  s_d5408722471ce3::t_0b6722415df24c 1-14
+pstack/skills-zhCN/principle-guard-the-context-window/SKILL.md
+  s_d5408722471ce3::t_f5cd7508becd36 1-13
+pstack/skills-zhCN/principle-laziness-protocol/SKILL.md
+  s_d5408722471ce3::t_974a7a2d52865d 1-11
+pstack/skills-zhCN/principle-make-operations-idempotent/SKILL.md
+  s_d5408722471ce3::t_06f4c5bf999817 1-16
+pstack/skills-zhCN/principle-migrate-callers-then-delete-legacy-apis/SKILL.md
+  s_d5408722471ce3::t_4666ed0e144f91 1-15
+pstack/skills-zhCN/principle-minimize-reader-load/SKILL.md
+  s_d5408722471ce3::t_e9669a698dca33 1-16
+pstack/skills-zhCN/principle-model-the-domain/SKILL.md
+  s_d5408722471ce3::t_4cebc9defad3c2 1-16
+pstack/skills-zhCN/principle-never-block-on-the-human/SKILL.md
+  s_d5408722471ce3::t_509c1bc5f6399a 1-16
+pstack/skills-zhCN/principle-outcome-oriented-execution/SKILL.md
+  s_d5408722471ce3::t_2413eca80707e6 1-22
+pstack/skills-zhCN/principle-prove-it-works/SKILL.md
+  s_d5408722471ce3::t_33c2f40bf3260a 1-12
+pstack/skills-zhCN/principle-redesign-from-first-principles/SKILL.md
+  s_d5408722471ce3::t_1d5faca6c079d1 1-17
+pstack/skills-zhCN/principle-separate-before-serializing-shared-state/SKILL.md
+  s_d5408722471ce3::t_1faff22875d38c 1-12
+pstack/skills-zhCN/principle-sequence-verifiable-units/SKILL.md
+  s_d5408722471ce3::t_93a3abc3c8b4cd 1-14
+pstack/skills-zhCN/principle-subtract-before-you-add/SKILL.md
+  s_d5408722471ce3::t_4818824b17d227 1-19
+pstack/skills-zhCN/principle-test-behavior-not-implementation/SKILL.md
+  s_d5408722471ce3::t_5b7ab007190eed 1-17
+pstack/skills-zhCN/principle-type-system-discipline/SKILL.md
+  s_d5408722471ce3::t_317fff422b494d 1-16
+pstack/skills-zhCN/recall/SKILL.md
+  s_c97446b7684bad::t_2ed99561535862 1-36
+pstack/skills-zhCN/reflect/SKILL.md
+  s_6a9cc2dd5772c5::t_bae72f164202fe 1-17
+pstack/skills-zhCN/setup-pstack/SKILL.md
+  s_6a9cc2dd5772c5::t_0dab0cd766ae19 1-80
+pstack/skills-zhCN/sharpen/SKILL.md
+  s_6a9cc2dd5772c5::t_46573aff5b1db8 1-16
+pstack/skills-zhCN/show-me-your-work/SKILL.md
+  s_6a9cc2dd5772c5::t_44beee8e8fa974 1-82
+pstack/skills-zhCN/show-me-your-work/references/decision-log-template.tsv
+  s_6a9cc2dd5772c5::t_c9782839a46244 1
+pstack/skills-zhCN/show-me-your-work/scripts/log.sh
+  s_6a9cc2dd5772c5::t_ac5228fa639922 1-42
+pstack/skills-zhCN/statechart/SKILL.md
+  s_c97446b7684bad::t_afe23b16a0acdb 1-82
+pstack/skills-zhCN/statechart/references/render.md
+  s_c97446b7684bad::t_76ef01a69d4321 1-93
+pstack/skills-zhCN/statechart/scripts/backends/cfg.ts
+  s_6a9cc2dd5772c5::t_fbda9767272de3 1-33
+pstack/skills-zhCN/statechart/scripts/backends/mermaid.ts
+  s_6a9cc2dd5772c5::t_0a866a75dc3fac 1-249
+pstack/skills-zhCN/statechart/scripts/backends/plain-text.ts
+  s_6a9cc2dd5772c5::t_43360cb0fd30d4 1-72
+pstack/skills-zhCN/statechart/scripts/backends/report.ts
+  s_6a9cc2dd5772c5::t_d04157d974db49 1-177
+pstack/skills-zhCN/statechart/scripts/frontends/config.ts
+  s_6a9cc2dd5772c5::t_d49f3deb2d3455 1-276
+pstack/skills-zhCN/statechart/scripts/frontends/dot.ts
+  s_6a9cc2dd5772c5::t_eb9653b3b3b0e5 1-77
+pstack/skills-zhCN/statechart/scripts/frontends/marks.ts
+  s_6a9cc2dd5772c5::t_16dda15437f794 1-93
+pstack/skills-zhCN/statechart/scripts/frontends/messages.ts
+  s_6a9cc2dd5772c5::t_00e022ecf08719 1-52
+pstack/skills-zhCN/statechart/scripts/frontends/spec.ts
+  s_6a9cc2dd5772c5::t_1d495f8ed70924 1-114
+pstack/skills-zhCN/statechart/scripts/frontends/trace.ts
+  s_6a9cc2dd5772c5::t_28cdaf50392346 1-24
+pstack/skills-zhCN/statechart/scripts/frontends/value.ts
+  s_6a9cc2dd5772c5::t_49bd58e0fda293 1-166
+pstack/skills-zhCN/statechart/scripts/frontends/verdict.ts
+  s_6a9cc2dd5772c5::t_f96b2fcf4d8174 1-40
+pstack/skills-zhCN/statechart/scripts/frontends/view.ts
+  s_6a9cc2dd5772c5::t_4bd957cddb26cf 1-119
+pstack/skills-zhCN/statechart/scripts/ir.ts
+  s_6a9cc2dd5772c5::t_bc5f9c92b41da1 1-547
+pstack/skills-zhCN/statechart/scripts/janitor.ts
+  s_6a9cc2dd5772c5::t_24ca9017c27675 1-13
+pstack/skills-zhCN/statechart/scripts/kill.ts
+  s_6a9cc2dd5772c5::t_28d1806f100e44 1-15
+pstack/skills-zhCN/statechart/scripts/package.json
+  s_6a9cc2dd5772c5::t_c290c21cbc5fee 1-11
+pstack/skills-zhCN/statechart/scripts/passes/annotate.ts
+  s_6a9cc2dd5772c5::t_fa5abd3df59128 1-128
+pstack/skills-zhCN/statechart/scripts/passes/label.ts
+  s_6a9cc2dd5772c5::t_035141c4b2fcfa 1-269
+pstack/skills-zhCN/statechart/scripts/passes/lift.ts
+  s_6a9cc2dd5772c5::t_ed1d8781812866 1-85
+pstack/skills-zhCN/statechart/scripts/passes/loop-check.ts
+  s_6a9cc2dd5772c5::t_cf5102f408d2e6 1-68
+pstack/skills-zhCN/statechart/scripts/passes/paths.ts
+  s_6a9cc2dd5772c5::t_8b0a87f74eeda9 1-60
+pstack/skills-zhCN/statechart/scripts/passes/reach.ts
+  s_6a9cc2dd5772c5::t_d649535a77f916 1-135
+pstack/skills-zhCN/statechart/scripts/passes/region-check.ts
+  s_6a9cc2dd5772c5::t_0cb72e12d33c63 1-97
+pstack/skills-zhCN/statechart/scripts/passes/regions.ts
+  s_6a9cc2dd5772c5::t_58a7f6ae6219f2 1-295
+pstack/skills-zhCN/statechart/scripts/pipeline.ts
+  s_6a9cc2dd5772c5::t_8bfbb5454ab7a6 1-76
+pstack/skills-zhCN/statechart/scripts/run.ts
+  s_6a9cc2dd5772c5::t_9d9babcc714147 1-500
+pstack/skills-zhCN/statechart/scripts/statechart
+  s_6a9cc2dd5772c5::t_9db6256c69e74a 1-29
+pstack/skills-zhCN/statechart/scripts/statechart.ts
+  s_6a9cc2dd5772c5::t_baf7591161f14f 1-165
+pstack/skills-zhCN/statechart/scripts/test/ConfigOracle.java
+  s_6a9cc2dd5772c5::t_b0f0a33430085f 1-63
+pstack/skills-zhCN/statechart/scripts/test/chart.test.ts
+  s_6a9cc2dd5772c5::t_fdfa74215dbe38 1-1253
+pstack/skills-zhCN/statechart/scripts/test/charts/Braces.mmd
+  s_6a9cc2dd5772c5::t_dbbe1cf978791d 1-7
+pstack/skills-zhCN/statechart/scripts/test/charts/Escapes.mmd
+  s_6a9cc2dd5772c5::t_8b2c833b3d8d50 1-11
+pstack/skills-zhCN/statechart/scripts/test/charts/Phases.mmd
+  s_6a9cc2dd5772c5::t_0d9183ab0cf623 1-29
+pstack/skills-zhCN/statechart/scripts/test/cli.test.ts
+  s_6a9cc2dd5772c5::t_bdd99162568a2b 1-1344
+pstack/skills-zhCN/statechart/scripts/test/config-fuzz.test.ts
+  s_6a9cc2dd5772c5::t_e9377d0640bdf5 1-263
+pstack/skills-zhCN/statechart/scripts/test/corpus.test.ts
+  s_6a9cc2dd5772c5::t_9b2398d81c1a20 1-441
+pstack/skills-zhCN/statechart/scripts/test/corpus/Counter/ChartRun.out
+  s_6a9cc2dd5772c5::t_95ba55ae436dcf 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/Counter/Counter.cfg
+  s_6a9cc2dd5772c5::t_2699c6195b3878 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/Counter/Counter.tla
+  s_6a9cc2dd5772c5::t_9e4c255431f8ec 1-10
+pstack/skills-zhCN/statechart/scripts/test/corpus/Counter/chart.mmd
+  s_6a9cc2dd5772c5::t_8652079198e029 1-9
+pstack/skills-zhCN/statechart/scripts/test/corpus/Counter/graph.dot
+  s_6a9cc2dd5772c5::t_bd97aaedcb3c63 1-16
+pstack/skills-zhCN/statechart/scripts/test/corpus/Counter/report.md
+  s_6a9cc2dd5772c5::t_388104c1beffde 1-7
+pstack/skills-zhCN/statechart/scripts/test/corpus/Counter/sany.out
+  s_6a9cc2dd5772c5::t_5312eb2a59dd76 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/Counter/verdict-1.out
+  s_6a9cc2dd5772c5::t_cbe990a743787e 1-49
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterAction/ChartRun.out
+  s_6a9cc2dd5772c5::t_54a93df3a69def 1-60
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterAction/CounterAction.cfg
+  s_6a9cc2dd5772c5::t_ae52653b3d3fd6 1-4
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterAction/CounterAction.tla
+  s_6a9cc2dd5772c5::t_fbec1e8613357f 1-22
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterAction/chart.mmd
+  s_6a9cc2dd5772c5::t_bdd86a68b226e5 1-26
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterAction/graph.dot
+  s_6a9cc2dd5772c5::t_f117ed2f53ed1c 1-19
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterAction/report.md
+  s_6a9cc2dd5772c5::t_659cbcff79b347 1-20
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterAction/sany.out
+  s_6a9cc2dd5772c5::t_65ec3a8d592e0b 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterAction/verdict-1.exit
+  s_6a9cc2dd5772c5::t_5a81f145f41de8 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterAction/verdict-1.out
+  s_6a9cc2dd5772c5::t_58b09b5d19f958 1-56
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterAction/verdict-2.exit
+  s_6a9cc2dd5772c5::t_000d3f2c9aefde 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterAction/verdict-2.out
+  s_6a9cc2dd5772c5::t_4e57cd7f9585b7 1-82
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterAction/verdict-3.out
+  s_6a9cc2dd5772c5::t_e1a4cb42fd4a31 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterDeadlock/ChartRun.out
+  s_6a9cc2dd5772c5::t_ac61cf6b8fb085 1-59
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterDeadlock/CounterDeadlock.cfg
+  s_6a9cc2dd5772c5::t_d2d941f490a746 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterDeadlock/CounterDeadlock.tla
+  s_6a9cc2dd5772c5::t_7ddbe6099e8da3 1-11
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterDeadlock/chart.mmd
+  s_6a9cc2dd5772c5::t_f5548e90fff7fd 1-22
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterDeadlock/graph.dot
+  s_6a9cc2dd5772c5::t_50ab6be25b9f4f 1-16
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterDeadlock/report.md
+  s_6a9cc2dd5772c5::t_1313e28df36069 1-17
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterDeadlock/sany.out
+  s_6a9cc2dd5772c5::t_26b2f93e3d636b 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterDeadlock/verdict-1.exit
+  s_6a9cc2dd5772c5::t_b385f940e281ee 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterDeadlock/verdict-1.out
+  s_6a9cc2dd5772c5::t_8a23b3b4693910 1-56
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterDeadlock/verdict-2.exit
+  s_6a9cc2dd5772c5::t_c238b844bd5744 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterDeadlock/verdict-2.out
+  s_6a9cc2dd5772c5::t_2b778308aaef08 1-77
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterFan/ChartRun.out
+  s_6a9cc2dd5772c5::t_ad6bbe3043efa0 1-69
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterFan/CounterFan.cfg
+  s_6a9cc2dd5772c5::t_c00d8d40c386ab 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterFan/CounterFan.tla
+  s_6a9cc2dd5772c5::t_b6cd4ef802403f 1-11
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterFan/chart.mmd
+  s_6a9cc2dd5772c5::t_9ce4e527e4b354 1-85
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterFan/graph.dot
+  s_6a9cc2dd5772c5::t_d40b21bfd17a20 1-70
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterFan/report.md
+  s_6a9cc2dd5772c5::t_248eba68123291 1-12
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterFan/sany.out
+  s_6a9cc2dd5772c5::t_8dc557748b31ea 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterFan/verdict-1.exit
+  s_6a9cc2dd5772c5::t_7797cb0a910463 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterFan/verdict-1.out
+  s_6a9cc2dd5772c5::t_bf8d24371dee37 1-67
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterFan/verdict-2.out
+  s_6a9cc2dd5772c5::t_85f572e29ffb5b 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterGuard/ChartRun.exit
+  s_6a9cc2dd5772c5::t_06def2cfa604f9 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterGuard/ChartRun.out
+  s_6a9cc2dd5772c5::t_abf015e5b83f6f 1-85
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterGuard/CounterGuard.cfg
+  s_6a9cc2dd5772c5::t_153277d94f349e 1-6
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterGuard/CounterGuard.tla
+  s_6a9cc2dd5772c5::t_10440db2035984 1-13
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterGuard/chart.mmd
+  s_6a9cc2dd5772c5::t_a2f1b1e81ccb1b 1-5
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterGuard/graph.dot
+  s_6a9cc2dd5772c5::t_a0c0e1261e1179 1-10
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterGuard/report.md
+  s_6a9cc2dd5772c5::t_9aeeb9a1a73bae 1-31
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterGuard/sany.out
+  s_6a9cc2dd5772c5::t_7935e3e281a8b8 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterGuard/verdict-1.exit
+  s_6a9cc2dd5772c5::t_972650b08436ad 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterGuard/verdict-1.out
+  s_6a9cc2dd5772c5::t_162f4b9fa27f28 1-64
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterGuard/verdict-2.exit
+  s_6a9cc2dd5772c5::t_8000479c4dec0e 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterGuard/verdict-2.out
+  s_6a9cc2dd5772c5::t_a3dd01d6347cf6 1-77
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPast/ChartRun.out
+  s_6a9cc2dd5772c5::t_0165a15c5c2c76 1-55
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPast/CounterInitPast.cfg
+  s_6a9cc2dd5772c5::t_e8ec5c123d48c3 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPast/CounterInitPast.tla
+  s_6a9cc2dd5772c5::t_46062dd582f4ee 1-10
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPast/chart.mmd
+  s_6a9cc2dd5772c5::t_b223985cbe7f6d 1-12
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPast/graph.dot
+  s_6a9cc2dd5772c5::t_1365f0c9d51f94 1-6
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPast/report.md
+  s_6a9cc2dd5772c5::t_6c741f075d2a93 1-12
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPast/sany.out
+  s_6a9cc2dd5772c5::t_95eaccda67f277 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPast/verdict-1.exit
+  s_6a9cc2dd5772c5::t_aa74db7ae13d60 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPast/verdict-1.out
+  s_6a9cc2dd5772c5::t_9d513085d27cca 1-33
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPast/verdict-2.out
+  s_6a9cc2dd5772c5::t_c244d65b6e0c32 1-54
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPastHolds/ChartRun.out
+  s_6a9cc2dd5772c5::t_741ba5505e6251 1-54
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPastHolds/CounterInitPastHolds.cfg
+  s_6a9cc2dd5772c5::t_036acc6bfbdb3c 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPastHolds/CounterInitPastHolds.tla
+  s_6a9cc2dd5772c5::t_0af8cf228e89fd 1-10
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPastHolds/chart.mmd
+  s_6a9cc2dd5772c5::t_6e8e3c447b951d 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPastHolds/graph.dot
+  s_6a9cc2dd5772c5::t_214dee8701eb0d 1-6
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPastHolds/report.md
+  s_6a9cc2dd5772c5::t_18c46445d120fa 1-7
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPastHolds/sany.out
+  s_6a9cc2dd5772c5::t_184ad81e7d3c60 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInitPastHolds/verdict-1.out
+  s_6a9cc2dd5772c5::t_f590f86a36d03f 1-46
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInstance/ChartRun.out
+  s_6a9cc2dd5772c5::t_ea49b949f6bc76 1-59
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInstance/CounterInstance.cfg
+  s_6a9cc2dd5772c5::t_ca6393a787f413 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInstance/CounterInstance.tla
+  s_6a9cc2dd5772c5::t_c36b58711fff03 1-10
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInstance/CounterSteps.tla
+  s_6a9cc2dd5772c5::t_3d1986e1477890 1-6
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInstance/chart.mmd
+  s_6a9cc2dd5772c5::t_6f40383d5ef10e 1-17
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInstance/graph.dot
+  s_6a9cc2dd5772c5::t_cbd020bc69030e 1-15
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInstance/report.md
+  s_6a9cc2dd5772c5::t_d2510d9c2792ef 1-14
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInstance/sany.out
+  s_6a9cc2dd5772c5::t_05fec4ad3b4154 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInstance/verdict-1.exit
+  s_6a9cc2dd5772c5::t_5178ab6d90f111 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterInstance/verdict-1.out
+  s_6a9cc2dd5772c5::t_b1c4df6863f867 1-78
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterJump/ChartRun.out
+  s_6a9cc2dd5772c5::t_93bdb084d2a5a2 1-59
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterJump/CounterJump.cfg
+  s_6a9cc2dd5772c5::t_7b752e8678739d 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterJump/CounterJump.tla
+  s_6a9cc2dd5772c5::t_4f06d973d2317e 1-19
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterJump/chart.mmd
+  s_6a9cc2dd5772c5::t_87941663c6b08b 1-26
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterJump/graph.dot
+  s_6a9cc2dd5772c5::t_31b38789a7b72c 1-22
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterJump/report.md
+  s_6a9cc2dd5772c5::t_79b6020cf645bb 1-12
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterJump/sany.out
+  s_6a9cc2dd5772c5::t_2ca02e0e195c95 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterJump/verdict-1.exit
+  s_6a9cc2dd5772c5::t_b036c72b4d51f6 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterJump/verdict-1.out
+  s_6a9cc2dd5772c5::t_8a48677fa23df9 1-58
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterJump/verdict-2.out
+  s_6a9cc2dd5772c5::t_cca574404afc26 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterLoop/ChartRun.out
+  s_6a9cc2dd5772c5::t_917503dff640b3 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterLoop/CounterLoop.cfg
+  s_6a9cc2dd5772c5::t_13494f188f383e 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterLoop/CounterLoop.tla
+  s_6a9cc2dd5772c5::t_3ddf20f9a2b93f 1-11
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterLoop/chart.mmd
+  s_6a9cc2dd5772c5::t_70c1f723d0250d 1-17
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterLoop/graph.dot
+  s_6a9cc2dd5772c5::t_d301100d2c650c 1-15
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterLoop/report.md
+  s_6a9cc2dd5772c5::t_a186930ec9b48c 1-14
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterLoop/sany.out
+  s_6a9cc2dd5772c5::t_55c48ae2eb81f2 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterLoop/verdict-1.exit
+  s_6a9cc2dd5772c5::t_bc48cd1e7fba57 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterLoop/verdict-1.out
+  s_6a9cc2dd5772c5::t_4a25246bd15d4b 1-76
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterOrder/ChartRun.out
+  s_6a9cc2dd5772c5::t_98674a9c508f68 1-59
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterOrder/CounterOrder.cfg
+  s_6a9cc2dd5772c5::t_6236ce5ffb1f1b 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterOrder/CounterOrder.tla
+  s_6a9cc2dd5772c5::t_cb2f37465c82e8 1-11
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterOrder/chart.mmd
+  s_6a9cc2dd5772c5::t_076f0da469ce0a 1-19
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterOrder/graph.dot
+  s_6a9cc2dd5772c5::t_af69d78a5a472a 1-10
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterOrder/report.md
+  s_6a9cc2dd5772c5::t_a0582ff1af4f57 1-15
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterOrder/sany.out
+  s_6a9cc2dd5772c5::t_fa634cd780c4c7 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterOrder/verdict-1.exit
+  s_6a9cc2dd5772c5::t_73c2d4eef94614 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterOrder/verdict-1.out
+  s_6a9cc2dd5772c5::t_e8b32c096acf84 1-56
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterOrder/verdict-2.exit
+  s_6a9cc2dd5772c5::t_6a83fd9e761489 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterOrder/verdict-2.out
+  s_6a9cc2dd5772c5::t_1e87a4da3e3e1f 1-67
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/ChartRun.out
+  s_6a9cc2dd5772c5::t_ec92d24b7cf637 1-62
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/CounterRules.cfg
+  s_6a9cc2dd5772c5::t_0000fcaaace6b0 1-6
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/CounterRules.tla
+  s_6a9cc2dd5772c5::t_460a4f35da2fe8 1-24
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/Moves.tla
+  s_6a9cc2dd5772c5::t_14459a326bb9e9 1-5
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/chart.mmd
+  s_6a9cc2dd5772c5::t_aae0ea5fd81bbf 1-22
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/graph.dot
+  s_6a9cc2dd5772c5::t_09e329e960c89e 1-10
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/report.md
+  s_6a9cc2dd5772c5::t_c98850afeea11c 1-23
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/sany.out
+  s_6a9cc2dd5772c5::t_ec164b124159b0 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/verdict-1.exit
+  s_6a9cc2dd5772c5::t_e6f822521f0707 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/verdict-1.out
+  s_6a9cc2dd5772c5::t_4d8939cc27ba35 1-58
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/verdict-2.exit
+  s_6a9cc2dd5772c5::t_bb92a97308c659 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/verdict-2.out
+  s_6a9cc2dd5772c5::t_e251052bc0fa2a 1-66
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/verdict-3.exit
+  s_6a9cc2dd5772c5::t_daddd25daf7225 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/verdict-3.out
+  s_6a9cc2dd5772c5::t_d5a01a0dc73f77 1-74
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterRules/verdict-4.out
+  s_6a9cc2dd5772c5::t_2c6321c9f9c44c 1-59
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStart/ChartRun.out
+  s_6a9cc2dd5772c5::t_f07547281add34 1-58
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStart/CounterStart.cfg
+  s_6a9cc2dd5772c5::t_ffedd83d4d3a3a 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStart/CounterStart.tla
+  s_6a9cc2dd5772c5::t_cb961c00816368 1-15
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStart/chart.mmd
+  s_6a9cc2dd5772c5::t_b89b8bf849f54b 1-18
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStart/graph.dot
+  s_6a9cc2dd5772c5::t_e25ca85732b5e7 1-13
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStart/report.md
+  s_6a9cc2dd5772c5::t_b8a242007d284c 1-11
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStart/sany.out
+  s_6a9cc2dd5772c5::t_8d6bfb5e55b80f 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStart/verdict-1.exit
+  s_6a9cc2dd5772c5::t_489bccee61c8d5 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStart/verdict-1.out
+  s_6a9cc2dd5772c5::t_f07a2cb2d0a1a0 1-33
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStart/verdict-2.out
+  s_6a9cc2dd5772c5::t_598d2ea2d9b566 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStop/ChartRun.out
+  s_6a9cc2dd5772c5::t_a5a833abb930f0 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStop/CounterStop.cfg
+  s_6a9cc2dd5772c5::t_82782ce50abad4 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStop/CounterStop.tla
+  s_6a9cc2dd5772c5::t_6b37d8d0621e80 1-15
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStop/chart.mmd
+  s_6a9cc2dd5772c5::t_56b8793551c9af 1-7
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStop/graph.dot
+  s_6a9cc2dd5772c5::t_2252cb908d2ee1 1-13
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStop/report.md
+  s_6a9cc2dd5772c5::t_2e89b38931e912 1-6
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStop/sany.out
+  s_6a9cc2dd5772c5::t_9069df77c539d0 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterStop/verdict-1.out
+  s_6a9cc2dd5772c5::t_0b3f13f0c9a55f 1-49
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTie/ChartRun.out
+  s_6a9cc2dd5772c5::t_d03e2a26549cf8 1-61
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTie/CounterTie.cfg
+  s_6a9cc2dd5772c5::t_895b89f49b5ac9 1-4
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTie/CounterTie.tla
+  s_6a9cc2dd5772c5::t_6bdf7cee7182fe 1-14
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTie/chart.mmd
+  s_6a9cc2dd5772c5::t_cd5906fd3ab69b 1-30
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTie/graph.dot
+  s_6a9cc2dd5772c5::t_3407cccadf7ee5 1-19
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTie/report.md
+  s_6a9cc2dd5772c5::t_0baf2d444d97b8 1-27
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTie/sany.out
+  s_6a9cc2dd5772c5::t_e5413cb2b22541 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTie/verdict-1.exit
+  s_6a9cc2dd5772c5::t_05cb5ef98aed56 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTie/verdict-1.out
+  s_6a9cc2dd5772c5::t_13a7878142e591 1-56
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTie/verdict-2.exit
+  s_6a9cc2dd5772c5::t_01dc1471703395 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTie/verdict-2.out
+  s_6a9cc2dd5772c5::t_0c56cb595f2312 1-64
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTie/verdict-3.exit
+  s_6a9cc2dd5772c5::t_b91bb250c7eb14 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTie/verdict-3.out
+  s_6a9cc2dd5772c5::t_178680e2c40d65 1-87
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTie/verdict-4.out
+  s_6a9cc2dd5772c5::t_85d08ecaa2d081 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTieInGraph/ChartRun.out
+  s_6a9cc2dd5772c5::t_51e7869218640e 1-60
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTieInGraph/CounterTieInGraph.cfg
+  s_6a9cc2dd5772c5::t_6afc43dd1b962e 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTieInGraph/CounterTieInGraph.tla
+  s_6a9cc2dd5772c5::t_9be202bdb796c4 1-12
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTieInGraph/chart.mmd
+  s_6a9cc2dd5772c5::t_a9ea27495a43bc 1-23
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTieInGraph/graph.dot
+  s_6a9cc2dd5772c5::t_7736eb2bc06548 1-19
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTieInGraph/report.md
+  s_6a9cc2dd5772c5::t_c01cbe8b6e662b 1-11
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTieInGraph/sany.out
+  s_6a9cc2dd5772c5::t_12ef9aea8418ea 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTieInGraph/verdict-1.exit
+  s_6a9cc2dd5772c5::t_0f6c0178be21b3 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTieInGraph/verdict-1.out
+  s_6a9cc2dd5772c5::t_ae0875471dcf2a 1-56
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterTieInGraph/verdict-2.out
+  s_6a9cc2dd5772c5::t_9ea86e30e48a31 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/ChartRun.out
+  s_6a9cc2dd5772c5::t_fe8d3f0e348c9f 1-61
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/CounterView.cfg
+  s_6a9cc2dd5772c5::t_7f875cb4d3f938 1-4
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/CounterView.tla
+  s_6a9cc2dd5772c5::t_249d0e835ee29c 1-14
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/chart.mmd
+  s_6a9cc2dd5772c5::t_9bc11868cb00d7 1-23
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/graph.dot
+  s_6a9cc2dd5772c5::t_e7098f9928a1bd 1-19
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/report.md
+  s_6a9cc2dd5772c5::t_08cdb5666ff748 1-27
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/sany.out
+  s_6a9cc2dd5772c5::t_4c2cdf4436a216 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/verdict-1.exit
+  s_6a9cc2dd5772c5::t_1f3bd31b6247b6 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/verdict-1.out
+  s_6a9cc2dd5772c5::t_5c82f22ffca734 1-56
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/verdict-2.exit
+  s_6a9cc2dd5772c5::t_8978558da93f70 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/verdict-2.out
+  s_6a9cc2dd5772c5::t_2afcef4d34c5b5 1-64
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/verdict-3.exit
+  s_6a9cc2dd5772c5::t_6899cfff25e8c8 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/verdict-3.out
+  s_6a9cc2dd5772c5::t_5b780805307bf7 1-87
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/verdict-4.out
+  s_6a9cc2dd5772c5::t_c3c7ad45e35b5d 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/CounterView/view.mjs
+  s_6a9cc2dd5772c5::t_0620e64eab75ad 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/DieHard/ChartRun.out
+  s_6a9cc2dd5772c5::t_cf9a70c7fcfda0 1-59
+pstack/skills-zhCN/statechart/scripts/test/corpus/DieHard/DieHard.cfg
+  s_6a9cc2dd5772c5::t_7dcfd0ef2566e3 1-4
+pstack/skills-zhCN/statechart/scripts/test/corpus/DieHard/DieHard.tla
+  s_6a9cc2dd5772c5::t_b77e09ef06352a 1-38
+pstack/skills-zhCN/statechart/scripts/test/corpus/DieHard/chart.mmd
+  s_6a9cc2dd5772c5::t_476d6a4bc3d735 1-92
+pstack/skills-zhCN/statechart/scripts/test/corpus/DieHard/graph.dot
+  s_6a9cc2dd5772c5::t_6cd4f8dcb5201c 1-126
+pstack/skills-zhCN/statechart/scripts/test/corpus/DieHard/report.md
+  s_6a9cc2dd5772c5::t_c57214ab4da00a 1-17
+pstack/skills-zhCN/statechart/scripts/test/corpus/DieHard/sany.out
+  s_6a9cc2dd5772c5::t_9ef2a9569e3c72 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/DieHard/verdict-1.exit
+  s_6a9cc2dd5772c5::t_7f0a6a15aa3982 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/DieHard/verdict-1.out
+  s_6a9cc2dd5772c5::t_4f7b3974f59fc8 1-91
+pstack/skills-zhCN/statechart/scripts/test/corpus/DieHard/verdict-2.out
+  s_6a9cc2dd5772c5::t_4f39dd2cf32de8 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/ChartRun.out
+  s_6a9cc2dd5772c5::t_e09d55fc4efcfd 1-61
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/FirstRule.cfg
+  s_6a9cc2dd5772c5::t_4d33f364723d41 1-6
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/FirstRule.tla
+  s_6a9cc2dd5772c5::t_a122e995f30688 1-11
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/chart.mmd
+  s_6a9cc2dd5772c5::t_0ca34daabf9264 1-22
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/graph.dot
+  s_6a9cc2dd5772c5::t_b87d062212b3ff 1-16
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/report.md
+  s_6a9cc2dd5772c5::t_992fad2c5d7479 1-25
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/sany.out
+  s_6a9cc2dd5772c5::t_0b615280f9894b 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/verdict-1.exit
+  s_6a9cc2dd5772c5::t_15fe63f9d58e99 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/verdict-1.out
+  s_6a9cc2dd5772c5::t_12ae60ca2a3679 1-56
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/verdict-2.exit
+  s_6a9cc2dd5772c5::t_9f403f0b340fab 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/verdict-2.out
+  s_6a9cc2dd5772c5::t_4e15dbc48c7662 1-64
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/verdict-3.exit
+  s_6a9cc2dd5772c5::t_b5f3da81d2dc82 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/verdict-3.out
+  s_6a9cc2dd5772c5::t_f2a3eafbfde645 1-64
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/verdict-4.exit
+  s_6a9cc2dd5772c5::t_7d8189e39ecbf6 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/FirstRule/verdict-4.out
+  s_6a9cc2dd5772c5::t_23bc63b9e2d5b4 1-77
+pstack/skills-zhCN/statechart/scripts/test/corpus/HiddenClock/ChartRun.out
+  s_6a9cc2dd5772c5::t_3965663a6085f3 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/HiddenClock/HiddenClock.cfg
+  s_6a9cc2dd5772c5::t_cc2176a3a62352 1-4
+pstack/skills-zhCN/statechart/scripts/test/corpus/HiddenClock/HiddenClock.tla
+  s_6a9cc2dd5772c5::t_f62ba552e7d1e0 1-11
+pstack/skills-zhCN/statechart/scripts/test/corpus/HiddenClock/chart.mmd
+  s_6a9cc2dd5772c5::t_af1bfcdaa5c6b5 1-13
+pstack/skills-zhCN/statechart/scripts/test/corpus/HiddenClock/graph.dot
+  s_6a9cc2dd5772c5::t_340fe3d1f0bd01 1-12
+pstack/skills-zhCN/statechart/scripts/test/corpus/HiddenClock/report.md
+  s_6a9cc2dd5772c5::t_35a741aaf68607 1-11
+pstack/skills-zhCN/statechart/scripts/test/corpus/HiddenClock/sany.out
+  s_6a9cc2dd5772c5::t_a7a678ee27d8ae 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/HiddenClock/verdict-1.exit
+  s_6a9cc2dd5772c5::t_2dd62b3422635c 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/HiddenClock/verdict-1.out
+  s_6a9cc2dd5772c5::t_9fa04ac0291f12 1-72
+pstack/skills-zhCN/statechart/scripts/test/corpus/Login/ChartRun.out
+  s_6a9cc2dd5772c5::t_d7244b5bbcb8e3 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/Login/Login.cfg
+  s_6a9cc2dd5772c5::t_4c8cd136ea62d5 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/Login/Login.tla
+  s_6a9cc2dd5772c5::t_4c3c7e051c0ea9 1-62
+pstack/skills-zhCN/statechart/scripts/test/corpus/Login/chart.mmd
+  s_6a9cc2dd5772c5::t_90481bca6a292d 1-28
+pstack/skills-zhCN/statechart/scripts/test/corpus/Login/graph.dot
+  s_6a9cc2dd5772c5::t_0132802eceb960 1-40
+pstack/skills-zhCN/statechart/scripts/test/corpus/Login/report.md
+  s_6a9cc2dd5772c5::t_691ff3144f9f59 1-7
+pstack/skills-zhCN/statechart/scripts/test/corpus/Login/sany.out
+  s_6a9cc2dd5772c5::t_9ce2649c03259f 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/Login/verdict-1.out
+  s_6a9cc2dd5772c5::t_d713fbe9b683e8 1-47
+pstack/skills-zhCN/statechart/scripts/test/corpus/Login/view.mjs
+  s_6a9cc2dd5772c5::t_5549ce5483b81c 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginGuarded/ChartRun.out
+  s_6a9cc2dd5772c5::t_dead6aabb9d339 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginGuarded/LoginGuarded.cfg
+  s_6a9cc2dd5772c5::t_fb7ec5b92f1208 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginGuarded/LoginGuarded.tla
+  s_6a9cc2dd5772c5::t_c607c0f4ee7bdc 1-64
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginGuarded/chart.mmd
+  s_6a9cc2dd5772c5::t_d079e7b7659185 1-28
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginGuarded/graph.dot
+  s_6a9cc2dd5772c5::t_e96556c4a50159 1-37
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginGuarded/report.md
+  s_6a9cc2dd5772c5::t_ed23bd4d397321 1-8
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginGuarded/sany.out
+  s_6a9cc2dd5772c5::t_e853100caa0b3b 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginGuarded/verdict-1.out
+  s_6a9cc2dd5772c5::t_522d9d678513bc 1-47
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginGuarded/view.mjs
+  s_6a9cc2dd5772c5::t_fc045ca2abb4c0 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginParallel/ChartRun.out
+  s_6a9cc2dd5772c5::t_5e6203b43fc156 1-60
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginParallel/LoginParallel.cfg
+  s_6a9cc2dd5772c5::t_3b37246d676308 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginParallel/LoginParallel.tla
+  s_6a9cc2dd5772c5::t_0021a36d96cb35 1-64
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginParallel/chart.mmd
+  s_6a9cc2dd5772c5::t_5832e5aac64406 1-44
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginParallel/graph.dot
+  s_6a9cc2dd5772c5::t_9d4cd19842dc37 1-58
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginParallel/report.md
+  s_6a9cc2dd5772c5::t_00fe9af83021ff 1-17
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginParallel/sany.out
+  s_6a9cc2dd5772c5::t_3234b5000a4ce7 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginParallel/verdict-1.exit
+  s_6a9cc2dd5772c5::t_fdc349722f7cd5 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginParallel/verdict-1.out
+  s_6a9cc2dd5772c5::t_e72a2416c51977 1-83
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginParallel/verdict-2.out
+  s_6a9cc2dd5772c5::t_18c5f5070387aa 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/LoginParallel/view.mjs
+  s_6a9cc2dd5772c5::t_7efeb033beba28 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayer/ChartRun.out
+  s_6a9cc2dd5772c5::t_1b2d725c023f66 1-60
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayer/MediaPlayer.cfg
+  s_6a9cc2dd5772c5::t_785ec57adf2891 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayer/MediaPlayer.tla
+  s_6a9cc2dd5772c5::t_0f2469126020af 1-103
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayer/chart.mmd
+  s_6a9cc2dd5772c5::t_a62030a93f6a10 1-43
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayer/graph.dot
+  s_6a9cc2dd5772c5::t_9e1e17f5af35fe 1-93
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayer/report.md
+  s_6a9cc2dd5772c5::t_69abca8f0798e5 1-14
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayer/sany.out
+  s_6a9cc2dd5772c5::t_536572a502c56e 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayer/verdict-1.exit
+  s_6a9cc2dd5772c5::t_866035779b2443 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayer/verdict-1.out
+  s_6a9cc2dd5772c5::t_095543a985fcdd 1-59
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayer/verdict-2.out
+  s_6a9cc2dd5772c5::t_6a767e07e0ccce 1-72
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayer/view.mjs
+  s_6a9cc2dd5772c5::t_41b5abf50bcdfb 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerFixed/ChartRun.out
+  s_6a9cc2dd5772c5::t_5efc7f147d9869 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerFixed/MediaPlayerFixed.cfg
+  s_6a9cc2dd5772c5::t_3439597b4860bb 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerFixed/MediaPlayerFixed.tla
+  s_6a9cc2dd5772c5::t_d47f34a7cfba2c 1-100
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerFixed/chart.mmd
+  s_6a9cc2dd5772c5::t_523d258eef98b1 1-31
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerFixed/graph.dot
+  s_6a9cc2dd5772c5::t_484e23a7319171 1-85
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerFixed/report.md
+  s_6a9cc2dd5772c5::t_e7967ea9d78bcd 1-9
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerFixed/sany.out
+  s_6a9cc2dd5772c5::t_2a7034b2a8d315 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerFixed/verdict-1.out
+  s_6a9cc2dd5772c5::t_23541bd164540c 1-47
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerFixed/view.mjs
+  s_6a9cc2dd5772c5::t_eed34c7dcf806d 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/ChartRun.out
+  s_6a9cc2dd5772c5::t_941cf6e8e09fec 1-59
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/MediaPlayer.tla
+  s_6a9cc2dd5772c5::t_4f992652b0fe0a 1-103
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/MediaPlayerProps.cfg
+  s_6a9cc2dd5772c5::t_5ae74821f6d8f8 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/MediaPlayerProps.tla
+  s_6a9cc2dd5772c5::t_5546037cd9220c 1-6
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/chart.mmd
+  s_6a9cc2dd5772c5::t_6d21c17b197e24 1-42
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/graph.dot
+  s_6a9cc2dd5772c5::t_c50707d4376f86 1-93
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/report.md
+  s_6a9cc2dd5772c5::t_5c9365885a1b52 1-19
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/sany.out
+  s_6a9cc2dd5772c5::t_19a6baae0700fa 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/verdict-1.exit
+  s_6a9cc2dd5772c5::t_d983955adcd9ed 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/verdict-1.out
+  s_6a9cc2dd5772c5::t_5a0d27429b065a 1-61
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/verdict-2.out
+  s_6a9cc2dd5772c5::t_88eff30e0a7176 1-59
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/verdict-3.out
+  s_6a9cc2dd5772c5::t_7a141fe77a0d3c 1-61
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/verdict-4.exit
+  s_6a9cc2dd5772c5::t_b829cbc6a9f01f 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/verdict-4.out
+  s_6a9cc2dd5772c5::t_c03cc274e0142e 1-66
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/verdict-5.exit
+  s_6a9cc2dd5772c5::t_9f13821ba5e9cd 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/verdict-5.out
+  s_6a9cc2dd5772c5::t_a75c10963521b8 1-58
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/verdict-6.out
+  s_6a9cc2dd5772c5::t_8509eb6a0b6b64 1-49
+pstack/skills-zhCN/statechart/scripts/test/corpus/MediaPlayerProps/view.mjs
+  s_6a9cc2dd5772c5::t_3af360561bc7fa 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/PickWorker/ChartRun.out
+  s_6a9cc2dd5772c5::t_0a785baa346359 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/PickWorker/PickWorker.cfg
+  s_6a9cc2dd5772c5::t_e7179ea81f07d6 1-6
+pstack/skills-zhCN/statechart/scripts/test/corpus/PickWorker/PickWorker.tla
+  s_6a9cc2dd5772c5::t_cfa9a14fe5b6af 1-11
+pstack/skills-zhCN/statechart/scripts/test/corpus/PickWorker/chart.mmd
+  s_6a9cc2dd5772c5::t_6a73285703bd15 1-5
+pstack/skills-zhCN/statechart/scripts/test/corpus/PickWorker/graph.dot
+  s_6a9cc2dd5772c5::t_52f63843f98a97 1-11
+pstack/skills-zhCN/statechart/scripts/test/corpus/PickWorker/report.md
+  s_6a9cc2dd5772c5::t_e0a06c82e4d1e1 1-7
+pstack/skills-zhCN/statechart/scripts/test/corpus/PickWorker/sany.out
+  s_6a9cc2dd5772c5::t_a96c0736aed362 1-5
+pstack/skills-zhCN/statechart/scripts/test/corpus/PickWorker/verdict-1.out
+  s_6a9cc2dd5772c5::t_a73ce51a0bfc44 1-70
+pstack/skills-zhCN/statechart/scripts/test/corpus/Shadow/ChartRun.out
+  s_6a9cc2dd5772c5::t_a4701d57bfe39e 1-61
+pstack/skills-zhCN/statechart/scripts/test/corpus/Shadow/Shadow.cfg
+  s_6a9cc2dd5772c5::t_df596ca803f562 1-4
+pstack/skills-zhCN/statechart/scripts/test/corpus/Shadow/Shadow.tla
+  s_6a9cc2dd5772c5::t_e82d0f8abee508 1-11
+pstack/skills-zhCN/statechart/scripts/test/corpus/Shadow/ShadowLib.tla
+  s_6a9cc2dd5772c5::t_caf681befb8f64 1-6
+pstack/skills-zhCN/statechart/scripts/test/corpus/Shadow/ShadowSub.tla
+  s_6a9cc2dd5772c5::t_1c7c3841b67e76 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/Shadow/chart.mmd
+  s_6a9cc2dd5772c5::t_394d0a542fe916 1-9
+pstack/skills-zhCN/statechart/scripts/test/corpus/Shadow/graph.dot
+  s_6a9cc2dd5772c5::t_2119a6678707cd 1-16
+pstack/skills-zhCN/statechart/scripts/test/corpus/Shadow/report.md
+  s_6a9cc2dd5772c5::t_99341ef3c9f167 1-8
+pstack/skills-zhCN/statechart/scripts/test/corpus/Shadow/sany.out
+  s_6a9cc2dd5772c5::t_604e6880c9fb67 1-4
+pstack/skills-zhCN/statechart/scripts/test/corpus/Shadow/verdict-1.out
+  s_6a9cc2dd5772c5::t_07a851b82438c6 1-65
+pstack/skills-zhCN/statechart/scripts/test/corpus/SpacedNames/ChartRun.out
+  s_6a9cc2dd5772c5::t_5e5fe928495858 1-59
+pstack/skills-zhCN/statechart/scripts/test/corpus/SpacedNames/SpacedNames.cfg
+  s_6a9cc2dd5772c5::t_a11dc6ede23a81 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/SpacedNames/SpacedNames.tla
+  s_6a9cc2dd5772c5::t_78fb188dff1134 1-9
+pstack/skills-zhCN/statechart/scripts/test/corpus/SpacedNames/chart.mmd
+  s_6a9cc2dd5772c5::t_7844df7cb8386c 1-23
+pstack/skills-zhCN/statechart/scripts/test/corpus/SpacedNames/graph.dot
+  s_6a9cc2dd5772c5::t_d218abaa9dfbc1 1-17
+pstack/skills-zhCN/statechart/scripts/test/corpus/SpacedNames/report.md
+  s_6a9cc2dd5772c5::t_3991315a911d78 1-15
+pstack/skills-zhCN/statechart/scripts/test/corpus/SpacedNames/sany.out
+  s_6a9cc2dd5772c5::t_67e05f902ee85d 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/SpacedNames/verdict-1.exit
+  s_6a9cc2dd5772c5::t_969f48a86151ee 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/SpacedNames/verdict-1.out
+  s_6a9cc2dd5772c5::t_6a18217a9787c7 1-65
+pstack/skills-zhCN/statechart/scripts/test/corpus/SpacedNames/verdict-2.exit
+  s_6a9cc2dd5772c5::t_4e39ed54682378 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/SpacedNames/verdict-2.out
+  s_6a9cc2dd5772c5::t_d10151a362b294 1-75
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhase/ChartRun.out
+  s_6a9cc2dd5772c5::t_c9709addd1c38e 1-69
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhase/TwoPhase.cfg
+  s_6a9cc2dd5772c5::t_ea5548c1d8a936 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhase/TwoPhase.tla
+  s_6a9cc2dd5772c5::t_eff8ccb420ae6f 1-75
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhase/chart.mmd
+  s_6a9cc2dd5772c5::t_d46dce16ebffa1 1-60
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhase/graph.dot
+  s_6a9cc2dd5772c5::t_35547032e03d7c 1-297
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhase/report.md
+  s_6a9cc2dd5772c5::t_07acb8d96fb5a4 1-20
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhase/sany.out
+  s_6a9cc2dd5772c5::t_6a3f5f6436de43 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhase/verdict-1.exit
+  s_6a9cc2dd5772c5::t_7da8dfbaf1976a 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhase/verdict-1.out
+  s_6a9cc2dd5772c5::t_a8330b35076069 1-95
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhase/verdict-2.out
+  s_6a9cc2dd5772c5::t_b47828f31fc702 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhase/view.mjs
+  s_6a9cc2dd5772c5::t_e41e5ede336e9c 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhaseFixed/ChartRun.out
+  s_6a9cc2dd5772c5::t_68c1722a188316 1-57
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhaseFixed/TwoPhaseFixed.cfg
+  s_6a9cc2dd5772c5::t_e1f9a10ac1636a 1-3
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhaseFixed/TwoPhaseFixed.tla
+  s_6a9cc2dd5772c5::t_01b258fd49b350 1-75
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhaseFixed/chart.mmd
+  s_6a9cc2dd5772c5::t_6a016a5635c53f 1-37
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhaseFixed/graph.dot
+  s_6a9cc2dd5772c5::t_e81103bdca354f 1-223
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhaseFixed/report.md
+  s_6a9cc2dd5772c5::t_f7012c30e29434 1-11
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhaseFixed/sany.out
+  s_6a9cc2dd5772c5::t_a6fcd42fcd9190 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhaseFixed/verdict-1.out
+  s_6a9cc2dd5772c5::t_d7e19f98bf182f 1-47
+pstack/skills-zhCN/statechart/scripts/test/corpus/TwoPhaseFixed/view.mjs
+  s_6a9cc2dd5772c5::t_381b6b4c3f9efc 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/TypeGuard/ChartRun.exit
+  s_6a9cc2dd5772c5::t_f4b07da54ff112 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/TypeGuard/ChartRun.out
+  s_6a9cc2dd5772c5::t_5a32b983dc312f 1-75
+pstack/skills-zhCN/statechart/scripts/test/corpus/TypeGuard/TypeGuard.cfg
+  s_6a9cc2dd5772c5::t_c509f48200a689 1-5
+pstack/skills-zhCN/statechart/scripts/test/corpus/TypeGuard/TypeGuard.tla
+  s_6a9cc2dd5772c5::t_ecc02ce3e8986a 1-11
+pstack/skills-zhCN/statechart/scripts/test/corpus/TypeGuard/chart.mmd
+  s_6a9cc2dd5772c5::t_8ad5036243d892 1-18
+pstack/skills-zhCN/statechart/scripts/test/corpus/TypeGuard/graph.dot
+  s_6a9cc2dd5772c5::t_f341d2a0f1ba70 1-14
+pstack/skills-zhCN/statechart/scripts/test/corpus/TypeGuard/report.md
+  s_6a9cc2dd5772c5::t_9b4736c6445f53 1-29
+pstack/skills-zhCN/statechart/scripts/test/corpus/TypeGuard/sany.out
+  s_6a9cc2dd5772c5::t_32f5bef534ff17 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/TypeGuard/verdict-1.exit
+  s_6a9cc2dd5772c5::t_87014028c1a69d 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/TypeGuard/verdict-1.out
+  s_6a9cc2dd5772c5::t_9c48bf98a2b44f 1-64
+pstack/skills-zhCN/statechart/scripts/test/corpus/TypeGuard/verdict-2.exit
+  s_6a9cc2dd5772c5::t_4e0c55e9bded14 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/TypeGuard/verdict-2.out
+  s_6a9cc2dd5772c5::t_352efbee182610 1-75
+pstack/skills-zhCN/statechart/scripts/test/corpus/UserNoDeadlock/ChartRun.out
+  s_6a9cc2dd5772c5::t_cb9a06aaf9e1c3 1-58
+pstack/skills-zhCN/statechart/scripts/test/corpus/UserNoDeadlock/UserNoDeadlock.cfg
+  s_6a9cc2dd5772c5::t_a21d9244f51f20 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/UserNoDeadlock/UserNoDeadlock.tla
+  s_6a9cc2dd5772c5::t_629e7df858ce25 1-8
+pstack/skills-zhCN/statechart/scripts/test/corpus/UserNoDeadlock/chart.mmd
+  s_6a9cc2dd5772c5::t_a0de55233b5369 1-22
+pstack/skills-zhCN/statechart/scripts/test/corpus/UserNoDeadlock/graph.dot
+  s_6a9cc2dd5772c5::t_47bc1e9d145f67 1-16
+pstack/skills-zhCN/statechart/scripts/test/corpus/UserNoDeadlock/report.md
+  s_6a9cc2dd5772c5::t_a3c195b0ae44ac 1-15
+pstack/skills-zhCN/statechart/scripts/test/corpus/UserNoDeadlock/sany.out
+  s_6a9cc2dd5772c5::t_062dbd55d3f53e 1-2
+pstack/skills-zhCN/statechart/scripts/test/corpus/UserNoDeadlock/verdict-1.exit
+  s_6a9cc2dd5772c5::t_c95c06f8f6c12b 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/UserNoDeadlock/verdict-1.out
+  s_6a9cc2dd5772c5::t_6a91a5e424a1e0 1-56
+pstack/skills-zhCN/statechart/scripts/test/corpus/UserNoDeadlock/verdict-2.exit
+  s_6a9cc2dd5772c5::t_c1155c3732353e 1
+pstack/skills-zhCN/statechart/scripts/test/corpus/UserNoDeadlock/verdict-2.out
+  s_6a9cc2dd5772c5::t_8ae487c708794c 1-77
+pstack/skills-zhCN/statechart/scripts/test/differential.test.ts
+  s_6a9cc2dd5772c5::t_a774799b41a055 1-565
+pstack/skills-zhCN/statechart/scripts/test/drawn.ts
+  s_6a9cc2dd5772c5::t_27e82f32d1875b 1-20
+pstack/skills-zhCN/statechart/scripts/test/grid/Grid.cfg
+  s_6a9cc2dd5772c5::t_071e6628a8eada 1-2
+pstack/skills-zhCN/statechart/scripts/test/grid/Grid.tla
+  s_6a9cc2dd5772c5::t_c697fabf545a44 1-9
+pstack/skills-zhCN/statechart/scripts/test/grid/sany.out
+  s_6a9cc2dd5772c5::t_87e1ef9b0419c4 1-2
+pstack/skills-zhCN/statechart/scripts/test/java.ts
+  s_6a9cc2dd5772c5::t_a834d14af333ef 1-63
+pstack/skills-zhCN/statechart/scripts/test/labels.ts
+  s_6a9cc2dd5772c5::t_3dc6d0cc8b8206 1-648
+pstack/skills-zhCN/statechart/scripts/test/messages.test.ts
+  s_6a9cc2dd5772c5::t_909ee8a79b54fa 1-226
+pstack/skills-zhCN/statechart/scripts/test/pipeline.test.ts
+  s_6a9cc2dd5772c5::t_46b5baed541964 1-270
+pstack/skills-zhCN/statechart/scripts/test/plain-tlc.test.ts
+  s_6a9cc2dd5772c5::t_40eee291a17956 1-255
+pstack/skills-zhCN/statechart/scripts/test/render.test.ts
+  s_6a9cc2dd5772c5::t_dbadc6667627a4 1-145
+pstack/skills-zhCN/statechart/scripts/test/tlc-out.test.ts
+  s_6a9cc2dd5772c5::t_3cae6e7c875aff 1-90
+pstack/skills-zhCN/statechart/scripts/test/tlc.ts
+  s_6a9cc2dd5772c5::t_82eeadf6550eb2 1-158
+pstack/skills-zhCN/statechart/scripts/tsconfig.json
+  s_6a9cc2dd5772c5::t_2b5895b167cad7 1-11
+pstack/skills-zhCN/statechart/scripts/worker.ts
+  s_6a9cc2dd5772c5::t_820ed14d12376c 1-35
+pstack/skills-zhCN/swarm/SKILL.md
+  s_d5408722471ce3::t_8118fc73758891 1-41
+pstack/skills-zhCN/tdd/SKILL.md
+  s_6a9cc2dd5772c5::t_fbd0622aae5666 1-42
+pstack/skills-zhCN/teach/SKILL.md
+  s_d5408722471ce3::t_a170e5b21d7424 1-22
+pstack/skills-zhCN/technical-writing/SKILL.md
+  s_6a9cc2dd5772c5::t_095a1939db1a09 1-70
+pstack/skills-zhCN/typescript-best-practices/SKILL.md
+  s_d5408722471ce3::t_6c46e7777aafd0 1-32
+pstack/skills-zhCN/typescript-best-practices/references/patterns.md
+  s_c97446b7684bad::t_a5cc100b7e0dc7 1-329
+pstack/skills-zhCN/unslop/SKILL.md
+  s_6a9cc2dd5772c5::t_1289023ccc9a65 1-40
+pstack/skills-zhCN/why/SKILL.md
+  s_6a9cc2dd5772c5::t_e873b1f90df6c4 1-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "2fa4372b84816be65a6aa411a013084d842c737e",
+  "prompts": {},
+  "sessions": {
+    "s_6a9cc2dd5772c5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a20687-9b73-7a71-9afe-cbf8ebd1ecd8",
+        "model": "unknown"
+      },
+      "human_author": "xuwentao.59 <xuwentao.59@jd.com>"
+    },
+    "s_c97446b7684bad": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a2068e-26c2-7363-8853-e1df1266f9cb",
+        "model": "unknown"
+      },
+      "human_author": "xuwentao.59 <xuwentao.59@jd.com>"
+    },
+    "s_d5408722471ce3": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a2068d-fe3f-7773-88d4-076fbbff2783",
+        "model": "unknown"
+      },
+      "human_author": "xuwentao.59 <xuwentao.59@jd.com>"
+    },
+    "s_e73e10364f1661": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a2068e-5311-74c0-bf5f-0c7baf6f8da6",
+        "model": "unknown"
+      },
+      "human_author": "xuwentao.59 <xuwentao.59@jd.com>"
+    }
+  }
+}
