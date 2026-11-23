@@ -1,0 +1,39 @@
+pstack/docs/guide-zhCN/01-setup.md
+  s_6a9cc2dd5772c5::t_2978a43dce2ae3 25,35,41
+pstack/docs/guide-zhCN/02-poteto-mode.md
+  s_6a9cc2dd5772c5::t_31225920fc6903 28,67,69,115,123,133,137
+pstack/docs/guide-zhCN/03-understand.md
+  s_6a9cc2dd5772c5::t_63da03ca920c49 17,25,33,43,59,75
+pstack/docs/guide-zhCN/04-design.md
+  s_6a9cc2dd5772c5::t_1a5582452e1b84 15,25,41,53,63,75,93,103
+pstack/docs/guide-zhCN/05-build-and-clean.md
+  s_6a9cc2dd5772c5::t_d21ef6cd7611c2 31,33,35,37,51,55,59,77
+pstack/docs/guide-zhCN/06-verify-and-ship.md
+  s_6a9cc2dd5772c5::t_a0bbcb289ee7a8 3,22,29,39,49,59,61,73,75,94,104,116,126,134,138,160
+pstack/docs/guide-zhCN/07-overnight.md
+  s_6a9cc2dd5772c5::t_e429cde42cf4b2 35,38,40,60,70,76,82,88,96
+pstack/docs/guide-zhCN/08-principles.md
+  s_6a9cc2dd5772c5::t_0fdbb29aacd634 33-42,46-51,55-59,63-64,68
+pstack/docs/guide-zhCN/09-make-it-yours.md
+  s_6a9cc2dd5772c5::t_a1f3c2e343f281 13,31,42,60,62,72,90,96
+pstack/docs/guide-zhCN/10-recipes-and-pitfalls.md
+  s_6a9cc2dd5772c5::t_992a7c49417432 151,159,161,178
+pstack/docs/guide-zhCN/README.md
+  s_6a9cc2dd5772c5::t_dc99f341f9f0ab 20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "5a1c389cc9274f0dacdea1eaf4e165e139afd10d",
+  "prompts": {},
+  "sessions": {
+    "s_6a9cc2dd5772c5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a20687-9b73-7a71-9afe-cbf8ebd1ecd8",
+        "model": "unknown"
+      },
+      "human_author": "xuwentao.59 <xuwentao.59@jd.com>"
+    }
+  }
+}
