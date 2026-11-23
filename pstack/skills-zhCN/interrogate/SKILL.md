@@ -14,7 +14,7 @@ disable-model-invocation: true
 
 ## 并行分发
 
-运行 **arena** 技能的 Phase A 第 3、4 步和 Phase B，做四处替换。读 `interrogate reviewers` 行，替代 `arena runners`。把范围内的未提交改动复制进每个 worktree。每个对抗者以 `generalPurpose` 派生。用范围、意图和下面这份任务简报，替代 arena 的任务和缘由：
+运行 **arena** 技能的阶段 A 第 3、4 步和阶段 B，做四处替换。读 `interrogate reviewers` 行，替代 `arena runners`。把范围内的未提交改动复制进每个 worktree。每个对抗者以 `generalPurpose` 派生。用范围、意图和下面这份任务简报，替代 arena 的任务和缘由：
 
 > Break this change. Prove each finding with a run against the real code, such as a failing test, a repro script, or command output that shows the wrong behavior. For a design or plan, run a prototype or probe the current tree. Keep repros in your own worktree. Report each finding with a title, the exact command, the output it printed, and the output the intent requires. Leave out anything you did not run. That covers style, naming, structure, and risks that need a future change to matter. No findings is a valid result.
 
@@ -22,9 +22,9 @@ disable-model-invocation: true
 
 ## 验证
 
-按 arena Phase F 重跑每条发现的命令来验证。输出展示了失败、且失败破坏意图时才保留。其余丢弃。共享根因的发现合并。
+按 arena 阶段 F 重跑每条发现的命令来验证。输出展示了失败、且失败破坏意图时才保留。其余丢弃。共享根因的发现合并。
 
-跳过 arena 的 Phase C、D、E。对抗者找的是不同的失败，所以结论保留每一条验证过的发现，而不是某一个对抗者的清单。
+跳过 arena 的阶段 C、D、E。对抗者找的是不同的失败，所以结论保留每一条验证过的发现，而不是某一个对抗者的清单。
 
 ## 输出
 
