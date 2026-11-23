@@ -21,7 +21,7 @@ disable-model-invocation: true
 - **evidence。** 能证明它的链接或路径：提交 SHA、PR 编号、`file:line`，或产物、trace、截图的路径。绝不写一段话。
 - **result。** 结果或判据状态：`tests green`、`reverted`、`pixel-diff 0`、`INCONCLUSIVE`、`open`。
 
-一个示例，用平实的话写，让审阅者一眼读懂。
+示例用平实的话写，让审阅者一眼读懂。
 
 ```
 ts	phase	decision	why	evidence	result

@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Automate me（自动化沉淀我的风格）
 
-一个引导式流程，把用户的工作惯例变成智能体会遵循的技能。产出是为其量身定制的一个 `-mode` 技能（如 `jay-mode`、`priya-mode`）。
+引导式流程，把用户的工作惯例变成智能体会遵循的技能。产出是为其量身定制的一个 `-mode` 技能（如 `jay-mode`、`priya-mode`）。
 
 本技能编排另外三个：内联的挖掘环节（见第 1 步）、Cursor 内置的 `create-skill`（编写）、**unslop** 技能（文字纪律）。它编排顺序，不替代它们。
 
@@ -68,7 +68,7 @@ disable-model-invocation: true
 
 - 路径：保留已有 mode 技能的分类。新 mode 时，若仓库已为该 handle 建有个人分类，用 `.cursor/skills/<handle>/<handle>-mode/SKILL.md`。否则默认放项目里的 `.cursor/skills/<handle>-mode/SKILL.md`（用户偏好个人技能时放 `~/.cursor/skills/<handle>-mode/`）。
 - Handle：用户的名或选定的标识。
-- frontmatter `description`：按用户的名字＋`/<handle>-mode`＋「按 TA 的风格工作」触发，不用「write code」「review PR」这类泛化关键词。
+- frontmatter `description`：按用户的名字＋`/<handle>-mode`＋「按用户的风格工作」触发，不用「write code」「review PR」这类泛化关键词。
 - frontmatter 格式：遵循 `create-skill` 的 YAML 规则。`description` 保持单个 YAML 标量。标点或换行需要时加引号，或用 `description: >-` 加缩进续行。
 - frontmatter 默认 `disable-model-invocation: true`。只有用户明确希望其 mode 每一轮都生效时才关掉。
 
@@ -86,14 +86,14 @@ disable-model-invocation: true
 
 - **不要过拟合单次对话。** 说过一次、另一次又被推翻的偏好是噪声。写成规则前要求多个实例。
 - **不要耍聪明。** 复述其他技能的内容、发明比喻、给智能体读者写「诗意」文字，都是只有成本没有收益。保持可操作。
-- **引用，不内联。** 用户依赖的其他技能以路径引用出现，不贴摘录。TA 在别处维护的原则文档同理。
+- **引用，不内联。** 用户依赖的其他技能以路径引用出现，不贴摘录。用户在别处维护的原则文档同理。
 - **章节保持最少。** 只有用户在某处有具体的、非默认的规则才加章节。「沟通清晰」不是一个章节。「短段落。比较选项用表格。条目真正并列时才用列表。」才是。
 - **称呼用泛称。** 祈使句里用「用户」或「人类」，不用作者的名字。
 - **不强行对称。** 用户没有值得写下的流程规则时，整个流程章节跳过。
 
 ## 评估
 
-`-mode` 技能是主观产物。`create-skill` 式的测试/迭代基准循环在这里没用。和用户做感觉核对：读起来像 TA 吗？漏了什么吗？然后交付。
+`-mode` 技能是主观产物。`create-skill` 式的测试/迭代基准循环在这里没用。和用户做感觉核对：读起来像用户本人吗？漏了什么吗？然后交付。
 
 只有技能的触发准确率在实践中真成了问题，才跑 description 优化循环。
 

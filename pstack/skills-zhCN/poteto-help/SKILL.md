@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Poteto help（pstack 帮助）
 
-回答用户关于 pstack 的问题，递给 TA 一条可直接发送的提示词，并链接答案来源文件。帮助类问题不要开工。用户问的是怎么做，而一次 pstack 运行花的是真金白银的 token，让用户自己发提示词。
+回答用户关于 pstack 的问题，递给用户一条可直接发送的提示词，并链接答案来源文件。帮助类问题不要开工。用户问的是怎么做，而一次 pstack 运行花的是真金白银的 token，让用户自己发提示词。
 
 要求干活的消息，如「use pstack to fix this bug」（用 pstack 修这个 bug），不是帮助类问题。读 [`poteto-mode`](../poteto-mode/SKILL.md)，按它干活，并提一句 Custom Mode 能让它持续生效。
 
@@ -30,8 +30,8 @@ disable-model-invocation: true
 
 模型规则缺失且确有影响的，问用户要不要现在就为每个角色选模型和推理预算。有影响的场景：用户是新手、问题关于安装或成本、答案取决于跑哪些模型。每个会话至多问一次。需求也不明时，两个问题一起问。给两个选项：
 
-- 现在：给 TA `/setup-pstack` 去输入，同时回答 TA 的问题。
-- 稍后：回答 TA 的问题，加一行说明在跑 `/setup-pstack` 之前每个角色都保持默认模型。
+- 现在：给用户 `/setup-pstack` 去输入，同时回答用户的问题。
+- 稍后：回答用户的问题，加一行说明在跑 `/setup-pstack` 之前每个角色都保持默认模型。
 
 ## 完成安装
 
@@ -72,7 +72,7 @@ pstack 为 Cursor 而建，也能装进 Claude Code：先 `/plugin marketplace a
 | 了解代码为何长这样，或某个数字从哪来 | [`/why`](../why/SKILL.md) |
 | 用平实讲解理解一个改动或子系统 | [`/teach`](../teach/SKILL.md) |
 | 补上自己近期在某主题上的工作进展 | [`/recall`](../recall/SKILL.md) |
-| 用平实的话和小图同步本会话自上一条消息以来的变化，逐项列出等 TA 拍板的事项，只凭回复即可拍板 | [`/ketchup`](../ketchup/SKILL.md) |
+| 用平实的话和小图同步本会话自上一条消息以来的变化，逐项列出等用户拍板的事项，只凭回复即可拍板 | [`/ketchup`](../ketchup/SKILL.md) |
 | 像 `/ketchup` 一样同步，用带字幕的幻灯片短视频，等拍板的决策以文字放在视频下 | [`/ketchup-video`](../ketchup-video/SKILL.md) |
 | 知道一个小 diff 可能弄坏自身之外的什么 | [`/blast-radius`](../blast-radius/SKILL.md) |
 | 写跨函数边界的代码前定下类型和模块形态 | [`/architect`](../architect/SKILL.md) |
