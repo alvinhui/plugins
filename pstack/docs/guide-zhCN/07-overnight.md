@@ -32,12 +32,12 @@
 - "完成的标准是……"把目标变成每轮迭代都能运行的检查。
 - "基于 `<base>` 新建 worktree"让这轮运行不与你正在进行的任何其他工作冲突。
 - "提交前不用问我"预先批准了那个原本会让智能体阻塞的权限。
-- `/loop` 是 Cursor 内置的唤醒机制，不是 pstack 技能。[Autonomous run playbook](../../skills/poteto-mode/playbooks/autonomous-run.md) 靠它在事件或心跳到来时重新检查完成判据。
+- `/loop` 是 Cursor 内置的唤醒机制，不是 pstack 技能。[Autonomous run playbook](../../skills-zhCN/poteto-mode/playbooks/autonomous-run.md) 靠它在事件或心跳到来时重新检查完成判据。
 - 退出机制让它能在真正陷入僵局时停下、写清原因，好过花八个小时反复重新解读目标。
 
-因为这些工作要等你离开之后再审阅，`/poteto-mode` 会把它交给 [`/figure-it-out`](../../skills/figure-it-out/SKILL.md)：编写任何代码之前先设计好整轮运行的阶段，并接入决策日志。
+因为这些工作要等你离开之后再审阅，`/poteto-mode` 会把它交给 [`/figure-it-out`](../../skills-zhCN/figure-it-out/SKILL.md)：编写任何代码之前先设计好整轮运行的阶段，并接入决策日志。
 
-想主动停止一轮运行，就告诉智能体暂停，或说明你即将下线、要重启 Cursor。[Pause safely playbook](../../skills/poteto-mode/playbooks/pause-safely.md) 会完成或回退当前步骤，提交一个进行中的检查点，写一份续接笔记。新开的聊天通过 Session pickup playbook 从这份笔记接手。说"继续"绝不会触发暂停。
+想主动停止一轮运行，就告诉智能体暂停，或说明你即将下线、要重启 Cursor。[Pause safely playbook](../../skills-zhCN/poteto-mode/playbooks/pause-safely.md) 会完成或回退当前步骤，提交一个进行中的检查点，写一份续接笔记。新开的聊天通过 Session pickup playbook 从这份笔记接手。说"继续"绝不会触发暂停。
 
 ## 循环整晚在做什么
 
@@ -57,7 +57,7 @@ flowchart TD
 
 ## 早上做审计
 
-[`/show-me-your-work`](../../skills/show-me-your-work/SKILL.md) 让整轮运行变得可审阅。每行记录时间、阶段、决策、理由、证据指针和结果，存成 `decisions.tsv` 这份 TSV（几轮运行共用一个目录时，存到 `.audit/<task-slug>.tsv`）。默认只留在本地。工作规模足够大、评审者需要这条轨迹才能信任结果时，再把它提交进仓库。
+[`/show-me-your-work`](../../skills-zhCN/show-me-your-work/SKILL.md) 让整轮运行变得可审阅。每行记录时间、阶段、决策、理由、证据指针和结果，存成 `decisions.tsv` 这份 TSV（几轮运行共用一个目录时，存到 `.audit/<task-slug>.tsv`）。默认只留在本地。工作规模足够大、评审者需要这条轨迹才能信任结果时，再把它提交进仓库。
 
 回来之后，索取一份可审阅的运行汇报：
 
@@ -67,25 +67,25 @@ flowchart TD
 
 技能交回摘要之前，会先派一个不同模型家族的评审智能体，通读决策轨迹和会话记录；回复以 Attention 小节收尾，列出值得你重点审视的内容。先读这一节，再读它指向的日志行。你审计的是决策，不是把一整晚重读一遍。
 
-只想快速了解状态、不做审计，就在执行这项工作的那个聊天里运行 [`/ketchup`](../../skills/ketchup/SKILL.md)。它只读不写，用平实的语言说明你上一条消息之后有什么变化，附上工作产出的截图和小图。然后逐条列出等你决定的事项——合并、批准、或在几个选项里选择——每条都附它的建议、证据和风险，仅凭回复就能做决定。
+只想快速了解状态、不做审计，就在执行这项工作的那个聊天里运行 [`/ketchup`](../../skills-zhCN/ketchup/SKILL.md)。它只读不写，用平实的语言说明你上一条消息之后有什么变化，附上工作产出的截图和小图。然后逐条列出等你决定的事项——合并、批准、或在几个选项里选择——每条都附它的建议、证据和风险，仅凭回复就能做决定。
 
 ## 一整晚要跑的是一个队列，而不是一个任务
 
 上面这份约定针对的是一个任务、一个完成判据。有些晚上要完成的更多：一批相互独立的改动排成的队列，甚至一整个大项目。两个 playbook 加一个技能，把同样的信任放大到这个规模。
 
-[Autopilot-full](../../skills/poteto-mode/playbooks/autopilot-full.md) 把一个相互独立的 PR 队列推进到全部合并。每个 PR 有一个负责智能体，从构建一路负责到合并，但任何负责智能体都不能凭自己的结论合并。一批全新的验证 worker 检查负责智能体交出的、已达代码就绪状态的 head。之后的变基或小修只派一个全新的验证 worker；只有出现新行为或很大的新 diff，才再次动用整批 swarm。只有对最终要合并的那份补丁给出干净结论，才授权合并：
+[Autopilot-full](../../skills-zhCN/poteto-mode/playbooks/autopilot-full.md) 把一个相互独立的 PR 队列推进到全部合并。每个 PR 有一个负责智能体，从构建一路负责到合并，但任何负责智能体都不能凭自己的结论合并。一批全新的验证 worker 检查负责智能体交出的、已达代码就绪状态的 head。之后的变基或小修只派一个全新的验证 worker；只有出现新行为或很大的新 diff，才再次动用整批 swarm。只有对最终要合并的那份补丁给出干净结论，才授权合并：
 
 ```text
 /poteto-mode 对这个队列启用 full autopilot。每一项都相互独立。我要在早上看到它们全部合并。
 ```
 
-[Autopilot-stack](../../skills/poteto-mode/playbooks/autopilot-stack.md) 就是去掉合并的 Autopilot-full。醒来看到的是一批已验证的 PR，各带结论，由你自己审阅、自行落地。PR 只堆叠在它真正依赖的 PR 上。想在任何合并发生之前亲自审阅一遍工作，就选它，而不是 Autopilot-full：
+[Autopilot-stack](../../skills-zhCN/poteto-mode/playbooks/autopilot-stack.md) 就是去掉合并的 Autopilot-full。醒来看到的是一批已验证的 PR，各带结论，由你自己审阅、自行落地。PR 只堆叠在它真正依赖的 PR 上。想在任何合并发生之前亲自审阅一遍工作，就选它，而不是 Autopilot-full：
 
 ```text
 /poteto-mode 用 autopilot 跑这五个改动，但不要合并。我早上自己落地。
 ```
 
-一整个项目计划，比如横跨许多包的迁移，没有专属 playbook。`/poteto-mode` 会把大型或横切多处的工作交给 [`/figure-it-out`](../../skills/figure-it-out/SKILL.md)，由它设计一轮严谨的运行：
+一整个项目计划，比如横跨许多包的迁移，没有专属 playbook。`/poteto-mode` 会把大型或横切多处的工作交给 [`/figure-it-out`](../../skills-zhCN/figure-it-out/SKILL.md)，由它设计一轮严谨的运行：
 
 ```text
 /poteto-mode 把每个包都迁移到新的 store。全程负责，直到每个包都完成转换并合并。我每天查看两次进度。
@@ -93,7 +93,7 @@ flowchart TD
 
 ## 多个项目并行跑
 
-一个 [Cursor Project](https://cursor.com/blog/projects) 给一个协调者智能体一条持久的会话线程。协调者不写代码，只指挥子智能体；子智能体默认在云端运行，合上笔记本工作也不中断。发给协调者的提示词以 `/poteto-mode` 开头，它派出的子智能体就会遵循 playbook。它启动的每个智能体都先读 [`worker.md`](../../skills/poteto-mode/worker.md)，于是 worker 会坚持任务启动时定下的标准、可逆的决定自行做出而不询问你，提出的 PR 可直接评审。
+一个 [Cursor Project](https://cursor.com/blog/projects) 给一个协调者智能体一条持久的会话线程。协调者不写代码，只指挥子智能体；子智能体默认在云端运行，合上笔记本工作也不中断。发给协调者的提示词以 `/poteto-mode` 开头，它派出的子智能体就会遵循 playbook。它启动的每个智能体都先读 [`worker.md`](../../skills-zhCN/poteto-mode/worker.md)，于是 worker 会坚持任务启动时定下的标准、可逆的决定自行做出而不询问你，提出的 PR 可直接评审。
 
 几个习惯很有用：
 

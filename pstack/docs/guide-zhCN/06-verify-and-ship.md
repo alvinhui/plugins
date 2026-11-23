@@ -1,6 +1,6 @@
 # 验证结果，提 PR
 
-"能编译"不算证据。[证明它真的能跑（Prove It Works）原则](../../skills/principle-prove-it-works/SKILL.md)要求智能体在汇报成功之前先检查真实产物，而你要做的，是让"真实产物"可检查。这一页介绍：说清完成判据、审查测量得到的数字、为你的应用生成验证技能、用形式化方法验证一条测试很少覆盖的性质、提 PR，再推进到合并。
+"能编译"不算证据。[证明它真的能跑（Prove It Works）原则](../../skills-zhCN/principle-prove-it-works/SKILL.md)要求智能体在汇报成功之前先检查真实产物，而你要做的，是让"真实产物"可检查。这一页介绍：说清完成判据、审查测量得到的数字、为你的应用生成验证技能、用形式化方法验证一条测试很少覆盖的性质、提 PR，再推进到合并。
 
 验证是多数智能体工作中最慢的一环，因为这一环通常需要等人。让智能体自己能完成验证，你就不再是瓶颈。跳过验证，运行再多智能体也只是积累更多未经检查的工作等你审阅。
 
@@ -19,14 +19,14 @@
 检查要与改动对应：
 
 - CLI 改动就运行真实命令。
-- UI 改动就在运行中的应用里走一遍改动后的流程。如果要求与参考图逐像素一致，[Visual parity playbook](../../skills/poteto-mode/playbooks/visual-parity.md) 会将截图与冻结基线做 diff，而不是靠肉眼判断。
+- UI 改动就在运行中的应用里走一遍改动后的流程。如果要求与参考图逐像素一致，[Visual parity playbook](../../skills-zhCN/poteto-mode/playbooks/visual-parity.md) 会将截图与冻结基线做 diff，而不是靠肉眼判断。
 - 解析器或迁移就重放一份保存的输入。
 - 性能改动就对比前后的性能剖析结果。
 - 存储改动就把写入的值读取回来。
 
 索要证据时，要求提供你能亲自检查的产物：先失败后通过的测试、前后对比视频、trace、截图。如果修复已经合并，就在 main 上把同样的检查再执行一遍。产物胜过听起来合理的解释：你不必把整轮运行重放一遍，就能对它提出质疑。
 
-对不完全放心的小 diff，用 [`/blast-radius`](../../skills/blast-radius/SKILL.md) 找出它可能波及的其他位置。它会找到让这次改动安全的那个关键事实，并通过运行代码来证明，而不是仅凭论证。
+对不完全放心的小 diff，用 [`/blast-radius`](../../skills-zhCN/blast-radius/SKILL.md) 找出它可能波及的其他位置。它会找到让这次改动安全的那个关键事实，并通过运行代码来证明，而不是仅凭论证。
 
 ## 用 /benchmark-checklist 审查性能数字
 
@@ -36,7 +36,7 @@
 /benchmark-checklist 在导出加速的数字写进 pr 之前先审查一遍
 ```
 
-[`/benchmark-checklist`](../../skills/benchmark-checklist/SKILL.md) 会问七个问题，每个问题都要有真实运行给出的证据：
+[`/benchmark-checklist`](../../skills-zhCN/benchmark-checklist/SKILL.md) 会问七个问题，每个问题都要有真实运行给出的证据：
 
 1. 这个数字受什么限制？为什么不是两倍？
 2. 每一侧是否都按生产环境的方式调优后运行？
@@ -46,7 +46,7 @@
 6. 在用户真正等待的那条路径上，端到端是否有影响？
 7. 要测的工作是否确实发生在计时区间内？
 
-结论只会是 faster、slower、no measurable difference 或 inconclusive 之一，并附上运行次数、波动范围和限制因素。说不出限制因素，或某一侧未经调优就运行，结论就是 inconclusive。`/poteto-mode` 在 Perf issue 和 Hillclimb playbook 里已经内置这份清单；你在这些 playbook 之外测了数字，或者别人的数字好得可疑时，再自己输入它。这是[解释这个数字（Explain the Number）原则](../../skills/principle-explain-the-number/SKILL.md)的落地形式。
+结论只会是 faster、slower、no measurable difference 或 inconclusive 之一，并附上运行次数、波动范围和限制因素。说不出限制因素，或某一侧未经调优就运行，结论就是 inconclusive。`/poteto-mode` 在 Perf issue 和 Hillclimb playbook 里已经内置这份清单；你在这些 playbook 之外测了数字，或者别人的数字好得可疑时，再自己输入它。这是[解释这个数字（Explain the Number）原则](../../skills-zhCN/principle-explain-the-number/SKILL.md)的落地形式。
 
 ## 给项目生成验证技能
 
@@ -56,9 +56,9 @@
 /create-verification-skill
 ```
 
-[`/create-verification-skill`](../../skills/create-verification-skill/SKILL.md) 审查的对象是仓库，不是你。它会弄清用户会操作什么、应用如何在本地启动、用什么驱动（优先用现成的测试装置，否则用浏览器加 CDP、PTY 或纯 HTTP）、什么证据能证明行为，以及两个实例能否同时运行。只有代码无法回答的问题才会问你。
+[`/create-verification-skill`](../../skills-zhCN/create-verification-skill/SKILL.md) 审查的对象是仓库，不是你。它会弄清用户会操作什么、应用如何在本地启动、用什么驱动（优先用现成的测试装置，否则用浏览器加 CDP、PTY 或纯 HTTP）、什么证据能证明行为，以及两个实例能否同时运行。只有代码无法回答的问题才会问你。
 
-它生成 `.cursor/skills/verify-<app>/`：一份面向智能体的说明，包含明确的 Launch、Doctor、Drive、Evidence、Cleanup 小节，随附脚本都写进 Helpers 小节；外加 `features/` 下的功能地图，索引应用有哪些功能、每个功能用什么结果证明有效。技能自带一份[完整的功能地图示例](../../skills/create-verification-skill/references/feature-map-example/)，有 README 索引，每个功能一个文件，都用四个必需的 H2。交付之前，生成器会把技能端到端完整运行一次：启动、doctor 检查、驱动一个功能、采集证据、清理，再确认证据在清理后仍然完好。这次验证失败，就不要使用生成的结果。
+它生成 `.cursor/skills/verify-<app>/`：一份面向智能体的说明，包含明确的 Launch、Doctor、Drive、Evidence、Cleanup 小节，随附脚本都写进 Helpers 小节；外加 `features/` 下的功能地图，索引应用有哪些功能、每个功能用什么结果证明有效。技能自带一份[完整的功能地图示例](../../skills-zhCN/create-verification-skill/references/feature-map-example/)，有 README 索引，每个功能一个文件，都用四个必需的 H2。交付之前，生成器会把技能端到端完整运行一次：启动、doctor 检查、驱动一个功能、采集证据、清理，再确认证据在清理后仍然完好。这次验证失败，就不要使用生成的结果。
 
 从此，"在应用里验证"就是这个仓库里任何智能体都能直接执行的一步，无需再沟通一轮环境配置。想要特定形式的证据，就在提示词里点名这个技能：
 
@@ -70,9 +70,9 @@
 /poteto-mode 用 /verify-<app> 复现这个问题。如果在 main 上能复现，就修复它，并给我一段视频作为证据。
 ```
 
-验证技能可用之后，[`/swarm`](../../skills/swarm/SKILL.md) 就能按功能地图的条目拆分一整轮验证，再汇总结果。一批验证 worker 还能在足够大的样本上确认性能提升，或在 PR 交付前对应用做模糊测试、排查回归。
+验证技能可用之后，[`/swarm`](../../skills-zhCN/swarm/SKILL.md) 就能按功能地图的条目拆分一整轮验证，再汇总结果。一批验证 worker 还能在足够大的样本上确认性能提升，或在 PR 交付前对应用做模糊测试、排查回归。
 
-把验证技能当作基础设施，而不是一次性用品。把它提交进仓库，团队里每个人、每个智能体就都以同一套方式驱动应用。然后[造杠杆（Build the Lever）](../../skills/principle-build-the-lever/SKILL.md)：智能体反复编写一次性脚本来操作应用时，就要求一个小型控制 CLI，让技能改为调用它。智能体节省 token，每次运行也都可复现。便于智能体使用的 CLI 有这些特点：
+把验证技能当作基础设施，而不是一次性用品。把它提交进仓库，团队里每个人、每个智能体就都以同一套方式驱动应用。然后[造杠杆（Build the Lever）](../../skills-zhCN/principle-build-the-lever/SKILL.md)：智能体反复编写一次性脚本来操作应用时，就要求一个小型控制 CLI，让技能改为调用它。智能体节省 token，每次运行也都可复现。便于智能体使用的 CLI 有这些特点：
 
 - 少量可组合的命令，每条都执行实际工作，而不是大量单薄的命令。
 - 有破坏性的操作都带 `--dry-run` 选项。
@@ -91,7 +91,7 @@
 /maintain-verification-skill
 ```
 
-[`/maintain-verification-skill`](../../skills/maintain-verification-skill/SKILL.md) 审计生成的技能：先给每个功能并行派一个只读的源码阅读者，再实际运行一轮，把地图上每个功能都驱动一遍。结果只有三种。`clean`：覆盖完整，没有需要提交的内容。`changed`：一个 PR，包含验证过的修正，只修改验证技能自己的目录。`blocked`：写明阻塞项。它从不修改产品代码。实测中发现产品回归，就如实上报，不会通过修改文档掩盖问题。
+[`/maintain-verification-skill`](../../skills-zhCN/maintain-verification-skill/SKILL.md) 审计生成的技能：先给每个功能并行派一个只读的源码阅读者，再实际运行一轮，把地图上每个功能都驱动一遍。结果只有三种。`clean`：覆盖完整，没有需要提交的内容。`changed`：一个 PR，包含验证过的修正，只修改验证技能自己的目录。`blocked`：写明阻塞项。它从不修改产品代码。实测中发现产品回归，就如实上报，不会通过修改文档掩盖问题。
 
 ## 用形式化验证技能证明一条性质
 
@@ -101,7 +101,7 @@
 /create-formal-verification-skill
 ```
 
-[`/create-formal-verification-skill`](../../skills/create-formal-verification-skill/SKILL.md) 从代码中选择目标：代码许下的某个承诺，破坏它会损害用户，而测试又很少覆盖到会破坏它的情形。它选择最关键的目标，而不是最容易验证的。也可以点名一个模块或一个 bug，让它从那里入手：
+[`/create-formal-verification-skill`](../../skills-zhCN/create-formal-verification-skill/SKILL.md) 从代码中选择目标：代码许下的某个承诺，破坏它会损害用户，而测试又很少覆盖到会破坏它的情形。它选择最关键的目标，而不是最容易验证的。也可以点名一个模块或一个 bug，让它从那里入手：
 
 ```text
 /create-formal-verification-skill 任务租约和重试逻辑。同一个任务绝不能同时运行两次。
@@ -113,7 +113,7 @@
 
 它生成一个项目内的技能，告诉下一个智能体：改动是否涉及已验证的代码、如何用一条命令运行检查、如何区分真 bug 和建模错误。交付之前，生成器会先做一个破坏该性质的临时改动，按技能完整执行一遍，检查必须能发现它。交付说明写清楚：验证了什么、用的什么工具和验证边界、检查发现了什么、没覆盖什么。一次通过覆盖的是模型或验证边界之内，不是整个系统。
 
-技能还会记录每项检查覆盖哪些代码，以及检查最后一次与之匹配时的 commit。绕过这个技能的合并和重构，可能让检查对着一段早已不存在的代码描述继续通过。这类改动之后，运行 [`/maintain-formal-verification-skill`](../../skills/maintain-formal-verification-skill/SKILL.md)。它按代码更新验证、重新运行、演示每个更新后的检查仍然能失败，并告诉你每次失败是验证过时，还是代码里有 bug。
+技能还会记录每项检查覆盖哪些代码，以及检查最后一次与之匹配时的 commit。绕过这个技能的合并和重构，可能让检查对着一段早已不存在的代码描述继续通过。这类改动之后，运行 [`/maintain-formal-verification-skill`](../../skills-zhCN/maintain-formal-verification-skill/SKILL.md)。它按代码更新验证、重新运行、演示每个更新后的检查仍然能失败，并告诉你每次失败是验证过时，还是代码里有 bug。
 
 ## 用状态图讲清行为
 
@@ -123,7 +123,7 @@
 /statechart 用户离线编辑笔记时会看到什么
 ```
 
-[`/statechart`](../../skills/statechart/SKILL.md) 从 TLA+ 模型生成一张 Mermaid 状态图，呈现的是用户视角的行为，图和被检查的模型因此不会脱节。读者定下的规则（"离线时绝不该看到 Synced"）变成不变式。图会标出每个违反规则的状态，报告用读者的语言给出到达该状态的最短路径。交付之前，智能体会在真实代码里复现每条 bug 路径，建模错误就不会被当成 bug 呈交给读者。
+[`/statechart`](../../skills-zhCN/statechart/SKILL.md) 从 TLA+ 模型生成一张 Mermaid 状态图，呈现的是用户视角的行为，图和被检查的模型因此不会脱节。读者定下的规则（"离线时绝不该看到 Synced"）变成不变式。图会标出每个违反规则的状态，报告用读者的语言给出到达该状态的最短路径。交付之前，智能体会在真实代码里复现每条 bug 路径，建模错误就不会被当成 bug 呈交给读者。
 
 ## 提 PR
 
@@ -131,11 +131,11 @@
 /poteto-mode 提 pr。提交要小且有序，描述里附上证据。
 ```
 
-[Opening a PR playbook](../../skills/poteto-mode/playbooks/opening-a-pr.md) 在 worktree 里工作：把工作变基成小而可落地的提交、清理 diff、写一份一分钟能读完的简报作为正文，然后提出一个可直接评审的 PR。后续改动堆叠成新 PR，优于让一条分支不断增长。
+[Opening a PR playbook](../../skills-zhCN/poteto-mode/playbooks/opening-a-pr.md) 在 worktree 里工作：把工作变基成小而可落地的提交、清理 diff、写一份一分钟能读完的简报作为正文，然后提出一个可直接评审的 PR。后续改动堆叠成新 PR，优于让一条分支不断增长。
 
 ## 用 Babysit 跟进 PR 直到可合并
 
-PR 一经提出就开始积累阻塞项：检查失败、评审者留言、主干还在前进。把这些变动交给 [Babysit playbook](../../skills/poteto-mode/playbooks/babysit.md)：
+PR 一经提出就开始积累阻塞项：检查失败、评审者留言、主干还在前进。把这些变动交给 [Babysit playbook](../../skills-zhCN/poteto-mode/playbooks/babysit.md)：
 
 ```text
 /poteto-mode 跟进这个 pr。让 CI 全绿。
@@ -157,6 +157,6 @@ CI 全绿不等于安全。准备好落地时，直接说明：
 /poteto-mode 落地整个 stack。
 ```
 
-[Shipping playbook](../../skills/poteto-mode/playbooks/shipping.md) 在启动合并流程之前，先独立验证每个 PR：每个 PR 由一个全新的智能体实际运行、证明行为，评判改动的智能体绝不是编写它的那个。然后 Shipping 只从 stack 底部落地那段连续的已验证区间，一次一个 PR，默认通过 GitHub，Origin CLI 可用时通过 Origin，并报告第一个断链的 PR。已验证的 PR 如果位于未验证的 PR 之上，就必须等待——合并它会把中间的缺口一起带进主干。
+[Shipping playbook](../../skills-zhCN/poteto-mode/playbooks/shipping.md) 在启动合并流程之前，先独立验证每个 PR：每个 PR 由一个全新的智能体实际运行、证明行为，评判改动的智能体绝不是编写它的那个。然后 Shipping 只从 stack 底部落地那段连续的已验证区间，一次一个 PR，默认通过 GitHub，Origin CLI 可用时通过 Origin，并报告第一个断链的 PR。已验证的 PR 如果位于未验证的 PR 之上，就必须等待——合并它会把中间的缺口一起带进主干。
 
 下一步：[睡觉时也让任务继续跑](./07-overnight.md)。

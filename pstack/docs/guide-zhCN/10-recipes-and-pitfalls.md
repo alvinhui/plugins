@@ -148,7 +148,7 @@ apply prove it works. 给我真实输出，不是构建日志。
 /bro
 ```
 
-整条提示词就这一个词。[`/bro`](../../skills/bro/SKILL.md) 把上一条消息用平实的语言重述一遍，不带术语，更简短。回复在技术上足够详尽、你却没理解它说了什么时，就用它。
+整条提示词就这一个词。[`/bro`](../../skills-zhCN/bro/SKILL.md) 把上一条消息用平实的语言重述一遍，不带术语，更简短。回复在技术上足够详尽、你却没理解它说了什么时，就用它。
 
 ## 跟进持续运行的会话进度
 
@@ -156,9 +156,9 @@ apply prove it works. 给我真实输出，不是构建日志。
 /ketchup
 ```
 
-[`/ketchup`](../../skills/ketchup/SKILL.md) 用平实的语言讲清你上条消息之后发生了什么变化，再列出每个等你决定的决策点，附上建议选项、证据和风险。汇报期间不做任何改动。
+[`/ketchup`](../../skills-zhCN/ketchup/SKILL.md) 用平实的语言讲清你上条消息之后发生了什么变化，再列出每个等你决定的决策点，附上建议选项、证据和风险。汇报期间不做任何改动。
 
-想看视频版就运行 [`/ketchup-video`](../../skills/ketchup-video/SKILL.md)。它用一段带字幕的幻灯片短视频讲述发生了什么，等你决定的决策点以文字列在视频下方。
+想看视频版就运行 [`/ketchup-video`](../../skills-zhCN/ketchup-video/SKILL.md)。它用一段带字幕的幻灯片短视频讲述发生了什么，等你决定的决策点以文字列在视频下方。
 
 ## 常见坑
 
@@ -175,7 +175,7 @@ apply prove it works. 给我真实输出，不是构建日志。
 - **评审意见照单全收。** 机器人和人都会把真问题和噪音混在一个列表里。`/interrogate` 只保留重跑能证实的发现，并列出丢弃了哪些、为什么；两个方向你都可以推翻它的结论。
 - **把 `auto` 当模型名用。** `auto` 和 `inherit-parent` 的意思是"省略 model 字段，让子智能体继承父聊天的模型"。[配置 pstack](./01-setup.md) 介绍了各模型角色。
 - **构建通过就报告成功。** 构建只证明能编译。要真实命令、真实流程、落库的值或性能剖析结果，并要求回复里带证据。
-- **手写 `SKILL.md`。** 走[编写或修改技能的 playbook](../../skills/poteto-mode/playbooks/authoring-a-skill.md)，让校验和评审真正发生。
+- **手写 `SKILL.md`。** 走[编写或修改技能的 playbook](../../skills-zhCN/poteto-mode/playbooks/authoring-a-skill.md)，让校验和评审真正发生。
 
 指南到此为止。如果你是跳着看的，回到[配置 pstack](./01-setup.md)，运行一个真实任务。习惯来自使用，而不是阅读。
 

@@ -17,7 +17,7 @@
 
 第一遍按顺序阅读。之后每一页都可独立查阅。
 
-遇到困难，或者不确定该用哪个技能，就把问题跟在 [`/poteto-help`](../../skills/poteto-help/SKILL.md) 后面输入：
+遇到困难，或者不确定该用哪个技能，就把问题跟在 [`/poteto-help`](../../skills-zhCN/poteto-help/SKILL.md) 后面输入：
 
 ```text
 /poteto-help 评审这个分支该用哪个技能？

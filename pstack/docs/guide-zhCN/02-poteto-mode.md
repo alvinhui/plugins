@@ -25,7 +25,7 @@ flowchart TD
     J --> K
 ```
 
-图中展示的是常见路线。此外还有这些 playbook：持续优化指标（hillclimbing）、诊断运行时异常、分析已捕获的追踪数据（trace）、构建原型、视觉一致性比对、编写和评测技能、自主运行、提 PR、跟进 PR 或 stack 直到其可合并、落地整个已验证的 stack、无人值守运行 PR 队列或 stack、接手旧会话、安全暂停、多阶段计划，以及清理 worktree。完整清单见 [playbook 目录](../../skills/poteto-mode/playbooks/)。
+图中展示的是常见路线。此外还有这些 playbook：持续优化指标（hillclimbing）、诊断运行时异常、分析已捕获的追踪数据（trace）、构建原型、视觉一致性比对、编写和评测技能、自主运行、提 PR、跟进 PR 或 stack 直到其可合并、落地整个已验证的 stack、无人值守运行 PR 队列或 stack、接手旧会话、安全暂停、多阶段计划，以及清理 worktree。完整清单见 [playbook 目录](../../skills-zhCN/poteto-mode/playbooks/)。
 
 ## 说目标，别写流程排场
 
@@ -64,9 +64,9 @@ flowchart TD
 /poteto-mode 读一下这个讨论串。用你自己的话、用平实的语言复述底层问题。先不要修改任何代码。
 ```
 
-理解偏差会在复述中暴露出来，而此时还没有写任何代码。当场纠正只需一条消息，晚了就要付出一次错误修复的代价。只想要复述、不想启动 playbook，就用 [`/in-your-own-words`](../../skills/in-your-own-words/SKILL.md)：它会把智能体理解的目标和要解决的问题原样陈述给你。
+理解偏差会在复述中暴露出来，而此时还没有写任何代码。当场纠正只需一条消息，晚了就要付出一次错误修复的代价。只想要复述、不想启动 playbook，就用 [`/in-your-own-words`](../../skills-zhCN/in-your-own-words/SKILL.md)：它会把智能体理解的目标和要解决的问题原样陈述给你。
 
-拿不准提示词的方向是否正确，发送之前先用 [`/sharpen`](../../skills/sharpen/SKILL.md) 打磨一遍：
+拿不准提示词的方向是否正确，发送之前先用 [`/sharpen`](../../skills-zhCN/sharpen/SKILL.md) 打磨一遍：
 
 ```text
 /sharpen 为 v2 配置格式写一份迁移指南。
@@ -112,7 +112,7 @@ flowchart TD
 /poteto-mode new task. 基于 <base> 新建一个 worktree 和分支，然后把解析器的改动移植过去。
 ```
 
-每个任务独占分支和 worktree，任何智能体都不会覆盖其他智能体的文件。不过 worktree 占用磁盘和机器资源，一台笔记本同时运行不了几个。[Opening a PR playbook](../../skills/poteto-mode/playbooks/opening-a-pr.md) 修改代码本来就默认在 worktree 中进行，所以只有当基线分支或目录位置有特殊要求时，你才需要专门说明。
+每个任务独占分支和 worktree，任何智能体都不会覆盖其他智能体的文件。不过 worktree 占用磁盘和机器资源，一台笔记本同时运行不了几个。[Opening a PR playbook](../../skills-zhCN/poteto-mode/playbooks/opening-a-pr.md) 修改代码本来就默认在 worktree 中进行，所以只有当基线分支或目录位置有特殊要求时，你才需要专门说明。
 
 worktree 会越积越多。磁盘紧张时问一句：
 
@@ -120,7 +120,7 @@ worktree 会越积越多。磁盘紧张时问一句：
 /poteto-mode 是什么占满了我的磁盘？把可以安全清理的 worktree 清理掉。
 ```
 
-[Worktree cleanup playbook](../../skills/poteto-mode/playbooks/worktree-cleanup.md) 会按合并状态、有无未提交的改动、还有哪些聊天在使用它，对每个 worktree 分类。只删除证据齐全、确认可删的；凡是仍有未提交改动的，都会停下来等你决定。
+[Worktree cleanup playbook](../../skills-zhCN/poteto-mode/playbooks/worktree-cleanup.md) 会按合并状态、有无未提交的改动、还有哪些聊天在使用它，对每个 worktree 分类。只删除证据齐全、确认可删的；凡是仍有未提交改动的，都会停下来等你决定。
 
 ## 让它自己跑下去
 
@@ -130,10 +130,10 @@ worktree 会越积越多。磁盘紧张时问一句：
 /poteto-mode 我要离开一会儿。一直执行到迁移检查报告旧调用方为零为止。记录你的决策。
 ```
 
-这类事后才审阅的任务会交给 [`/figure-it-out`](../../skills/figure-it-out/SKILL.md)：它先设计整轮运行的阶段，并全程维护一份 [`/show-me-your-work`](../../skills/show-me-your-work/SKILL.md) 决策日志。完整的过夜约定见[睡觉时也让任务继续跑](./07-overnight.md)。
+这类事后才审阅的任务会交给 [`/figure-it-out`](../../skills-zhCN/figure-it-out/SKILL.md)：它先设计整轮运行的阶段，并全程维护一份 [`/show-me-your-work`](../../skills-zhCN/show-me-your-work/SKILL.md) 决策日志。完整的过夜约定见[睡觉时也让任务继续跑](./07-overnight.md)。
 
 **坑：** 不要在提示词里罗列技能清单（"先 /architect，再 /arena，再 /interrogate……"）。playbook 已经排好了顺序，手写的顺序往往会打乱、甚至遗漏 playbook 本来会执行的步骤。只有想推翻某个具体选择时，才点名技能。
 
-完整的分派规则读 [`poteto-mode`](../../skills/poteto-mode/SKILL.md) 技能本身。
+完整的分派规则读 [`poteto-mode`](../../skills-zhCN/poteto-mode/SKILL.md) 技能本身。
 
 下一步：[先读懂代码，再动手改](./03-understand.md)。

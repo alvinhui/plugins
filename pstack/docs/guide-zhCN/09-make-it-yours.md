@@ -10,7 +10,7 @@ poteto-mode 只是某一个人的风格。底层的 playbook、路由和模型�
 /automate-me
 ```
 
-你不用描述自己的风格，[`/automate-me`](../../skills/automate-me/SKILL.md) 会从你的历史中读出来。它在当前工作区里挖掘你最近的会话记录，找出反复出现的偏好——回复方式、委托方式、验证、代码、行文和流程——然后询问你哪些确实是你本人的习惯。它通过 Cursor 内置的 `create-skill` 流程起草 `.cursor/skills/<your-name>-mode/SKILL.md`，将草稿交给 [`/unslop`](../../skills/unslop/SKILL.md) 处理一遍，再从 worktree 提交一个 PR，让你像评审其他改动一样评审它。
+你不用描述自己的风格，[`/automate-me`](../../skills-zhCN/automate-me/SKILL.md) 会从你的历史中读出来。它在当前工作区里挖掘你最近的会话记录，找出反复出现的偏好——回复方式、委托方式、验证、代码、行文和流程——然后询问你哪些确实是你本人的习惯。它通过 Cursor 内置的 `create-skill` 流程起草 `.cursor/skills/<your-name>-mode/SKILL.md`，将草稿交给 [`/unslop`](../../skills-zhCN/unslop/SKILL.md) 处理一遍，再从 worktree 提交一个 PR，让你像评审其他改动一样评审它。
 
 习惯发生变化就再运行一次：
 
@@ -28,7 +28,7 @@ poteto-mode 只是某一个人的风格。底层的 playbook、路由和模型�
 /reflect 这次花的时间太长了。把经验沉淀下来，下次运行不要再重蹈覆辙。
 ```
 
-[`/reflect`](../../skills/reflect/SKILL.md) 读取会话记录，只保留会改变未来智能体工作方式的教训，把提案分成 `Accepted`、`Rejected`、`Backlog` 三类。修改任何技能之前都会先等你批准。只有会改变未来某个决策的提案才值得批准。一次异常的会话只是个案，不是规律。
+[`/reflect`](../../skills-zhCN/reflect/SKILL.md) 读取会话记录，只保留会改变未来智能体工作方式的教训，把提案分成 `Accepted`、`Rejected`、`Backlog` 三类。修改任何技能之前都会先等你批准。只有会改变未来某个决策的提案才值得批准。一次异常的会话只是个案，不是规律。
 
 ## 用 /correct 修环境，而不是反复叮嘱
 
@@ -39,7 +39,7 @@ poteto-mode 只是某一个人的风格。底层的 playbook、路由和模型�
 3. 用测试捕获它。
 4. 写成文档或智能体规则。智能体跳过规则时不会有任何检查失败，所以排在最后。
 
-人工评审不在列表里。评审者需要在每个 PR 上发现同一个错误，这本身就是这里要解决的问题。[`/correct`](../../skills/correct/SKILL.md) 负责完成这项工作：
+人工评审不在列表里。评审者需要在每个 PR 上发现同一个错误，这本身就是这里要解决的问题。[`/correct`](../../skills-zhCN/correct/SKILL.md) 负责完成这项工作：
 
 ```text
 /correct 智能体总是绕过 repository 层直接调用数据库客户端
@@ -57,9 +57,9 @@ poteto-mode 只是某一个人的风格。底层的 playbook、路由和模型�
 /poteto-mode 写一个技能，用于验证这个仓库里的数据库迁移
 ```
 
-写技能会匹配[编写或修改技能的 playbook](../../skills/poteto-mode/playbooks/authoring-a-skill.md)：走 Cursor 内置的 `create-skill`，校验 frontmatter 和链接，再经 Opening a PR playbook 交付。写给智能体看的文字，标准要比写给人看的更高——一句无用的话，将来会变成某个智能体照办的指令。把这个标准交给 playbook 把关，不要手写 `SKILL.md`。
+写技能会匹配[编写或修改技能的 playbook](../../skills-zhCN/poteto-mode/playbooks/authoring-a-skill.md)：走 Cursor 内置的 `create-skill`，校验 frontmatter 和链接，再经 Opening a PR playbook 交付。写给智能体看的文字，标准要比写给人看的更高——一句无用的话，将来会变成某个智能体照办的指令。把这个标准交给 playbook 把关，不要手写 `SKILL.md`。
 
-两类特例有专门的生成器。需要驱动你的应用、证明行为正确的技能是验证技能，改用 [`/create-verification-skill`](../../skills/create-verification-skill/SKILL.md) 和 [`/maintain-verification-skill`](../../skills/maintain-verification-skill/SKILL.md)。用模型检查器、证明或其他验证器检查代码某条性质的技能是形式化验证技能，用 [`/create-formal-verification-skill`](../../skills/create-formal-verification-skill/SKILL.md) 和 [`/maintain-formal-verification-skill`](../../skills/maintain-formal-verification-skill/SKILL.md)。[验证结果，提 PR](./06-verify-and-ship.md#用形式化验证技能证明一条性质) 对这两类都有介绍。
+两类特例有专门的生成器。需要驱动你的应用、证明行为正确的技能是验证技能，改用 [`/create-verification-skill`](../../skills-zhCN/create-verification-skill/SKILL.md) 和 [`/maintain-verification-skill`](../../skills-zhCN/maintain-verification-skill/SKILL.md)。用模型检查器、证明或其他验证器检查代码某条性质的技能是形式化验证技能，用 [`/create-formal-verification-skill`](../../skills-zhCN/create-formal-verification-skill/SKILL.md) 和 [`/maintain-formal-verification-skill`](../../skills-zhCN/maintain-formal-verification-skill/SKILL.md)。[验证结果，提 PR](./06-verify-and-ship.md#用形式化验证技能证明一条性质) 对这两类都有介绍。
 
 ## 用 /technical-writing 按标准写文档
 
@@ -69,7 +69,7 @@ poteto-mode 只是某一个人的风格。底层的 playbook、路由和模型�
 /technical-writing 评审 README 的改动
 ```
 
-[`/technical-writing`](../../skills/technical-writing/SKILL.md) 执行的是一套分层标准，目标是让疲惫的工程师读一遍就懂。它先确定文档类型（教程、操作指南、参考、解释），再逐句检查：谁做什么、一句只讲一件事、不允许一句话有两种读法。可以用它评审你或智能体刚写的内容，也可以在要求编写文档时一开始就点名它。
+[`/technical-writing`](../../skills-zhCN/technical-writing/SKILL.md) 执行的是一套分层标准，目标是让疲惫的工程师读一遍就懂。它先确定文档类型（教程、操作指南、参考、解释），再逐句检查：谁做什么、一句只讲一件事、不允许一句话有两种读法。可以用它评审你或智能体刚写的内容，也可以在要求编写文档时一开始就点名它。
 
 ## 盲测技能改动
 
@@ -87,13 +87,13 @@ poteto-mode 只是某一个人的风格。底层的 playbook、路由和模型�
 
 一开始就言明要 eval，这次改动才不至于失真。凭一次糟糕会话写出来的修复，往往只对那一次会话有效；修改次数多了，技能就会逐渐偏离。eval 能在交付前发现这种漂移。
 
-[Eval playbook](../../skills/poteto-mode/playbooks/eval.md) 的设计围绕一种失败模式：观察者效应。智能体知道自己在被评估，表现就会不同。所以候选智能体拿到的是清理过的目录里一个看起来普通的任务，全程不出现 "eval" 或 "candidate" 字样，也不知道彼此的存在。一位评委在中性标签下给所有输出打分；是否真正遵循了技能指引链，按每个候选实际读过哪些文件评分，而不是依据它自己的陈述。
+[Eval playbook](../../skills-zhCN/poteto-mode/playbooks/eval.md) 的设计围绕一种失败模式：观察者效应。智能体知道自己在被评估，表现就会不同。所以候选智能体拿到的是清理过的目录里一个看起来普通的任务，全程不出现 "eval" 或 "candidate" 字样，也不知道彼此的存在。一位评委在中性标签下给所有输出打分；是否真正遵循了技能指引链，按每个候选实际读过哪些文件评分，而不是依据它自己的陈述。
 
 接受结论之前，自己把每份输出读一遍。和评委意见不一致时，先怀疑评分标准，再怀疑自己的判断。
 
 ## 用 /make-bot-ui 做一个机器人界面
 
-有一个面向特定场景的技能，供 Grok Bot 用户使用。[`/make-bot-ui`](../../skills/make-bot-ui/SKILL.md) 构建一个小页面，按钮通过 webhook 例程唤醒机器人。比如你可以逐条滑动评审队列，每滑一条就让机器人处理那一条。webhook 的发送方密钥保存在你机器上的一个服务里，永远不会进入浏览器或聊天。这个技能还介绍了如何通过 Tailscale 将页面暴露出去。
+有一个面向特定场景的技能，供 Grok Bot 用户使用。[`/make-bot-ui`](../../skills-zhCN/make-bot-ui/SKILL.md) 构建一个小页面，按钮通过 webhook 例程唤醒机器人。比如你可以逐条滑动评审队列，每滑一条就让机器人处理那一条。webhook 的发送方密钥保存在你机器上的一个服务里，永远不会进入浏览器或聊天。这个技能还介绍了如何通过 Tailscale 将页面暴露出去。
 
 **坑：** 不要因为技能表现不佳就在任务中途修改它。单独开 PR 修复，任务照常推进。技能改动混在功能代码里一起交付，评审时无法察觉，也无法评估。
 

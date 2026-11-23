@@ -22,7 +22,7 @@ Cursor 会确认插件安装完成。
 /setup-pstack
 ```
 
-[`/setup-pstack`](../../skills/setup-pstack/SKILL.md) 会先探测你有哪些模型可用，询问推理预算，再把各个角色（代码委派角色、判断角色、评审组）列出来供你选择。按问题作答即可。它最终写入 `~/.cursor/rules/pstack-models.mdc`——一条简短的规则，每个 pstack 技能都会读取。
+[`/setup-pstack`](../../skills-zhCN/setup-pstack/SKILL.md) 会先探测你有哪些模型可用，询问推理预算，再把各个角色（代码委派角色、判断角色、评审组）列出来供你选择。按问题作答即可。它最终写入 `~/.cursor/rules/pstack-models.mdc`——一条简短的规则，每个 pstack 技能都会读取。
 
 默认配置等同于 `large` 预算：代码、文字和判断类角色运行 Opus 5.5，推理档位 `xhigh`；评审组和 swarm worker 运行 `high`。没有角色会超过 `xhigh`。评审组之外，Fable 5.2 只在两种情况下启用：你在任务中点名它，或者同一份任务说明交给 Opus 5.5 运行两次都未通过检查。`medium` 把每个角色降一档，`small` 降两档，两者都更节省 token。
 
@@ -32,13 +32,13 @@ Cursor 会确认插件安装完成。
 
 ## 验证技能：装还是不装
 
-配置收尾时，`/setup-pstack` 会检查项目中是否有能验证应用行为的手段：一个 `verify-*` 技能，或者现成的测试装置。两者都没有时，它会用 [`/create-verification-skill`](../../skills/create-verification-skill/SKILL.md) 提议生成一个，只询问一次。
+配置收尾时，`/setup-pstack` 会检查项目中是否有能验证应用行为的手段：一个 `verify-*` 技能，或者现成的测试装置。两者都没有时，它会用 [`/create-verification-skill`](../../skills-zhCN/create-verification-skill/SKILL.md) 提议生成一个，只询问一次。
 
 接受的话，它会写入 `.cursor/skills/verify-<app>/`：一个项目本地技能，教智能体像真实用户那样操作你的应用。交付之前，它会先把这个技能完整运行一次。拒绝也不影响，配置继续进行，你随时可以自己运行 `/create-verification-skill`。细节见[验证结果，提 PR](./06-verify-and-ship.md#给项目生成验证技能)。
 
 刚上手 pstack 的话，建议接受。能自行检查结果的智能体会持续推进直到检查通过；不能自检的智能体，每个结果都要交回给你人工核对。整本指南中，验证技能的回报最高。
 
-接着，除非项目中已经有了，配置还会提议用 [`/create-formal-verification-skill`](../../skills/create-formal-verification-skill/SKILL.md) 生成一个形式化验证技能，同样只询问一次。测试只能覆盖有人想到要写的用例；形式化验证技能检验的是代码的一条关键性质，比如"同一个任务绝不会同时运行两份"，并在声明的范围内覆盖所有情况。代码中有并发、重试、状态机或解析器时就接受——这些地方出 bug 代价高，而真正导致故障的情形测试往往覆盖不到。没有就先拒绝，以后情况变化再运行。见[验证结果，提 PR](./06-verify-and-ship.md#用形式化验证技能证明一条性质)。
+接着，除非项目中已经有了，配置还会提议用 [`/create-formal-verification-skill`](../../skills-zhCN/create-formal-verification-skill/SKILL.md) 生成一个形式化验证技能，同样只询问一次。测试只能覆盖有人想到要写的用例；形式化验证技能检验的是代码的一条关键性质，比如"同一个任务绝不会同时运行两份"，并在声明的范围内覆盖所有情况。代码中有并发、重试、状态机或解析器时就接受——这些地方出 bug 代价高，而真正导致故障的情形测试往往覆盖不到。没有就先拒绝，以后情况变化再运行。见[验证结果，提 PR](./06-verify-and-ship.md#用形式化验证技能证明一条性质)。
 
 配置完成后另开一个聊天。模型规则只对新会话生效。
 
