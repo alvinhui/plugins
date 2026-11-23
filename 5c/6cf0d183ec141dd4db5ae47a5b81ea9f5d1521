@@ -1,0 +1,39 @@
+pstack/skills-zhCN/automate-me/SKILL.md
+  s_0b6fda333353cc::t_ac4c24f499447d 9,71,89,96
+pstack/skills-zhCN/create-verification-skill/SKILL.md
+  s_0b6fda333353cc::t_e4a7b22ac4d2b9 31
+pstack/skills-zhCN/interrogate/SKILL.md
+  s_0b6fda333353cc::t_6434a9133a9fa8 3,9,32
+pstack/skills-zhCN/ketchup/SKILL.md
+  s_0b6fda333353cc::t_418bb9f54a8444 9
+pstack/skills-zhCN/maintain-verification-skill/SKILL.md
+  s_0b6fda333353cc::t_0751adf4e62be1 33
+pstack/skills-zhCN/no-comments/SKILL.md
+  s_0b6fda333353cc::t_c8e6dc7f70be7a 20
+pstack/skills-zhCN/poteto-help/SKILL.md
+  s_0b6fda333353cc::t_0b29d890d98f48 9,33-34,75
+pstack/skills-zhCN/poteto-mode/playbooks/shipping.md
+  s_0b6fda333353cc::t_d1e7517ac31ef7 8
+pstack/skills-zhCN/principle-attack-the-premise/SKILL.md
+  s_0b6fda333353cc::t_68bb44973f4d12 13-14
+pstack/skills-zhCN/principle-test-behavior-not-implementation/SKILL.md
+  s_0b6fda333353cc::t_bed2433a4bf8fc 17
+pstack/skills-zhCN/show-me-your-work/SKILL.md
+  s_0b6fda333353cc::t_3063b6cfb3beae 24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "5c6cf0d183ec141dd4db5ae47a5b81ea9f5d1521",
+  "prompts": {},
+  "sessions": {
+    "s_0b6fda333353cc": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a20712-322d-7292-8e64-fd03b922f729",
+        "model": "unknown"
+      },
+      "human_author": "xuwentao.59 <xuwentao.59@jd.com>"
+    }
+  }
+}
